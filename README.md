@@ -154,9 +154,9 @@ export CUDA_VISIBLE_DEVICES=0,1,2,4,5,6,7
 export PYTHONUNBUFFERED=1
 
 torchrun --nproc_per_node=8 finetune/finetune_twostage.py \
-  --base_model weight_text/Qwen38btext \
-  --train_jsonl dataset4sft_en/syn_data.jsonl \
-  --valid_jsonl dataset4sft_en/monthly_windows_with_answer_vail_empty_new_server.jsonl \
+  --base_model weight/Qwen38b \
+  --train_jsonl data/energy_train.jsonl \
+  --valid_jsonl data/energy_vail.jsonl \
   --out_dir Qwen_weight_en/syn_stage1_patch2_128d_4bs_10epochs \
   --stage 1 \
   --bf16 --epochs 100 --lr 1e-4 \
@@ -173,9 +173,9 @@ export PYTHONUNBUFFERED=1
 export MASTER_PORT=29511
 
 torchrun --nproc_per_node=8 --master_port=${MASTER_PORT} finetune/finetune_twostage.py \
-  --base_model weight_text/Qwen38btext \
-  --train_jsonl dataset4sft_en/syn_data.jsonl \
-  --valid_jsonl dataset4sft_en/monthly_windows_with_answer_vail_empty_new_server.jsonl \
+  --base_model weight/Qwen38b \
+  --train_jsonl data/energy_train.jsonl \
+  --valid_jsonl data/energy_vail.jsonl \
   --out_dir Qwen_weight_en/syn_stage2_patch2_128d_4bs_10epochs \
   --stage1_dir Qwen_weight_en/syn_stage1_patch2_128d_4bs_10epochs/epoch_ckpts/epoch_10 \
   --stage 2 \
@@ -195,9 +195,9 @@ export MASTER_PORT=29520
 export PYTHONUNBUFFERED=1
 
 torchrun --nproc_per_node=8 --master_port=${MASTER_PORT} finetune/grpo_stage.py \
-  --base_model weight_text/Qwen38btext \
+  --base_model weight/Qwen38b \
   --stage1_dir Qwen_weight_en/syn_stage1_patch2_128d_4bs_10epochs/epoch_ckpts/epoch_10 \
-  --train_jsonl dataset4sft_en/syn_data.jsonl \
+  --train_jsonl data/energy_train.jsonl \
   --sft_lora_dir Qwen_weight_en/syn_stage2_patch2_128d_4bs_10epochs/epoch_ckpts/epoch_01 \
   --out_dir Qwen_weight_en/syn_stage3_patch2_128d_4bs_10epochs \
   --bf16 \
@@ -210,10 +210,11 @@ torchrun --nproc_per_node=8 --master_port=${MASTER_PORT} finetune/grpo_stage.py 
 
 ```bash
 python eval_en_RL_new_server_score_log/run_eval_ts.py \
-  --data dataset4sft_en/monthly_windows_with_answer_test_empty_new_server.jsonl \
-  --base weight_text/Qwen38btext \
+  --data data/energy_test.jsonl \
+  --base weight/Qwen38b \
   --adapter Qwen_weight_en/syn_stage3_patch2_128d_4bs_10epochs/epoch_ckpts/epoch_01 \
-  --out eval_en_result_rl/ours_log.csv \
+  --out result_energy_csv/ours_log.csv \
+  --log_dir result_energy_log/ours_energy.log\
   --ts-ckpt Qwen_weight_en/syn_stage1_patch2_128d_4bs_10epochs/epoch_ckpts/epoch_10
 ```
 
