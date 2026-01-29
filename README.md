@@ -1,4 +1,4 @@
-# Num2Event (ICML) — Energy Experiment Pipeline
+# Num2Event — Experiment Pipeline
 
 This repository contains an end-to-end pipeline for:
 
@@ -24,16 +24,18 @@ pip install -r requirements.txt
 
 ---
 
-## 2) Configure API credentials (required for LLM steps)
+
+## 2) Model & API Configuration
+
+### Download Model Weights
+You need to download the base model (`Qwen/Qwen3-8B`) from Hugging Face to your local directory (e.g., `checkpoints/Qwen3-8B`).
 
 ```bash
-export OPENAI_API_KEY="YOUR_KEY"
-export OPENAI_BASE_URL="YOUR_BASE_URL"
-```
+# Ensure git-lfs is installed ([https://git-lfs.com](https://git-lfs.com))
+git lfs install
 
-Notes:
-- `OPENAI_BASE_URL` is optional if you use the default OpenAI endpoint.
-- The extraction and reasoning steps require a working API key.
+# Clone the model
+git clone [https://huggingface.co/Qwen/Qwen3-8B](https://huggingface.co/Qwen/Qwen3-8B) checkpoints/Qwen3-8B
 
 ---
 
