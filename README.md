@@ -4,7 +4,7 @@
 
 ## 1) Environment setup
 
-### Option A: Conda (recommended)
+### Option A: Conda
 
 ```bash
 conda create -n num2event python=3.11 -y
@@ -34,7 +34,7 @@ export OPENAI_API_KEY="YOUR_KEY"
 export OPENAI_BASE_URL="YOUR_BASE_URL"
 ```
 
-## 3) Event extraction (LLM → JSONL)
+## 3) Event extraction & Schema expansion
 
 This step reads `dataset/energy.csv` and extracts structured events from the text column, writing outputs under `eventsdata_en/`.
 
@@ -51,7 +51,6 @@ Expected outputs (written automatically):
 
 ---
 
-## 4) Schema expansion (vocab bootstrap) (optional)
 
 During extraction, the pipeline also writes per-row vocabulary suggestions to:
 - `eventsdata_en/vocab_suggestions.jsonl`
@@ -74,7 +73,7 @@ Key arguments:
 
 ---
 
-## 5) Dedup + split events by date
+## 4) Split events by date
 
 This produces the deduplicated event sets used for training/validation/testing.
 
@@ -97,7 +96,7 @@ python data_process/energy4experiment_pipeline_standalone.py --dry-run
 
 ---
 
-## 6) Synthesis (IRF + arrivals model)
+## 5) Synthesis (IRF + arrivals model)
 
 This generates synthetic data under a chosen output directory.
 
@@ -127,7 +126,7 @@ python syn/synthesis_en.py \
 
 ---
 
-## 7) Build SFT datasets + reasoning traces
+## 6) Build SFT datasets + reasoning traces
 
 This step builds the SFT JSONL files (real + synthetic), optionally generates reasoning traces (Reason + FINAL), merges datasets, and rewrites prompts.
 
@@ -146,7 +145,7 @@ python data_process/energy4experiment_sft_full_standalone.py \
 
 ---
 
-## 8) Training
+## 7) Training
 
 ### Stage 1 (TS Encoder)
 
@@ -207,7 +206,7 @@ torchrun --nproc_per_node=8 --master_port=${MASTER_PORT} finetune/grpo_stage.py 
 
 ---
 
-## 9) Evaluation
+## 8) Evaluation
 
 ```bash
 python eval_en_RL_new_server_score_log/run_eval_ts.py \
