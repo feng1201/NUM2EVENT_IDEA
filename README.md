@@ -28,14 +28,20 @@ pip install -r requirements.txt
 ## 2) Model & API Configuration
 
 ### Download Model Weights
-You need to download the base model (`Qwen/Qwen3-8B`) from Hugging Face to your local directory (e.g., `checkpoints/Qwen3-8B`).
+We recommend using the `huggingface-cli` to download the model efficiently.
 
 ```bash
-# Ensure git-lfs is installed ([https://git-lfs.com](https://git-lfs.com))
-git lfs install
+# 1. Install Hugging Face Hub CLI
+pip install -U "huggingface_hub[cli]"
 
-Clone the model
-git clone [https://huggingface.co/Qwen/Qwen3-8B](https://huggingface.co/Qwen/Qwen3-8B) checkpoints/Qwen3-8B
+# 2. Download the model to a local directory
+huggingface-cli download Qwen/Qwen3-8B --local-dir checkpoints/Qwen3-8B
+```
+### API Configuration
+
+```bash
+export OPENAI_API_KEY="YOUR_KEY"
+export OPENAI_BASE_URL="YOUR_BASE_URL"
 ```
 
 ## 3) Event extraction (LLM → JSONL)
