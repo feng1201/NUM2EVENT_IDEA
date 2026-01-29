@@ -1,0 +1,537 @@
+Labels:
+['centers_for_disease_control', 'report_release', 'influenza', 'ambiguous']
+['centers_for_disease_control', 'report_release', 'influenza', 'up']
+['united_states', 'rate_change', 'hospitalizations', 'up']
+['united_states', 'report_release', 'influenza', 'ambiguous']
+['united_states', 'report_release', 'influenza', 'up']
+
+===== RAW GENERATION (decoded) =====
+The observed trend in the data indicates a pronounced decline in the proportion of U.S. influenza patients over the past three months, with a peak at week t1 followed by a steady downward trajectory that reaches a low plateau by week t12. Within the current month, the weekly changes (dP) continue this downward pattern in the first two weeks, but the last two weeks show a modest uptick, suggesting a possible localized resurgence or the emergence of a new strain. This pattern is consistent with the tail end of a typical influenza season, where overall activity wanes but sporadic increases can arise from heightened testing, reporting, or small outbreaks. Real‑time public health actions that could be occurring during this period include guidance releases, vaccine approvals, and outbreak detections that influence both surveillance data and public behavior.
+
+⟪FINAL⟫
+{
+  "hypotheses": [
+    {
+      "key": "centers_for_disease_control|issue_guidance|influenza|down"
+    },
+    {
+      "key": "world_health_organization|report_release|influenza|up"
+    },
+    {
+      "key": "food_and_drug_administration|approve_authorize|vaccine|up"
+    },
+    {
+      "key": "advisory_committee_on_immunization_practices|recommend_vaccination|influenza|up"
+    },
+    {
+      "key": "centers_for_disease_control|detect|influenza|up"
+    }
+  ]
+}
+===== END RAW GENERATION =====
+[DEBUG] parsed JSON: {"hypotheses": [{"key": "centers_for_disease_control|issue_guidance|influenza|down"}, {"key": "world_health_organization|report_release|influenza|up"}, {"key": "food_and_drug_administration|approve_authorize|vaccine|up"}, {"key": "advisory_committee_on_immunization_practices|recommend_vaccination|influenza|up"}, {"key": "centers_for_disease_control|detect|influenza|up"}]}
+['centers_for_disease_control', 'issue_guidance', 'influenza', 'down']
+['world_health_organization', 'report_release', 'influenza', 'up']
+['food_and_drug_administration', 'approve_authorize', 'vaccine', 'up']
+['advisory_committee_on_immunization_practices', 'recommend_vaccination', 'influenza', 'up']
+['centers_for_disease_control', 'detect', 'influenza', 'up']
+recall_all: 0.0 precision_all: 0.0
+Labels:
+['centers_for_disease_control', 'report_release', 'influenza', 'up']
+['centers_for_disease_control', 'report_release', 'influenza', 'ambiguous']
+
+===== RAW GENERATION (decoded) =====
+The observed trend in the data indicates a pronounced decline in the proportion of U.S. influenza patients over the past three months, dropping from 6.462 at the start of the period to 2.404 by the end. This downward trajectory is further reinforced by the current month’s weekly changes, all of which are negative, suggesting that influenza activity is tapering off as the season reaches its late stage. The gradual reduction is likely driven by a combination of seasonal factors and intensified public‑health measures: increased vaccination uptake, updated guidance from the CDC, and heightened surveillance reporting from international bodies such as the WHO. These interventions collectively contribute to a decreasing incidence of influenza cases, reflected in the modest weekly declines observed.
+
+⟪FINAL⟫
+{
+  "hypotheses": [
+    {
+      "key": "centers_for_disease_control|issue_guidance|vaccination|down"
+    },
+    {
+      "key": "world_health_organization|report_release|influenza|down"
+    },
+    {
+      "key": "food_and_drug_administration|approve_authorize|vaccine|up"
+    },
+    {
+      "key": "advisory_committee_on_immunization_practices|recommend_vaccination|influenza|down"
+    },
+    {
+      "key": "health_and_human_services|report_release|influenza|down"
+    }
+  ]
+}
+===== END RAW GENERATION =====
+[DEBUG] parsed JSON: {"hypotheses": [{"key": "centers_for_disease_control|issue_guidance|vaccination|down"}, {"key": "world_health_organization|report_release|influenza|down"}, {"key": "food_and_drug_administration|approve_authorize|vaccine|up"}, {"key": "advisory_committee_on_immunization_practices|recommend_vaccination|influenza|down"}, {"key": "health_and_human_services|report_release|influenza|down"}]}
+['centers_for_disease_control', 'issue_guidance', 'vaccination', 'down']
+['world_health_organization', 'report_release', 'influenza', 'down']
+['food_and_drug_administration', 'approve_authorize', 'vaccine', 'up']
+['advisory_committee_on_immunization_practices', 'recommend_vaccination', 'influenza', 'down']
+['health_and_human_services', 'report_release', 'influenza', 'down']
+recall_all: 0.0 precision_all: 0.0
+Labels:
+['centers_for_disease_control', 'report_release', 'influenza', 'ambiguous']
+['centers_for_disease_control', 'report_release', 'influenza', 'up']
+
+===== RAW GENERATION (decoded) =====
+The observed trend in the data indicates a gradual decline in influenza patient proportion over the past three months, from 3.058 to 2.206, suggesting effective seasonal control measures and increasing vaccination coverage. However, the current month shows a brief uptick in the first week (+0.031) followed by a steady downward trajectory, which may reflect a localized outbreak or a new influenza strain that triggered a temporary rise in cases before public health interventions and heightened vaccination efforts mitigated the spread. The pattern of a modest initial increase and subsequent decline aligns with typical influenza dynamics where early detection and rapid response can curb transmission. Potential drivers include CDC guidance on vaccination, release of surveillance reports, detection of a new strain, and confirmation of a small outbreak, all of which could influence the observed weekly changes.
+
+⟪FINAL⟫{
+  "hypotheses": [
+    { "key": "centers_for_disease_control|issue_guidance|influenza|down" },
+    { "key": "centers_for_disease_control|report_release|influenza|up" },
+    { "key": "centers_for_disease_control|detect|influenza|up" },
+    { "key": "centers_for_disease_control|conduct_study|influenza|ambiguous" },
+    { "key": "centers_for_disease_control|confirm|influenza|up" }
+  ]
+}
+===== END RAW GENERATION =====
+[DEBUG] parsed JSON: {"hypotheses": [{"key": "centers_for_disease_control|issue_guidance|influenza|down"}, {"key": "centers_for_disease_control|report_release|influenza|up"}, {"key": "centers_for_disease_control|detect|influenza|up"}, {"key": "centers_for_disease_control|conduct_study|influenza|ambiguous"}, {"key": "centers_for_disease_control|confirm|influenza|up"}]}
+['centers_for_disease_control', 'issue_guidance', 'influenza', 'down']
+['centers_for_disease_control', 'report_release', 'influenza', 'up']
+['centers_for_disease_control', 'detect', 'influenza', 'up']
+['centers_for_disease_control', 'conduct_study', 'influenza', 'ambiguous']
+['centers_for_disease_control', 'confirm', 'influenza', 'up']
+recall_all: 0.3333333333333333 precision_all: 0.06666666666666667
+Labels:
+['centers_for_disease_control', 'report_release', 'influenza', 'up']
+['united_states', 'report_release', 'h5n1', 'ambiguous']
+
+===== RAW GENERATION (decoded) =====
+The data shows a gradual decline in influenza patient proportion over the past three months, with weekly values falling from 2.705 to 2.017. In the current month, the first two weeks exhibit a modest decrease in the weekly change (dP), followed by a slight uptick in the last two weeks. This pattern suggests that public health interventions may have initially suppressed influenza activity, but a subsequent shift—perhaps due to a new strain or changes in reporting—has led to a modest rebound. The downward trend in the early weeks could reflect CDC guidance or a rate change in case reporting, while the later positive change may be driven by the detection of a new influenza strain or the rollout of a new vaccine, prompting increased surveillance and reporting.
+
+⟪FINAL⟫{
+  "hypotheses": [
+    { "key": "centers_for_disease_control|issue_guidance|influenza|down" },
+    { "key": "advisory_committee_on_immunization_practices|recommend_vaccination|influenza|up" },
+    { "key": "united_states|detect|influenza|ambiguous" },
+    { "key": "food_and_drug_administration|approve_authorize|vaccine|up" },
+    { "key": "health_and_human_services|rate_change|cases|down" }
+  ]
+}
+===== END RAW GENERATION =====
+[DEBUG] parsed JSON: {"hypotheses": [{"key": "centers_for_disease_control|issue_guidance|influenza|down"}, {"key": "advisory_committee_on_immunization_practices|recommend_vaccination|influenza|up"}, {"key": "united_states|detect|influenza|ambiguous"}, {"key": "food_and_drug_administration|approve_authorize|vaccine|up"}, {"key": "health_and_human_services|rate_change|cases|down"}]}
+['centers_for_disease_control', 'issue_guidance', 'influenza', 'down']
+['advisory_committee_on_immunization_practices', 'recommend_vaccination', 'influenza', 'up']
+['united_states', 'detect', 'influenza', 'ambiguous']
+['food_and_drug_administration', 'approve_authorize', 'vaccine', 'up']
+['health_and_human_services', 'rate_change', 'cases', 'down']
+recall_all: 0.25 precision_all: 0.05
+Labels:
+['centers_for_disease_control', 'recommend_vaccination', 'vaccination', 'ambiguous']
+['centers_for_disease_control', 'report_release', 'influenza', 'up']
+['food_and_drug_administration', 'approve_authorize', 'vaccine', 'ambiguous']
+
+===== RAW GENERATION (decoded) =====
+The data shows a steady decline in influenza patient proportion over the past three months, from 2.435 to 1.693, indicating a general downward trend in influenza activity. Within the current month, weekly changes are modestly negative until week c3, where a slight uptick occurs, followed by a sharp drop of –0.245 in week c4. This pattern suggests that influenza activity remained low but experienced a brief resurgence before a pronounced decline, possibly due to a combination of increased vaccination uptake, new vaccine approvals, and public health guidance. The large negative change in week c4 could reflect the impact of a newly authorized vaccine or a public health intervention that accelerated influenza prevention efforts.
+
+⟪FINAL⟫
+{
+  "hypotheses": [
+    { "key": "advisory_committee_on_immunization_practices|recommend_vaccination|influenza|up" },
+    { "key": "food_and_drug_administration|approve_authorize|vaccine|up" },
+    { "key": "centers_for_disease_control|issue_guidance|influenza|down" },
+    { "key": "health_and_human_services|report_release|influenza|down" },
+    { "key": "world_health_organization|detect|influenza|down" }
+  ]
+}
+===== END RAW GENERATION =====
+[DEBUG] parsed JSON: {"hypotheses": [{"key": "advisory_committee_on_immunization_practices|recommend_vaccination|influenza|up"}, {"key": "food_and_drug_administration|approve_authorize|vaccine|up"}, {"key": "centers_for_disease_control|issue_guidance|influenza|down"}, {"key": "health_and_human_services|report_release|influenza|down"}, {"key": "world_health_organization|detect|influenza|down"}]}
+['advisory_committee_on_immunization_practices', 'recommend_vaccination', 'influenza', 'up']
+['food_and_drug_administration', 'approve_authorize', 'vaccine', 'up']
+['centers_for_disease_control', 'issue_guidance', 'influenza', 'down']
+['health_and_human_services', 'report_release', 'influenza', 'down']
+['world_health_organization', 'detect', 'influenza', 'down']
+recall_all: 0.26666666666666666 precision_all: 0.08
+Labels:
+['centers_for_disease_control', 'report_release', 'influenza', 'up']
+['centers_for_disease_control', 'issue_guidance', 'influenza', 'ambiguous']
+['centers_for_disease_control', 'report_release', 'h1n1', 'ambiguous']
+['centers_for_disease_control', 'report_release', 'h5n1', 'up']
+['food_and_drug_administration', 'report_release', 'influenza', 'ambiguous']
+
+===== RAW GENERATION (decoded) =====
+The observed trend in the data indicates a steady decline in the proportion of influenza patients over the past three months, with each week of the current month showing a negative change in proportion. This pattern is consistent with the natural waning of the influenza season as well as the cumulative impact of public health interventions such as increased vaccination coverage and targeted guidance from health authorities. The sharper decreases early in the month suggest that a recent vaccination campaign or new guidance issued by a major agency may have accelerated the reduction in cases. Overall, the downward trajectory reflects a successful mitigation of influenza activity during the current month.
+
+⟪FINAL⟫{
+  "hypotheses": [
+    { "key": "centers_for_disease_control|issue_guidance|vaccination|down" },
+    { "key": "united_states|recommend_vaccination|influenza|down" },
+    { "key": "world_health_organization|report_release|influenza|down" },
+    { "key": "advisory_committee_on_immunization_practices|issue_guidance|vaccine|down" },
+    { "key": "health_and_human_services|conduct_study|influenza|down" }
+  ]
+}
+===== END RAW GENERATION =====
+[DEBUG] parsed JSON: {"hypotheses": [{"key": "centers_for_disease_control|issue_guidance|vaccination|down"}, {"key": "united_states|recommend_vaccination|influenza|down"}, {"key": "world_health_organization|report_release|influenza|down"}, {"key": "advisory_committee_on_immunization_practices|issue_guidance|vaccine|down"}, {"key": "health_and_human_services|conduct_study|influenza|down"}]}
+['centers_for_disease_control', 'issue_guidance', 'vaccination', 'down']
+['united_states', 'recommend_vaccination', 'influenza', 'down']
+['world_health_organization', 'report_release', 'influenza', 'down']
+['advisory_committee_on_immunization_practices', 'issue_guidance', 'vaccine', 'down']
+['health_and_human_services', 'conduct_study', 'influenza', 'down']
+recall_all: 0.2222222222222222 precision_all: 0.06666666666666667
+Labels:
+['centers_for_disease_control', 'report_release', 'influenza', 'ambiguous']
+['centers_for_disease_control', 'report_release', 'influenza', 'up']
+['centers_for_disease_control', 'issue_guidance', 'influenza', 'ambiguous']
+['centers_for_disease_control', 'report_release', 'mortality', 'ambiguous']
+['world_health_organization', 'report_release', 'h5n1', 'ambiguous']
+
+===== RAW GENERATION (decoded) =====
+The observed trend in the data indicates a gradual decline in influenza patient proportion over the past three months, followed by a modest rebound in the current month. The downward trajectory from t0 to t8 suggests effective seasonal control measures, possibly due to widespread vaccination and public health interventions. The slight uptick in the last few weeks (c2–c4) may reflect a shift in circulating strains, increased testing, or a recent public health announcement prompting higher reporting. The pattern aligns with typical influenza seasonality, where activity peaks in late winter and early spring, and may be influenced by recent CDC guidance or WHO reports. The positive weekly differentials in the current month suggest that real‑time events—such as new vaccine approvals, updated vaccination recommendations, or heightened surveillance—could be driving the observed increase.
+
+⟪FINAL⟫{
+  "hypotheses": [
+    { "key": "centers_for_disease_control|issue_guidance|influenza|up" },
+    { "key": "world_health_organization|report_release|influenza|up" },
+    { "key": "food_and_drug_administration|approve_authorize|vaccine|up" },
+    { "key": "advisory_committee_on_immunization_practices|recommend_vaccination|influenza|up" },
+    { "key": "health_and_human_services|detect|influenza|up" }
+  ]
+}
+===== END RAW GENERATION =====
+[DEBUG] parsed JSON: {"hypotheses": [{"key": "centers_for_disease_control|issue_guidance|influenza|up"}, {"key": "world_health_organization|report_release|influenza|up"}, {"key": "food_and_drug_administration|approve_authorize|vaccine|up"}, {"key": "advisory_committee_on_immunization_practices|recommend_vaccination|influenza|up"}, {"key": "health_and_human_services|detect|influenza|up"}]}
+['centers_for_disease_control', 'issue_guidance', 'influenza', 'up']
+['world_health_organization', 'report_release', 'influenza', 'up']
+['food_and_drug_administration', 'approve_authorize', 'vaccine', 'up']
+['advisory_committee_on_immunization_practices', 'recommend_vaccination', 'influenza', 'up']
+['health_and_human_services', 'detect', 'influenza', 'up']
+recall_all: 0.21904761904761902 precision_all: 0.08571428571428573
+Labels:
+['advisory_committee_on_immunization_practices', 'issue_guidance', 'vaccination', 'ambiguous']
+['centers_for_disease_control', 'report_release', 'influenza', 'ambiguous']
+['health_and_human_services', 'report_release', 'influenza', 'up']
+['national_institute_on_aging', 'issue_guidance', 'vaccination', 'ambiguous']
+
+===== RAW GENERATION (decoded) =====
+The observed trend in the data indicates a steady upward trajectory in the proportion of U.S. influenza patients over the past three months, rising from 1.575 to 2.025. Within the current month, each weekly change (dP) remains positive, yet the magnitude of the increase diminishes from +0.287 to +0.047, suggesting that the surge is beginning to plateau. This pattern is consistent with a typical influenza season that peaks and then tapers off, likely driven by a combination of factors: heightened transmission early in the season, followed by mounting public‑health interventions such as vaccination campaigns, updated clinical guidance, and increased public awareness. The slowing growth may also reflect the impact of these measures, as well as the natural waning of susceptible individuals and possible seasonal shifts in virus transmissibility.
+
+⟪FINAL⟫
+{
+  "hypotheses": [
+    {
+      "key": "centers_for_disease_control|issue_guidance|influenza|up"
+    },
+    {
+      "key": "world_health_organization|report_release|influenza|up"
+    },
+    {
+      "key": "food_and_drug_administration|approve_authorize|vaccine|up"
+    },
+    {
+      "key": "advisory_committee_on_immunization_practices|recommend_vaccination|influenza|up"
+    },
+    {
+      "key": "health_and_human_services|rate_change|hospitalizations|down"
+    }
+  ]
+}
+===== END RAW GENERATION =====
+[DEBUG] parsed JSON: {"hypotheses": [{"key": "centers_for_disease_control|issue_guidance|influenza|up"}, {"key": "world_health_organization|report_release|influenza|up"}, {"key": "food_and_drug_administration|approve_authorize|vaccine|up"}, {"key": "advisory_committee_on_immunization_practices|recommend_vaccination|influenza|up"}, {"key": "health_and_human_services|rate_change|hospitalizations|down"}]}
+['centers_for_disease_control', 'issue_guidance', 'influenza', 'up']
+['world_health_organization', 'report_release', 'influenza', 'up']
+['food_and_drug_administration', 'approve_authorize', 'vaccine', 'up']
+['advisory_committee_on_immunization_practices', 'recommend_vaccination', 'influenza', 'up']
+['health_and_human_services', 'rate_change', 'hospitalizations', 'down']
+recall_all: 0.19166666666666665 precision_all: 0.07500000000000001
+Labels:
+['centers_for_disease_control', 'issue_guidance', 'vaccination', 'ambiguous']
+['advisory_committee_on_immunization_practices', 'issue_guidance', 'vaccination', 'ambiguous']
+['centers_for_disease_control', 'report_release', 'hospitalizations', 'up']
+['centers_for_disease_control', 'report_release', 'influenza', 'up']
+
+===== RAW GENERATION (decoded) =====
+The observed trend in the data indicates a steady, upward trajectory in influenza patient proportions over the past three months, culminating in a peak at week t12. Within the current month, the first week shows a modest dip (–0.033), followed by a consistent rise in the subsequent weeks (+0.143, +0.045, +0.080). This pattern is characteristic of a seasonal influenza surge that has recently begun to intensify after a brief lull, possibly due to a temporary public‑health intervention or reporting lag. The rebound aligns temporally with heightened vaccination efforts, increased testing, and the release of updated surveillance guidance, suggesting that coordinated public‑health actions are driving the uptick in detected cases.
+
+⟪FINAL⟫
+{
+  "hypotheses": [
+    {
+      "key": "centers_for_disease_control|issue_guidance|influenza|ambiguous"
+    },
+    {
+      "key": "advisory_committee_on_immunization_practices|recommend_vaccination|influenza|up"
+    },
+    {
+      "key": "food_and_drug_administration|approve_authorize|vaccine|up"
+    },
+    {
+      "key": "world_health_organization|report_release|influenza|ambiguous"
+    },
+    {
+      "key": "health_and_human_services|detect|cases|up"
+    }
+  ]
+}
+===== END RAW GENERATION =====
+[DEBUG] parsed JSON: {"hypotheses": [{"key": "centers_for_disease_control|issue_guidance|influenza|ambiguous"}, {"key": "advisory_committee_on_immunization_practices|recommend_vaccination|influenza|up"}, {"key": "food_and_drug_administration|approve_authorize|vaccine|up"}, {"key": "world_health_organization|report_release|influenza|ambiguous"}, {"key": "health_and_human_services|detect|cases|up"}]}
+['centers_for_disease_control', 'issue_guidance', 'influenza', 'ambiguous']
+['advisory_committee_on_immunization_practices', 'recommend_vaccination', 'influenza', 'up']
+['food_and_drug_administration', 'approve_authorize', 'vaccine', 'up']
+['world_health_organization', 'report_release', 'influenza', 'ambiguous']
+['health_and_human_services', 'detect', 'cases', 'up']
+recall_all: 0.17037037037037037 precision_all: 0.06666666666666668
+Labels:
+['centers_for_disease_control', 'issue_guidance', 'vaccination', 'ambiguous']
+['centers_for_disease_control', 'report_release', 'influenza', 'ambiguous']
+['centers_for_disease_control', 'report_release', 'influenza', 'up']
+['centers_for_disease_control', 'conduct_study', 'influenza', 'ambiguous']
+['centers_for_disease_control', 'conduct_study', 'respiratory_syncytial_virus', 'ambiguous']
+
+===== RAW GENERATION (decoded) =====
+The data show a pronounced upward trajectory in influenza patient proportions over the past three months, culminating in a steep rise during the current month, with the most recent weekly increment (+0.413) markedly higher than earlier weeks. This pattern suggests an accelerating influenza activity, potentially driven by the emergence of a more transmissible strain, increased testing and reporting, or heightened public awareness prompting more healthcare visits. The consistent weekly increases in the current month point to a real‑time event—such as a new outbreak, a change in surveillance protocols, or a public health advisory—that has amplified detection or transmission. The magnitude of the last week’s jump indicates that the event likely occurred very recently, within the current month, and may involve a shift in policy or a novel strain that has not yet been fully accounted for in existing vaccination strategies.
+
+⟪FINAL⟫
+{
+  "hypotheses": [
+    {
+      "key": "centers_for_disease_control|detect|influenza|up"
+    },
+    {
+      "key": "world_health_organization|report_release|influenza|up"
+    },
+    {
+      "key": "advisory_committee_on_immunization_practices|recommend_vaccination|influenza|up"
+    },
+    {
+      "key": "food_and_drug_administration|approve_authorize|vaccine|up"
+    },
+    {
+      "key": "centers_for_disease_control|issue_guidance|influenza|up"
+    }
+  ]
+}
+===== END RAW GENERATION =====
+[DEBUG] parsed JSON: {"hypotheses": [{"key": "centers_for_disease_control|detect|influenza|up"}, {"key": "world_health_organization|report_release|influenza|up"}, {"key": "advisory_committee_on_immunization_practices|recommend_vaccination|influenza|up"}, {"key": "food_and_drug_administration|approve_authorize|vaccine|up"}, {"key": "centers_for_disease_control|issue_guidance|influenza|up"}]}
+['centers_for_disease_control', 'detect', 'influenza', 'up']
+['world_health_organization', 'report_release', 'influenza', 'up']
+['advisory_committee_on_immunization_practices', 'recommend_vaccination', 'influenza', 'up']
+['food_and_drug_administration', 'approve_authorize', 'vaccine', 'up']
+['centers_for_disease_control', 'issue_guidance', 'influenza', 'up']
+recall_all: 0.15333333333333332 precision_all: 0.06000000000000001
+Labels:
+['centers_for_disease_control', 'report_release', 'influenza', 'up']
+['centers_for_disease_control', 'approve_authorize', 'influenza', 'ambiguous']
+['centers_for_disease_control', 'issue_guidance', 'influenza', 'ambiguous']
+['centers_for_disease_control', 'recommend_vaccination', 'influenza', 'ambiguous']
+['centers_for_disease_control', 'report_release', 'deaths', 'up']
+
+===== RAW GENERATION (decoded) =====
+The observed trend in the data indicates a clear, accelerating rise in the proportion of influenza patients over the past 13 weeks, with the current month’s weekly increases (dP +0.247, +0.216, +0.171, +0.395) underscoring a sharp uptick. This pattern is consistent with the typical late‑season surge of influenza activity, suggesting that seasonal viral circulation is intensifying. The steepening curve may also reflect heightened surveillance and reporting efforts, possibly triggered by recent public‑health announcements or policy changes. In real‑time, such events could include new guidance on vaccination, the release of activity reports, or the detection of an outbreak, all of which would prompt more testing and case confirmation, thereby inflating the observed proportion.
+
+⟪FINAL⟫
+{
+  "hypotheses": [
+    {
+      "key": "centers_for_disease_control|issue_guidance|vaccination|ambiguous"
+    },
+    {
+      "key": "world_health_organization|report_release|influenza|up"
+    },
+    {
+      "key": "advisory_committee_on_immunization_practices|recommend_vaccination|influenza|ambiguous"
+    },
+    {
+      "key": "food_and_drug_administration|approve_authorize|vaccine|ambiguous"
+    },
+    {
+      "key": "centers_for_disease_control|detect|outbreak|influenza|up"
+    }
+  ]
+}
+===== END RAW GENERATION =====
+[DEBUG] parsed JSON: {"hypotheses": [{"key": "centers_for_disease_control|issue_guidance|vaccination|ambiguous"}, {"key": "world_health_organization|report_release|influenza|up"}, {"key": "advisory_committee_on_immunization_practices|recommend_vaccination|influenza|ambiguous"}, {"key": "food_and_drug_administration|approve_authorize|vaccine|ambiguous"}, {"key": "centers_for_disease_control|detect|outbreak|influenza|up"}]}
+['centers_for_disease_control', 'issue_guidance', 'vaccination', 'ambiguous']
+['world_health_organization', 'report_release', 'influenza', 'up']
+['advisory_committee_on_immunization_practices', 'recommend_vaccination', 'influenza', 'ambiguous']
+['food_and_drug_administration', 'approve_authorize', 'vaccine', 'ambiguous']
+['centers_for_disease_control', 'detect', 'outbreak', 'influenza', 'up']
+recall_all: 0.13939393939393938 precision_all: 0.05454545454545456
+Labels:
+['centers_for_disease_control', 'report_release', 'influenza', 'ambiguous']
+['centers_for_disease_control', 'report_release', 'influenza', 'up']
+['centers_for_disease_control', 'report_release', 'cases', 'up']
+['centers_for_disease_control', 'report_release', 'h5n1', 'ambiguous']
+
+===== RAW GENERATION (decoded) =====
+The observed trend in the data indicates a persistent and accelerating rise in the proportion of influenza patients over the past three months, with the current month’s weekly increases (dP = +0.853, +1.104, +0.594) reinforcing this upward trajectory. This pattern is consistent with a seasonal influenza surge, potentially amplified by factors such as a mismatch between circulating strains and the vaccine, waning immunity in the population, or heightened surveillance and testing that capture more cases. The steady climb suggests that influenza activity is intensifying rather than plateauing, pointing to real‑time public health events—such as new guidance, outbreak confirmations, or report releases—that are likely influencing both detection rates and public awareness.
+
+⟪FINAL⟫
+{
+  "hypotheses": [
+    { "key": "centers_for_disease_control|issue_guidance|influenza|up" },
+    { "key": "world_health_organization|report_release|influenza|up" },
+    { "key": "centers_for_disease_control|detect|influenza|up" },
+    { "key": "advisory_committee_on_immunization_practices|recommend_vaccination|influenza|up" },
+    { "key": "centers_for_disease_control|outbreak|influenza|up" }
+  ]
+}
+===== END RAW GENERATION =====
+[DEBUG] parsed JSON: {"hypotheses": [{"key": "centers_for_disease_control|issue_guidance|influenza|up"}, {"key": "world_health_organization|report_release|influenza|up"}, {"key": "centers_for_disease_control|detect|influenza|up"}, {"key": "advisory_committee_on_immunization_practices|recommend_vaccination|influenza|up"}, {"key": "centers_for_disease_control|outbreak|influenza|up"}]}
+['centers_for_disease_control', 'issue_guidance', 'influenza', 'up']
+['world_health_organization', 'report_release', 'influenza', 'up']
+['centers_for_disease_control', 'detect', 'influenza', 'up']
+['advisory_committee_on_immunization_practices', 'recommend_vaccination', 'influenza', 'up']
+['centers_for_disease_control', 'outbreak', 'influenza', 'up']
+recall_all: 0.12777777777777777 precision_all: 0.05000000000000001
+Labels:
+['centers_for_disease_control', 'report_release', 'influenza', 'up']
+['centers_for_disease_control', 'report_release', 'influenza', 'ambiguous']
+['centers_for_disease_control', 'issue_guidance', 'vaccination', 'ambiguous']
+['centers_for_disease_control', 'recommend_vaccination', 'vaccination', 'ambiguous']
+['centers_for_disease_control', 'report_release', 'influenza', 'down']
+
+===== RAW GENERATION (decoded) =====
+The observed trend in the data indicates a classic late‑winter/early‑spring influenza surge that peaked around week 7 of the 3‑month window, followed by a gradual decline in the subsequent weeks. The current month’s weekly differentials (dP) are predominantly negative, suggesting a continued downward trajectory in influenza activity, with a modest rebound in the final week that may reflect either a late‑season strain emergence or a temporary reporting artifact. This pattern is consistent with the impact of intensified vaccination campaigns and public‑health guidance issued by agencies such as the CDC, which typically precede the peak and help suppress subsequent case counts. The slight uptick in the last week could also be driven by a new sub‑type detection or a shift in testing practices, both of which would be captured by real‑time surveillance reports.
+
+⟪FINAL⟫
+{
+  "hypotheses": [
+    {
+      "key": "centers_for_disease_control|issue_guidance|influenza|ambiguous"
+    },
+    {
+      "key": "world_health_organization|report_release|influenza|down"
+    },
+    {
+      "key": "food_and_drug_administration|approve_authorize|vaccine|up"
+    },
+    {
+      "key": "centers_for_disease_control|detect|influenza|ambiguous"
+    },
+    {
+      "key": "centers_for_disease_control|conduct_study|hospitalizations|down"
+    }
+  ]
+}
+===== END RAW GENERATION =====
+[DEBUG] parsed JSON: {"hypotheses": [{"key": "centers_for_disease_control|issue_guidance|influenza|ambiguous"}, {"key": "world_health_organization|report_release|influenza|down"}, {"key": "food_and_drug_administration|approve_authorize|vaccine|up"}, {"key": "centers_for_disease_control|detect|influenza|ambiguous"}, {"key": "centers_for_disease_control|conduct_study|hospitalizations|down"}]}
+['centers_for_disease_control', 'issue_guidance', 'influenza', 'ambiguous']
+['world_health_organization', 'report_release', 'influenza', 'down']
+['food_and_drug_administration', 'approve_authorize', 'vaccine', 'up']
+['centers_for_disease_control', 'detect', 'influenza', 'ambiguous']
+['centers_for_disease_control', 'conduct_study', 'hospitalizations', 'down']
+recall_all: 0.11794871794871795 precision_all: 0.04615384615384616
+Labels:
+['centers_for_disease_control', 'issue_guidance', 'influenza', 'ambiguous']
+['centers_for_disease_control', 'report_release', 'influenza', 'up']
+['centers_for_disease_control', 'issue_guidance', 'vaccination', 'ambiguous']
+['centers_for_disease_control', 'recommend_vaccination', 'influenza', 'ambiguous']
+['centers_for_disease_control', 'recommend_vaccination', 'vaccination', 'ambiguous']
+
+===== RAW GENERATION (decoded) =====
+The observed trend in the data indicates a typical seasonal rise and fall of influenza activity, with a peak at week t3 followed by a gradual decline. In the current month, the first week shows a modest increase in the proportion of influenza patients, which could be due to heightened surveillance or the announcement of a new strain. The subsequent weeks exhibit progressively larger decreases, suggesting that public health interventions—such as guidance on vaccination, the recommendation of vaccination, and the approval of a new vaccine—have begun to curb transmission. These events likely contributed to the observed shift from a slight uptick to a downward trajectory in influenza activity.  
+
+⟪FINAL⟫{  
+  "hypotheses": [  
+    { "key": "centers_for_disease_control|issue_guidance|influenza|up" },  
+    { "key": "world_health_organization|report_release|influenza|up" },  
+    { "key": "centers_for_disease_control|recommend_vaccination|influenza|down" },  
+    { "key": "food_and_drug_administration|approve_authorize|vaccine|down" },  
+    { "key": "advisory_committee_on_immunization_practices|rate_change|hospitalizations|down" }  
+  ]  
+}
+===== END RAW GENERATION =====
+[DEBUG] parsed JSON: {"hypotheses": [{"key": "centers_for_disease_control|issue_guidance|influenza|up"}, {"key": "world_health_organization|report_release|influenza|up"}, {"key": "centers_for_disease_control|recommend_vaccination|influenza|down"}, {"key": "food_and_drug_administration|approve_authorize|vaccine|down"}, {"key": "advisory_committee_on_immunization_practices|rate_change|hospitalizations|down"}]}
+['centers_for_disease_control', 'issue_guidance', 'influenza', 'up']
+['world_health_organization', 'report_release', 'influenza', 'up']
+['centers_for_disease_control', 'recommend_vaccination', 'influenza', 'down']
+['food_and_drug_administration', 'approve_authorize', 'vaccine', 'down']
+['advisory_committee_on_immunization_practices', 'rate_change', 'hospitalizations', 'down']
+recall_all: 0.13809523809523808 precision_all: 0.07142857142857142
+Labels:
+['centers_for_disease_control', 'report_release', 'influenza', 'up']
+['centers_for_disease_control', 'report_release', 'influenza', 'ambiguous']
+
+===== RAW GENERATION (decoded) =====
+The observed trend in the data indicates a persistent decline in the proportion of influenza patients over the past three months, dropping from 5.762 to 3.030. Within the current month, the weekly differentials (dP) continue this downward trajectory, moving from –0.351 to –0.120. This consistent negative trend suggests that recent public‑health interventions—such as enhanced vaccination campaigns, updated guidance on preventive measures, or the introduction of a more effective vaccine—are effectively curbing influenza transmission. Seasonal factors may also play a role, as influenza activity typically wanes toward the end of the winter season. The steady decrease is unlikely to be random noise; rather, it points to coordinated efforts or a shift in circulating strains that reduce disease severity.
+
+⟪FINAL⟫{
+  "hypotheses": [
+    { "key": "centers_for_disease_control|issue_guidance|influenza|down" },
+    { "key": "united_states|recommend_vaccination|influenza|down" },
+    { "key": "world_health_organization|report_release|influenza|down" },
+    { "key": "food_and_drug_administration|approve_authorize|vaccine|down" },
+    { "key": "advisory_committee_on_immunization_practices|conduct_study|influenza|down" }
+  ]
+}
+===== END RAW GENERATION =====
+[DEBUG] parsed JSON: {"hypotheses": [{"key": "centers_for_disease_control|issue_guidance|influenza|down"}, {"key": "united_states|recommend_vaccination|influenza|down"}, {"key": "world_health_organization|report_release|influenza|down"}, {"key": "food_and_drug_administration|approve_authorize|vaccine|down"}, {"key": "advisory_committee_on_immunization_practices|conduct_study|influenza|down"}]}
+['centers_for_disease_control', 'issue_guidance', 'influenza', 'down']
+['united_states', 'recommend_vaccination', 'influenza', 'down']
+['world_health_organization', 'report_release', 'influenza', 'down']
+['food_and_drug_administration', 'approve_authorize', 'vaccine', 'down']
+['advisory_committee_on_immunization_practices', 'conduct_study', 'influenza', 'down']
+recall_all: 0.1288888888888889 precision_all: 0.06666666666666667
+Labels:
+['centers_for_disease_control', 'report_release', 'h5n1', 'up']
+['centers_for_disease_control', 'confirm', 'h5n1', 'ambiguous']
+['centers_for_disease_control', 'outbreak', 'h5n1', 'ambiguous']
+
+===== RAW GENERATION (decoded) =====
+The observed trend in the data indicates a steady decline in the proportion of U.S. influenza patients over the past three months, with weekly decreases continuing into the current month. The magnitude of the weekly declines has begun to taper in the most recent weeks, suggesting a plateauing of the downward trajectory. This pattern is consistent with a combination of factors: a seasonal waning of influenza activity, increased vaccination uptake prompted by public health guidance, and possibly the emergence of less virulent circulating strains. The negative weekly changes (dP) reflect a reduction in new cases, while the slowing rate of decline may point to a shift in the epidemic curve or changes in vaccine effectiveness. Real‑time public health actions—such as guidance releases, vaccination recommendations, and new vaccine approvals—are likely contributing to these dynamics.
+
+⟪FINAL⟫
+{
+  "hypotheses": [
+    {
+      "key": "centers_for_disease_control|issue_guidance|influenza|down"
+    },
+    {
+      "key": "advisory_committee_on_immunization_practices|recommend_vaccination|influenza|up"
+    },
+    {
+      "key": "world_health_organization|report_release|influenza|down"
+    },
+    {
+      "key": "food_and_drug_administration|approve_authorize|vaccine|up"
+    },
+    {
+      "key": "national_institute_on_aging|conduct_study|influenza|down"
+    }
+  ]
+}
+===== END RAW GENERATION =====
+[DEBUG] parsed JSON: {"hypotheses": [{"key": "centers_for_disease_control|issue_guidance|influenza|down"}, {"key": "advisory_committee_on_immunization_practices|recommend_vaccination|influenza|up"}, {"key": "world_health_organization|report_release|influenza|down"}, {"key": "food_and_drug_administration|approve_authorize|vaccine|up"}, {"key": "national_institute_on_aging|conduct_study|influenza|down"}]}
+['centers_for_disease_control', 'issue_guidance', 'influenza', 'down']
+['advisory_committee_on_immunization_practices', 'recommend_vaccination', 'influenza', 'up']
+['world_health_organization', 'report_release', 'influenza', 'down']
+['food_and_drug_administration', 'approve_authorize', 'vaccine', 'up']
+['national_institute_on_aging', 'conduct_study', 'influenza', 'down']
+recall_all: 0.12083333333333332 precision_all: 0.0625
+Labels:
+['centers_for_disease_control', 'detect', 'h5n1', 'ambiguous']
+
+===== RAW GENERATION (decoded) =====
+The observed trend in the data indicates a clear and sustained decline in the weekly proportion of influenza patients over the past 13 weeks, falling from 4.334 to 2.032. The current month’s weekly change of –0.110 further confirms this downward trajectory. Such a pattern is typical of the waning phase of an influenza season, often driven by increased vaccination coverage, heightened public health messaging, and the natural depletion of susceptible hosts. The negative change suggests that recent public health interventions—such as new guidance on vaccination, updated recommendations, or the introduction of a more effective vaccine—may have accelerated uptake and reduced transmission, thereby contributing to the observed decrease in influenza cases.
+
+⟪FINAL⟫
+{
+  "hypotheses": [
+    {
+      "key": "centers_for_disease_control|issue_guidance|vaccination|down"
+    },
+    {
+      "key": "advisory_committee_on_immunization_practices|recommend_vaccination|vaccination|down"
+    },
+    {
+      "key": "food_and_drug_administration|approve_authorize|vaccine|ambiguous"
+    },
+    {
+      "key": "world_health_organization|report_release|influenza|ambiguous"
+    },
+    {
+      "key": "health_and_human_services|detect|influenza|up"
+    }
+  ]
+}
+===== END RAW GENERATION =====
+[DEBUG] parsed JSON: {"hypotheses": [{"key": "centers_for_disease_control|issue_guidance|vaccination|down"}, {"key": "advisory_committee_on_immunization_practices|recommend_vaccination|vaccination|down"}, {"key": "food_and_drug_administration|approve_authorize|vaccine|ambiguous"}, {"key": "world_health_organization|report_release|influenza|ambiguous"}, {"key": "health_and_human_services|detect|influenza|up"}]}
+['centers_for_disease_control', 'issue_guidance', 'vaccination', 'down']
+['advisory_committee_on_immunization_practices', 'recommend_vaccination', 'vaccination', 'down']
+['food_and_drug_administration', 'approve_authorize', 'vaccine', 'ambiguous']
+['world_health_organization', 'report_release', 'influenza', 'ambiguous']
+['health_and_human_services', 'detect', 'influenza', 'up']
+recall_all: 0.11372549019607842 precision_all: 0.058823529411764705

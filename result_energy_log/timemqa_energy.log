@@ -1,0 +1,65 @@
+Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]Loading checkpoint shards:  25%|##5       | 1/4 [00:10<00:31, 10.52s/it]Loading checkpoint shards:  50%|#####     | 2/4 [00:21<00:21, 10.75s/it]Loading checkpoint shards:  75%|#######5  | 3/4 [00:27<00:08,  8.53s/it]Loading checkpoint shards: 100%|##########| 4/4 [00:39<00:00,  9.79s/it]Loading checkpoint shards: 100%|##########| 4/4 [00:39<00:00,  9.76s/it]
+
+[LOG] sample_idx=0 begin_infer
+[LOG] pred_keys: ['united_states|report_release|gasoline|up', 'opec_plus|production_hold|crude_oil|UNK', 'global_economy|economic_forecast_down|gas_price|UNK', 'us_energy_information_administration|inventory_data_down|gasoline|UNK', 'gang_warings|sanction_implement|oil_imports|UNK']
+recall_all: 0.0 precision_all: 0.0
+
+[LOG] sample_idx=1 begin_infer
+[LOG] pred_keys: ['united_states|report_release|gasoline|up', 'opec_plus|production_cut|crude_oil|down', 'gangs|production_cut|oil|down', 'gangs|report_release|oil|up', 'gangs|forecast_raise|gasoline|up']
+recall_all: 0.0 precision_all: 0.0
+
+[LOG] sample_idx=2 begin_infer
+[LOG] pred_keys: ['united_states|report_release|gasoline|up', 'global_crude_market|forecast_raise|oil_price|up', 'opec_plus|production_cut|crude_oil|down', 'us_eia|inventory_report|gasoline|down', 'regional_climate_conditions|temperature_fluctuation|heating_oil_demand|ambiguous']
+recall_all: 0.0 precision_all: 0.0
+
+[LOG] sample_idx=3 begin_infer
+[LOG] pred_keys: ['united_states|report_release|gasoline|up', 'opec_plus|production_cut|crude_oil|down']
+recall_all: 0.03571428571428571 precision_all: 0.125
+
+[LOG] sample_idx=4 begin_infer
+[LOG] pred_keys: ['united_states|report_release|gasoline|down', 'opec_plus|change_in_forecast|down|UNK', 'global_economic_growth|forecast_lower|ambiguous|UNK', 'regional_export|forecast|down|UNK']
+recall_all: 0.02857142857142857 precision_all: 0.1
+
+[LOG] sample_idx=5 begin_infer
+[LOG] pred_keys: ['united_states|report_release|gasoline|down', 'opec_plus|production_cut|production|up', 'us|sanction_impose|export|down', 'vaults|vaults_relevant_relevant_relevant|inventory|ambiguous', 'region|region_region|gasoline|report_release']
+recall_all: 0.023809523809523808 precision_all: 0.08333333333333333
+
+[LOG] sample_idx=6 begin_infer
+[LOG] pred_keys: ['united_states|report_release|price|up', 'opec_plus|production_cut|production|down', 'vaults|stock_level|down|UNK', 'vaults|stock_level|up|UNK', 'united_states|sanction_impose|object|up']
+recall_all: 0.04897959183673469 precision_all: 0.09999999999999999
+
+[LOG] sample_idx=7 begin_infer
+[LOG] pred_keys: ['united_states|report_release|price|up']
+recall_all: 0.04285714285714286 precision_all: 0.0875
+
+[LOG] sample_idx=8 begin_infer
+[LOG] pred_keys: ['united_states|report_release|gasoline|up', 'opec_plus|meeting|global_crude_supplies|ambiguous', 'united_states|report_release|api_inventory|down', 'eia|forecast|us_gasoline_demand|up', 'global_economy|seasonal_demand|up|ambiguous']
+recall_all: 0.0380952380952381 precision_all: 0.07777777777777778
+
+[LOG] sample_idx=9 begin_infer
+[LOG] pred_keys: ['united_states|report_release|gasoline|down', 'vaults_of_amazon|import|gasoline|down', 'vaults_of_amazon|export|gasoline|up', 'eia|projected.baseline_downgrade|heating_oil.and.diesel.prices|down', 'opec_|forecast_forecast_lower|crude.oil.prices|down']
+recall_all: 0.03428571428571429 precision_all: 0.06999999999999999
+
+[LOG] sample_idx=10 begin_infer
+[LOG] pred_keys: ['united_states|report_release|gasoline|up', 'opec_plus|cut_production_reduced|crude_oil|UNK', 'united_states|increased_gas_stockpile|gasoline|UNK', 'global_market|economic_recovery_impact|demand|UNK', 'environmental_agencies|forecast_adjustment_oil|down|UNK']
+recall_all: 0.03116883116883117 precision_all: 0.06363636363636363
+
+[LOG] sample_idx=11 begin_infer
+[LOG] pred_keys: ['united_states|report_release|gasoline|up', 'reduced_crude_refinery_levels|reduce|production|down', 'imported_gasoline_levels|reduce|import|down', 'imported_gasoline_levels|up|import|up', 'crude_oil_market|gang_demand|forecast|up']
+recall_all: 0.02857142857142857 precision_all: 0.05833333333333333
+
+[LOG] sample_idx=12 begin_infer
+[LOG] pred_keys: ['united_states|report_release|gasoline|price_up', 'opec_plus|production_cut|gasoline|up', 'eia|inventory_report|crude_oil|down_to_up', 'eia|inventory_report|gasoline|up', 'vaults_of_federalreserve|gangparis_petroil|global_inventory|bottoming_out']
+recall_all: 0.026373626373626374 precision_all: 0.05384615384615384
+
+[LOG] sample_idx=13 begin_infer
+[LOG] pred_keys: ['united_states|report_release|gasoline|up', 'opec_plus|cut_production|crude_oil|up', 'united_states|import_increases|gasoline|down', 'vaults_and_reserves_of_oil|drawdown|gasoline|down', 'market_forces|supply_restriction_loosening|price|down']
+recall_all: 0.024489795918367346 precision_all: 0.049999999999999996
+
+[LOG] sample_idx=14 begin_infer
+[LOG] pred_keys: ['united_states|report_release|gasoline|up', 'opec_plus|production_cut|crude_oil|up', 'opec_plus|report_release|crude_oil|up', 'united_states|sanction_impose|oil_export|up', 'eia|forecast_raise|gasoline|up']
+recall_all: 0.022857142857142857 precision_all: 0.04666666666666666
+
+[LOG] sample_idx=15 begin_infer
+[LOG] pred_keys: ['united_states|report_release|gasoline|up', 'global_oil_markets|crude_oil|down|export', 'us_imports|gasoline|up|UNK', 'united_states|environmental_agencies|report_release|forecast_up', 'opec_plus|report_release|production|down']
+recall_all: 0.02142857142857143 precision_all: 0.04375

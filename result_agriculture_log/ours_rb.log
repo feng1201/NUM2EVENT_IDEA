@@ -1,0 +1,1771 @@
+[INFO] Loaded 16 items from JSONL.
+[INFO] Initializing Qwen reasoner (base-only or base+TSenc)...
+Loading checkpoint shards:   0%|          | 0/5 [00:00<?, ?it/s]Loading checkpoint shards:  20%|██        | 1/5 [00:00<00:02,  1.82it/s]Loading checkpoint shards:  40%|████      | 2/5 [00:01<00:01,  1.99it/s]Loading checkpoint shards:  60%|██████    | 3/5 [00:01<00:00,  2.05it/s]Loading checkpoint shards:  80%|████████  | 4/5 [00:01<00:00,  2.25it/s]Loading checkpoint shards: 100%|██████████| 5/5 [00:02<00:00,  2.98it/s]Loading checkpoint shards: 100%|██████████| 5/5 [00:02<00:00,  2.49it/s]
+[INFO] QwenReasoner ready!
+Labels:
+['market', 'forecast_action', 'capacity', 'up']
+['market', 'forecast_action', 'price', 'up']
+['market', 'price_action', 'price', 'up']
+['market', 'production_action', 'production', 'up']
+['market', 'trade_policy_action', 'tariff', 'down']
+
+===== RAW GENERATION (decoded) =====
+The observed trend in the data indicates a notable shift in the U.S. Retail Broiler Composite (OT) over the last three months, with a recent decline in the current month's dOT. This suggests a possible slowdown in demand or supply-side disruptions. The decline could be attributed to several factors, including seasonal changes in consumer demand, potential shifts in trade policies affecting exports, or internal production challenges within the poultry industry. Additionally, health events such as outbreaks of avian diseases could have impacted production and led to reduced supply, thereby affecting the overall market dynamics. These real-time factors are critical in shaping the current trend and warrant further investigation to identify the most significant contributors.
+
+⟪FINAL⟫
+{
+  "hypotheses": [
+    {"key": "poultry_industry_association|health_event_action|disease_event|down"},
+    {"key": "us_government_agency|trade_policy_action|export|down"},
+    {"key": "poultry_company|production_action|capacity|down"},
+    {"key": "market|price_action|price|down"},
+    {"key": "poultry_industry_association|report_action|production|down"}
+  ]
+}
+===== END RAW GENERATION =====
+['poultry_industry_association', 'health_event_action', 'disease_event', 'down']
+['us_government_agency', 'trade_policy_action', 'export', 'down']
+['poultry_company', 'production_action', 'capacity', 'down']
+['market', 'price_action', 'price', 'down']
+['poultry_industry_association', 'report_action', 'production', 'down']
+[DEBUG][0] got 5 preds. First key: poultry_industry_association|health_event_action|disease_event|down
+precision_all: 0.2 recall_all: 0.2
+Labels:
+['market', 'forecast_action', 'price', 'down']
+['market', 'production_action', 'production', 'up']
+['market', 'price_action', 'price', 'down']
+['market', 'price_action', 'price', 'up']
+
+===== RAW GENERATION (decoded) =====
+The observed trend in the data indicates a notable fluctuation in the U.S. Retail Broiler Composite (OT) over the past three months, with a recent monthly dOT suggesting a directional shift. The composite OT has shown a downward trend, which could be attributed to several factors such as changes in supply chain dynamics, seasonal demand variations, or shifts in consumer behavior. The recent monthly dOT points to a potential slowdown in retail demand, possibly influenced by economic conditions or health-related concerns. Additionally, the poultry industry is often sensitive to external factors like trade policies, disease outbreaks, and production costs, which could be influencing the current trend. The downward movement in the current month may be linked to a combination of these factors, with the most immediate cause being a reduction in consumer spending or a temporary disruption in supply.
+
+⟪FINAL⟫
+{  
+  "hypotheses": [  
+    {  
+      "key": "market|price_action|price|down"  
+    },  
+    {  
+      "key": "poultry_industry_association|report_action|production|down"  
+    },  
+    {  
+      "key": "us_government_agency|trade_policy_action|export|down"  
+    },  
+    {  
+      "key": "poultry_company|production_action|capacity|down"  
+    },  
+    {  
+      "key": "poultry_industry_association|health_event_action|disease_event|down"  
+    }  
+  ]  
+}
+===== END RAW GENERATION =====
+['market', 'price_action', 'price', 'down']
+['poultry_industry_association', 'report_action', 'production', 'down']
+['us_government_agency', 'trade_policy_action', 'export', 'down']
+['poultry_company', 'production_action', 'capacity', 'down']
+['poultry_industry_association', 'health_event_action', 'disease_event', 'down']
+[DEBUG][1] got 5 preds. First key: market|price_action|price|down
+precision_all: 0.2 recall_all: 0.35
+Labels:
+['market', 'forecast_action', 'production', 'ambiguous']
+['market', 'price_action', 'price', 'down']
+['market', 'price_action', 'price', 'up']
+
+===== RAW GENERATION (decoded) =====
+The observed trend in the data indicates a notable fluctuation in the U.S. Retail Broiler Composite (OT) over the last three months, with a recent dip in the current month's dOT. This suggests a potential slowdown in demand or a shift in supply dynamics. Given the seasonal nature of poultry markets, it is plausible that recent weather patterns, such as unseasonably cold temperatures or extreme heat, may have impacted consumer behavior and livestock production. Additionally, changes in trade policies or export restrictions could have influenced the domestic market by altering the availability of broiler products. The recent decline in dOT may also be linked to internal production adjustments, such as changes in feed costs or disease outbreaks affecting poultry farms. These factors, combined with potential shifts in consumer preferences or economic conditions, could collectively explain the observed trend.
+
+⟪FINAL⟫
+{  
+  "hypotheses": [  
+    {"key": "market|price_action|price|down"},  
+    {"key": "poultry_industry_association|report_action|production|down"},  
+    {"key": "united_states|trade_policy_action|export|down"},  
+    {"key": "poultry_company|production_action|capacity|down"},  
+    {"key": "poultry_industry_association|health_event_action|disease_event|down"}  
+  ]  
+}
+===== END RAW GENERATION =====
+['market', 'price_action', 'price', 'down']
+['poultry_industry_association', 'report_action', 'production', 'down']
+['united_states', 'trade_policy_action', 'export', 'down']
+['poultry_company', 'production_action', 'capacity', 'down']
+['poultry_industry_association', 'health_event_action', 'disease_event', 'down']
+[DEBUG][2] got 5 preds. First key: market|price_action|price|down
+precision_all: 0.20000000000000004 recall_all: 0.45555555555555555
+Labels:
+['market', 'price_action', 'price', 'down']
+['market', 'price_action', 'price', 'up']
+['united_states', 'forecast_action', 'export', 'ambiguous']
+
+===== RAW GENERATION (decoded) =====
+The observed trend in the data indicates a notable shift in the U.S. Retail Broiler Composite (OT) over the last three months, with the current month showing a distinct deviation from the previous pattern. The data suggests a potential slowdown or reversal in the trend, possibly influenced by recent changes in supply chain dynamics, consumer behavior, or external policy interventions. A decrease in the current month's dOT could be linked to factors such as a temporary dip in demand, supply constraints, or adjustments in production planning. These factors may be interrelated, with the poultry industry reacting to evolving market conditions or regulatory changes. The observed pattern may also reflect the impact of seasonal variations or unexpected events within the industry.
+
+⟪FINAL⟫
+{  
+  "hypotheses": [  
+    { "key": "poultry_industry_association|report_action|production|down" },  
+    { "key": "us_government_agency|policy_action|tariff|up" },  
+    { "key": "market|price_action|poultry_product|down" },  
+    { "key": "poultry_company|production_action|capacity|down" },  
+    { "key": "health_event_action|disease_event|ambiguous" }  
+  ]  
+}
+===== END RAW GENERATION =====
+['poultry_industry_association', 'report_action', 'production', 'down']
+['us_government_agency', 'policy_action', 'tariff', 'up']
+['market', 'price_action', 'poultry_product', 'down']
+['poultry_company', 'production_action', 'capacity', 'down']
+['health_event_action', 'disease_event', 'ambiguous', '']
+[DEBUG][3] got 5 preds. First key: poultry_industry_association|report_action|production|down
+precision_all: 0.15000000000000002 recall_all: 0.3416666666666667
+Labels:
+['us_government_agency', 'subsidy_action', 'capacity', 'ambiguous']
+
+===== RAW GENERATION (decoded) =====
+The observed trend in the data indicates a notable fluctuation in the U.S. Retail Broiler Composite, with the current month showing a downward movement in the monthly dOT compared to the previous three months. This downward trend could be attributed to a combination of factors such as changes in consumer demand, supply chain disruptions, or shifts in production levels. A potential driving force could be a recent slowdown in consumer spending due to economic uncertainty, or a decrease in export activity due to trade policy changes. Additionally, internal production adjustments within the poultry industry, such as reduced capacity or changes in production efficiency, could also play a role. The current month's data suggests that these factors have had a measurable impact on the market dynamics, leading to a temporary decline in the overall trend.
+
+⟪FINAL⟫
+{
+  "hypotheses": [
+    {"key": "market|price_action|price|down"},
+    {"key": "poultry_industry_association|production_action|production|down"},
+    {"key": "us_government_agency|trade_policy_action|export|down"},
+    {"key": "poultry_company|production_action|capacity|down"},
+    {"key": "market|price_action|poultry_product|down"}
+  ]
+}
+===== END RAW GENERATION =====
+['market', 'price_action', 'price', 'down']
+['poultry_industry_association', 'production_action', 'production', 'down']
+['us_government_agency', 'trade_policy_action', 'export', 'down']
+['poultry_company', 'production_action', 'capacity', 'down']
+['market', 'price_action', 'poultry_product', 'down']
+[DEBUG][4] got 5 preds. First key: market|price_action|price|down
+precision_all: 0.12000000000000002 recall_all: 0.2733333333333333
+Labels:
+['market', 'forecast_action', 'production', 'up']
+['market', 'price_action', 'price', 'down']
+['market', 'production_action', 'production', 'up']
+['us_government_agency', 'approval_action', 'poultry_product', 'ambiguous']
+
+===== RAW GENERATION (decoded) =====
+The observed trend in the data indicates a recent decline in the monthly U.S. Retail Broiler Composite (OT) and a corresponding decrease in the current month's dOT. This suggests a potential slowdown in demand or a shift in market dynamics affecting the broiler industry. The decline could be linked to a variety of factors, including seasonal demand fluctuations, changes in consumer behavior, or external economic pressures. Additionally, the recent data may reflect the impact of supply chain disruptions, trade policies, or health-related events that have affected poultry production and distribution. Given the recent context, it is plausible that new regulations, market interventions, or shifts in consumer preferences have contributed to the observed trend. These factors could be influencing both production and pricing, leading to a downward trend in the OT and dOT metrics.
+
+⟪FINAL⟫
+{
+  "hypotheses": [
+    {"key": "market|price_action|price|down"},
+    {"key": "us_government_agency|trade_policy_action|tariff|up"},
+    {"key": "poultry_industry_association|report_action|production|down"},
+    {"key": "poultry_company|production_action|export|down"},
+    {"key": "health_event_action|disease_event|poultry_product|down"}
+  ]
+}
+===== END RAW GENERATION =====
+['market', 'price_action', 'price', 'down']
+['us_government_agency', 'trade_policy_action', 'tariff', 'up']
+['poultry_industry_association', 'report_action', 'production', 'down']
+['poultry_company', 'production_action', 'export', 'down']
+['health_event_action', 'disease_event', 'poultry_product', 'down']
+[DEBUG][5] got 5 preds. First key: market|price_action|price|down
+precision_all: 0.13333333333333333 recall_all: 0.26944444444444443
+Labels:
+['market', 'forecast_action', 'production', 'up']
+['market', 'price_action', 'price', 'up']
+
+===== RAW GENERATION (decoded) =====
+The observed trend in the data indicates a notable shift in the monthly U.S. Retail Broiler Composite (OT) over the last three months, with a recent decline in the current month's dOT. This suggests a potential slowdown in demand or a change in supply dynamics within the poultry sector. The decline could be attributed to several factors, including seasonal fluctuations in consumer demand, changes in retail pricing, or shifts in production levels due to operational constraints or external disruptions. Additionally, the poultry industry is highly sensitive to health-related events, such as disease outbreaks in livestock or regulatory changes, which could have influenced production and export activities. Given the timing, it is plausible that recent events—such as adjustments in trade policies, changes in domestic consumption, or shifts in pricing strategies—have contributed to the observed trend.
+
+⟪FINAL⟫
+{
+  "hypotheses": [
+    {"key": "market|price_action|price|down"},
+    {"key": "poultry_industry_association|report_action|production|down"},
+    {"key": "us_government_agency|trade_policy_action|export|down"},
+    {"key": "poultry_company|production_action|capacity|down"},
+    {"key": "health_event_action|disease_event|poultry_product|down"}
+  ]
+}
+===== END RAW GENERATION =====
+['market', 'price_action', 'price', 'down']
+['poultry_industry_association', 'report_action', 'production', 'down']
+['us_government_agency', 'trade_policy_action', 'export', 'down']
+['poultry_company', 'production_action', 'capacity', 'down']
+['health_event_action', 'disease_event', 'poultry_product', 'down']
+[DEBUG][6] got 5 preds. First key: market|price_action|price|down
+precision_all: 0.14285714285714285 recall_all: 0.30238095238095236
+Labels:
+['market', 'forecast_action', 'price', 'up']
+['market', 'price_action', 'price', 'up']
+['market', 'production_action', 'production', 'up']
+['market', 'trade_policy_action', 'export', 'up']
+
+===== RAW GENERATION (decoded) =====
+The observed trend in the data indicates a notable shift in the U.S. Retail Broiler Composite (OT) over the last three months, with the current month showing a distinct divergence from the previous two. This divergence suggests an external factor influencing the market, possibly related to production, trade, or health events. The previous months exhibited a stable or slightly upward trajectory, but the current month's data (dOT) appears to deviate, potentially signaling a change in supply dynamics or a regulatory shift. Given the timing, it is plausible that recent events such as a production adjustment, a health-related outbreak, or a new trade policy have impacted the market. These events could have altered the balance between supply and demand, leading to the observed change in the OT. The current month's data may reflect the immediate effects of these real-time developments, which could have implications for future market trends.
+
+⟪FINAL⟫
+{
+  "hypotheses": [
+    {"key": "market|price_action|price|down"},
+    {"key": "poultry_industry_association|report_action|production|down"},
+    {"key": "us_government_agency|trade_policy_action|tariff|up"},
+    {"key": "poultry_company|production_action|export|down"},
+    {"key": "poultry_industry_association|health_event_action|disease_event|up"}
+  ]
+}
+===== END RAW GENERATION =====
+['market', 'price_action', 'price', 'down']
+['poultry_industry_association', 'report_action', 'production', 'down']
+['us_government_agency', 'trade_policy_action', 'tariff', 'up']
+['poultry_company', 'production_action', 'export', 'down']
+['poultry_industry_association', 'health_event_action', 'disease_event', 'up']
+[DEBUG][7] got 5 preds. First key: market|price_action|price|down
+precision_all: 0.15 recall_all: 0.29583333333333334
+Labels:
+['market', 'report_action', 'production', 'ambiguous']
+['united_states', 'forecast_action', 'production', 'down']
+['us_government_agency', 'forecast_action', 'price', 'down']
+
+===== RAW GENERATION (decoded) =====
+The observed trend in the data indicates a notable shift in the U.S. Retail Broiler Composite (OT) over the last three months, with the current month showing a distinct deviation from the prior pattern. The data appears to suggest a downward movement in the current month's dOT, which could be linked to a combination of factors such as changes in supply dynamics, shifts in consumer demand, or external economic pressures. A decline in production or an increase in costs could be contributing to this trend. Additionally, the recent month may have seen a slowdown in export activity or a regulatory change impacting the poultry sector. These real-time events could be influencing the current market behavior and affecting the overall OT trend.
+
+⟪FINAL⟫
+{
+  "hypotheses": [
+    {"key": "market|price_action|price|down"},
+    {"key": "poultry_industry_association|report_action|production|down"},
+    {"key": "us_government_agency|trade_policy_action|export|down"},
+    {"key": "poultry_company|production_action|capacity|down"},
+    {"key": "poultry_industry_association|health_event_action|disease_event|down"}
+  ]
+}
+===== END RAW GENERATION =====
+['market', 'price_action', 'price', 'down']
+['poultry_industry_association', 'report_action', 'production', 'down']
+['us_government_agency', 'trade_policy_action', 'export', 'down']
+['poultry_company', 'production_action', 'capacity', 'down']
+['poultry_industry_association', 'health_event_action', 'disease_event', 'down']
+[DEBUG][8] got 5 preds. First key: market|price_action|price|down
+precision_all: 0.13333333333333333 recall_all: 0.26296296296296295
+Labels:
+['market', 'forecast_action', 'import', 'up']
+['market', 'forecast_action', 'production', 'down']
+['market', 'price_action', 'price', 'down']
+['market', 'production_action', 'production', 'down']
+
+===== RAW GENERATION (decoded) =====
+The observed trend in the data indicates a notable fluctuation in the U.S. Retail Broiler Composite (OT) over the last three months, with the most recent monthly dOT showing a downward movement. This downward trend could be attributed to several factors, including changes in production levels, shifts in consumer demand, or external market pressures. A decline in production might be driven by operational constraints, such as feed costs or labor shortages, which could have been exacerbated by recent economic conditions. Additionally, a shift in consumer behavior—such as a preference for alternative protein sources or a reduction in overall meat consumption—could also contribute to this trend. Furthermore, the possibility of trade policy changes or export restrictions could have impacted the domestic market by altering supply dynamics. Given these considerations, it is plausible that recent events have influenced the market in ways that are yet to be fully realized in the broader economic landscape.
+
+⟪FINAL⟫
+{  
+  "hypotheses": [  
+    {  
+      "key": "market|price_action|price|down"  
+    },  
+    {  
+      "key": "poultry_industry_association|report_action|production|down"  
+    },  
+    {  
+      "key": "us_government_agency|trade_policy_action|export|down"  
+    },  
+    {  
+      "key": "poultry_company|production_action|capacity|down"  
+    },  
+    {  
+      "key": "poultry_industry_association|health_event_action|disease_event|down"  
+    }  
+  ]  
+}
+===== END RAW GENERATION =====
+['market', 'price_action', 'price', 'down']
+['poultry_industry_association', 'report_action', 'production', 'down']
+['us_government_agency', 'trade_policy_action', 'export', 'down']
+['poultry_company', 'production_action', 'capacity', 'down']
+['poultry_industry_association', 'health_event_action', 'disease_event', 'down']
+[DEBUG][9] got 5 preds. First key: market|price_action|price|down
+precision_all: 0.13999999999999999 recall_all: 0.26166666666666666
+Labels:
+['market', 'forecast_action', 'price', 'down']
+['market', 'price_action', 'price', 'down']
+['market', 'price_action', 'price', 'up']
+['market', 'production_action', 'production', 'down']
+
+===== RAW GENERATION (decoded) =====
+The observed trend in the data indicates a potential shift in the U.S. poultry market dynamics, particularly in the context of recent production and export activities. The monthly OT data, which reflects the overall output, shows a consistent pattern over the last three months, suggesting a stable or slightly declining trend in production. However, the current month’s dOT data appears to show a notable deviation, potentially indicating a temporary dip or a recalibration in the market. This could be attributed to a variety of real-time events such as a sudden change in export demand, a temporary production constraint, or an internal company decision affecting supply. These factors could be influenced by broader economic conditions, trade policies, or internal corporate strategies. Given the recent context, it is plausible that these events have occurred within the current month, impacting the observed data trend.
+
+⟪FINAL⟫
+{  
+  "hypotheses": [  
+    { "key": "poultry_industry_association|report_action|production|down" },  
+    { "key": "poultry_company|production_action|capacity|down" },  
+    { "key": "us_government_agency|trade_policy_action|export|down" },  
+    { "key": "poultry_industry_association|price_action|price|down" },  
+    { "key": "poultry_company|forecast_action|export|down" }  
+  ]  
+}
+===== END RAW GENERATION =====
+['poultry_industry_association', 'report_action', 'production', 'down']
+['poultry_company', 'production_action', 'capacity', 'down']
+['us_government_agency', 'trade_policy_action', 'export', 'down']
+['poultry_industry_association', 'price_action', 'price', 'down']
+['poultry_company', 'forecast_action', 'export', 'down']
+[DEBUG][10] got 5 preds. First key: poultry_industry_association|report_action|production|down
+precision_all: 0.12727272727272726 recall_all: 0.23787878787878788
+Labels:
+['market', 'health_event_action', 'disease_event', 'ambiguous']
+
+===== RAW GENERATION (decoded) =====
+The observed trend in the data indicates a notable shift in the U.S. Retail Broiler Composite (OT) over the last three months, with the current month showing a significant deviation from the previous pattern. The data suggests a potential downward movement in the current month, possibly influenced by recent market dynamics. The decline could be attributed to a combination of factors, including reduced consumer demand due to economic uncertainty, increased competition from international markets, or internal supply chain disruptions. Additionally, the poultry industry may have faced challenges such as rising feed costs or health-related issues affecting production. These real-time factors could have directly impacted the current month's data, leading to the observed trend.
+
+⟪FINAL⟫
+{  
+  "hypotheses": [  
+    { "key": "market|price_action|price|down" },  
+    { "key": "poultry_industry_association|report_action|production|down" },  
+    { "key": "us_government_agency|tariff|import|down" },  
+    { "key": "poultry_company|production_action|capacity|down" },  
+    { "key": "health_event_action|disease_event|production|down" }  
+  ]  
+}
+===== END RAW GENERATION =====
+['market', 'price_action', 'price', 'down']
+['poultry_industry_association', 'report_action', 'production', 'down']
+['us_government_agency', 'tariff', 'import', 'down']
+['poultry_company', 'production_action', 'capacity', 'down']
+['health_event_action', 'disease_event', 'production', 'down']
+[DEBUG][11] got 5 preds. First key: market|price_action|price|down
+precision_all: 0.11666666666666665 recall_all: 0.21805555555555556
+Labels:
+['market', 'forecast_action', 'production', 'up']
+['market', 'price_action', 'price', 'up']
+['market', 'price_action', 'export', 'down']
+['market', 'price_action', 'price', 'ambiguous']
+
+===== RAW GENERATION (decoded) =====
+The observed trend in the data indicates a notable shift in the U.S. Retail Broiler Composite (OT) over the last three months, with the current month showing a distinct deviation from the previous pattern. The data suggests a possible stabilization or slight decline in the overall trend, which could be attributed to a combination of seasonal demand fluctuations, supply chain adjustments, and potential policy changes affecting the poultry industry. The recent month's data (dOT) appears to reflect a real-time event that has impacted the market dynamics, possibly related to production adjustments, trade policies, or internal industry actions. These changes may have influenced the pricing or availability of broiler products, leading to the observed deviation in the current month’s data.
+
+⟪FINAL⟫
+{
+  "hypotheses": [
+    {
+      "key": "poultry_industry_association|report_action|production|down"
+    },
+    {
+      "key": "us_government_agency|trade_policy_action|tariff|up"
+    },
+    {
+      "key": "poultry_company|production_action|capacity|down"
+    },
+    {
+      "key": "market|price_action|price|down"
+    },
+    {
+      "key": "poultry_industry_association|forecast_action|export|ambiguous"
+    }
+  ]
+}
+===== END RAW GENERATION =====
+['poultry_industry_association', 'report_action', 'production', 'down']
+['us_government_agency', 'trade_policy_action', 'tariff', 'up']
+['poultry_company', 'production_action', 'capacity', 'down']
+['market', 'price_action', 'price', 'down']
+['poultry_industry_association', 'forecast_action', 'export', 'ambiguous']
+[DEBUG][12] got 5 preds. First key: poultry_industry_association|report_action|production|down
+precision_all: 0.12307692307692307 recall_all: 0.23974358974358975
+Labels:
+['market', 'forecast_action', 'price', 'down']
+['market', 'price_action', 'price', 'up']
+['market', 'production_action', 'production', 'up']
+
+===== RAW GENERATION (decoded) =====
+The observed trend in the data indicates a potential shift in the dynamics of the U.S. poultry market, as reflected in the Retail Broiler Composite (OT) and the monthly dOT. The recent decline in dOT, combined with the broader context of the last three months, suggests a possible slowdown in demand or a change in supply-side conditions. Given the recent volatility in agricultural markets, this could be attributed to a combination of factors such as seasonal demand fluctuations, production adjustments, or external economic pressures. Additionally, the poultry industry is highly sensitive to health events or trade policies, which could have influenced the current trend. The data appears to suggest a downward movement in the current month, which may be linked to either a reduction in production, a change in consumer behavior, or a new policy affecting the market.
+
+⟪FINAL⟫
+{  
+  "hypotheses": [  
+    { "key": "market|price_action|price|down" },  
+    { "key": "poultry_industry_association|report_action|production|down" },  
+    { "key": "us_government_agency|trade_policy_action|tariff|up" },  
+    { "key": "poultry_company|production_action|capacity|down" },  
+    { "key": "health_event_action|disease_event|poultry_product|down" }  
+  ]  
+}
+===== END RAW GENERATION =====
+['market', 'price_action', 'price', 'down']
+['poultry_industry_association', 'report_action', 'production', 'down']
+['us_government_agency', 'trade_policy_action', 'tariff', 'up']
+['poultry_company', 'production_action', 'capacity', 'down']
+['health_event_action', 'disease_event', 'poultry_product', 'down']
+[DEBUG][13] got 5 preds. First key: market|price_action|price|down
+precision_all: 0.12857142857142856 recall_all: 0.24642857142857144
+Labels:
+['market', 'price_action', 'price', 'ambiguous']
+
+===== RAW GENERATION (decoded) =====
+The observed trend in the data indicates a notable shift in the U.S. Retail Broiler Composite (OT) over the last three months, with a recent monthly dOT showing a downward movement. This suggests a possible decline in demand or supply constraints within the poultry sector. The decline could be attributed to several factors, such as seasonal changes in consumer demand, fluctuations in production due to health concerns, or external market pressures. Additionally, the recent monthly data may reflect the impact of new trade policies or adjustments in pricing strategies by major poultry producers. These factors collectively point to a period of adjustment in the market, with the most recent month showing a clear downward trend that warrants further investigation.
+
+⟪FINAL⟫
+{
+  "hypotheses": [
+    {"key": "market|price_action|price|down"},
+    {"key": "poultry_industry_association|report_action|production|down"},
+    {"key": "us_government_agency|trade_policy_action|tariff|up"},
+    {"key": "poultry_company|production_action|capacity|down"},
+    {"key": "poultry_industry_association|health_event_action|disease_event|up"}
+  ]
+}
+===== END RAW GENERATION =====
+['market', 'price_action', 'price', 'down']
+['poultry_industry_association', 'report_action', 'production', 'down']
+['us_government_agency', 'trade_policy_action', 'tariff', 'up']
+['poultry_company', 'production_action', 'capacity', 'down']
+['poultry_industry_association', 'health_event_action', 'disease_event', 'up']
+[DEBUG][14] got 5 preds. First key: market|price_action|price|down
+precision_all: 0.13333333333333333 recall_all: 0.2966666666666667
+Labels:
+['market', 'price_action', 'price', 'up']
+['united_states', 'forecast_action', 'export', 'down']
+['united_states', 'health_event_action', 'disease_event', 'ambiguous']
+
+===== RAW GENERATION (decoded) =====
+The observed trend in the data indicates a notable shift in the U.S. Retail Broiler Composite (OT) over the last three months, with the current month showing a distinct deviation from the previous pattern. The data suggests a potential downward pressure on the current month's OT, which could be attributed to a combination of supply-side adjustments and external market influences. A possible explanation is a recent change in production dynamics, such as a temporary slowdown in broiler production due to operational constraints or a shift in inventory management. Additionally, external factors such as trade policy changes, health-related disruptions in the poultry supply chain, or shifts in consumer demand could have played a role. These factors may have collectively contributed to the observed movement in the current month's OT, indicating a need for closer scrutiny of both domestic and international market conditions.
+
+⟪FINAL⟫
+{
+  "hypotheses": [
+    {"key": "poultry_industry_association|report_action|production|down"},
+    {"key": "us_government_agency|trade_policy_action|tariff|up"},
+    {"key": "poultry_company|production_action|capacity|down"},
+    {"key": "poultry_industry_association|health_event_action|disease_event|up"},
+    {"key": "market|price_action|price|down"}
+  ]
+}
+===== END RAW GENERATION =====
+['poultry_industry_association', 'report_action', 'production', 'down']
+['us_government_agency', 'trade_policy_action', 'tariff', 'up']
+['poultry_company', 'production_action', 'capacity', 'down']
+['poultry_industry_association', 'health_event_action', 'disease_event', 'up']
+['market', 'price_action', 'price', 'down']
+[DEBUG][15] got 5 preds. First key: poultry_industry_association|report_action|production|down
+precision_all: 0.13749999999999998 recall_all: 0.2989583333333333
+[INFO] Loaded 16 items from JSONL.
+[INFO] Initializing Qwen reasoner (base-only or base+TSenc)...
+Loading checkpoint shards:   0%|          | 0/5 [00:00<?, ?it/s]Loading checkpoint shards:  20%|██        | 1/5 [00:00<00:01,  2.18it/s]Loading checkpoint shards:  40%|████      | 2/5 [00:00<00:01,  2.15it/s]Loading checkpoint shards:  60%|██████    | 3/5 [00:01<00:00,  2.15it/s]Loading checkpoint shards:  80%|████████  | 4/5 [00:01<00:00,  2.33it/s]Loading checkpoint shards: 100%|██████████| 5/5 [00:01<00:00,  3.07it/s]Loading checkpoint shards: 100%|██████████| 5/5 [00:01<00:00,  2.62it/s]
+[INFO] QwenReasoner ready!
+Labels:
+['market', 'forecast_action', 'capacity', 'up']
+['market', 'forecast_action', 'price', 'up']
+['market', 'price_action', 'price', 'up']
+['market', 'production_action', 'production', 'up']
+['market', 'trade_policy_action', 'tariff', 'down']
+
+===== RAW GENERATION (decoded) =====
+The observed trend in the data indicates a potential shift in the U.S. poultry market dynamics, as reflected in the monthly Retail Broiler Composite (OT) and the current month's dOT. The recent decline in the OT, combined with a downward movement in the dOT, suggests a possible slowdown in demand or an increase in supply pressures. This could be attributed to a combination of factors such as seasonal demand fluctuations, changes in consumer behavior, or external economic conditions affecting purchasing power. Additionally, if there were recent health events or production disruptions, these could have impacted the overall market sentiment. Given that the current month's data is the most recent, it is plausible that recent events such as regulatory changes, trade policy adjustments, or internal supply chain issues have played a role in shaping the observed trend. These factors could have influenced either the production levels, pricing mechanisms, or export dynamics within the poultry industry.
+
+⟪FINAL⟫
+{
+  "hypotheses": [
+    {"key": "market|price_action|price|down"},
+    {"key": "poultry_industry_association|report_action|production|down"},
+    {"key": "us_government_agency|trade_policy_action|tariff|up"},
+    {"key": "poultry_company|production_action|capacity|down"},
+    {"key": "health_event_action|disease_event|poultry_product|down"}
+  ]
+}
+===== END RAW GENERATION =====
+['market', 'price_action', 'price', 'down']
+['poultry_industry_association', 'report_action', 'production', 'down']
+['us_government_agency', 'trade_policy_action', 'tariff', 'up']
+['poultry_company', 'production_action', 'capacity', 'down']
+['health_event_action', 'disease_event', 'poultry_product', 'down']
+[DEBUG][0] got 5 preds. First key: market|price_action|price|down
+precision_all: 0.2 recall_all: 0.2
+Labels:
+['market', 'forecast_action', 'price', 'down']
+['market', 'production_action', 'production', 'up']
+['market', 'price_action', 'price', 'down']
+['market', 'price_action', 'price', 'up']
+
+===== RAW GENERATION (decoded) =====
+The observed trend in the data indicates a notable shift in the U.S. Retail Broiler Composite (OT) over the last three months, with a recent monthly dOT showing a downward movement. This suggests a possible slowdown in demand or a decline in prices within the poultry sector. The downward trend in the current month could be attributed to a combination of factors such as seasonal demand fluctuations, changes in consumer behavior, or external economic pressures. Additionally, any recent disruptions in supply chains or health-related issues within the poultry industry might have contributed to this decline. The data implies that the market is reacting to real-time conditions, potentially influenced by internal production decisions or external trade dynamics. These factors, when combined, create a plausible narrative for the observed movement in the OT.
+
+⟪FINAL⟫
+{
+  "hypotheses": [
+    {"key": "market|price_action|price|down"},
+    {"key": "poultry_industry_association|report_action|production|down"},
+    {"key": "us_government_agency|trade_policy_action|export|down"},
+    {"key": "poultry_company|production_action|capacity|down"},
+    {"key": "health_event_action|disease_event|poultry_product|down"}
+  ]
+}
+===== END RAW GENERATION =====
+['market', 'price_action', 'price', 'down']
+['poultry_industry_association', 'report_action', 'production', 'down']
+['us_government_agency', 'trade_policy_action', 'export', 'down']
+['poultry_company', 'production_action', 'capacity', 'down']
+['health_event_action', 'disease_event', 'poultry_product', 'down']
+[DEBUG][1] got 5 preds. First key: market|price_action|price|down
+precision_all: 0.2 recall_all: 0.35
+Labels:
+['market', 'forecast_action', 'production', 'ambiguous']
+['market', 'price_action', 'price', 'down']
+['market', 'price_action', 'price', 'up']
+
+===== RAW GENERATION (decoded) =====
+The observed trend in the data indicates a notable shift in the U.S. Retail Broiler Composite (OT) over the last three months, with a recent monthly dOT showing a downward movement. This suggests a potential slowdown or decline in the retail broiler market, possibly driven by factors such as reduced consumer demand, supply chain disruptions, or changes in pricing dynamics. The downward trend in the current month could be linked to recent events such as seasonal demand fluctuations, increased competition, or changes in consumer behavior due to economic conditions. It is also possible that recent health-related events or regulatory actions have impacted production or trade, contributing to the observed trend. These factors, combined with the broader economic climate, may have influenced the current month's data, indicating a need for closer scrutiny of market dynamics and external influences.
+
+⟪FINAL⟫
+{
+  "hypotheses": [
+    {"key": "market|price_action|price|down"},
+    {"key": "poultry_industry_association|report_action|production|down"},
+    {"key": "us_government_agency|trade_policy_action|export|down"},
+    {"key": "poultry_company|production_action|capacity|down"},
+    {"key": "health_event_action|disease_event|poultry_product|down"}
+  ]
+}
+===== END RAW GENERATION =====
+['market', 'price_action', 'price', 'down']
+['poultry_industry_association', 'report_action', 'production', 'down']
+['us_government_agency', 'trade_policy_action', 'export', 'down']
+['poultry_company', 'production_action', 'capacity', 'down']
+['health_event_action', 'disease_event', 'poultry_product', 'down']
+[DEBUG][2] got 5 preds. First key: market|price_action|price|down
+precision_all: 0.20000000000000004 recall_all: 0.45555555555555555
+Labels:
+['market', 'price_action', 'price', 'down']
+['market', 'price_action', 'price', 'up']
+['united_states', 'forecast_action', 'export', 'ambiguous']
+
+===== RAW GENERATION (decoded) =====
+The observed trend in the data indicates a potential shift in the U.S. poultry market dynamics, as reflected in the monthly retail broiler composite (OT) and the current month's deviation (dOT). The recent data suggests a subtle but notable change in the overall output trend, which may be linked to internal production adjustments or external market pressures. The dOT, which captures the current month's deviation, appears to deviate from the previous three months' average, hinting at an immediate factor influencing supply or demand. This could be due to a variety of real-time events, such as production adjustments, regulatory changes, or unexpected market conditions. The data suggests a directional shift, which may be influenced by either an increase in production capacity or a decline in export demand, both of which are plausible real-world causes. Given the current month's deviation, it is important to consider events that could have occurred within the past month and directly impacted the poultry sector.
+
+⟪FINAL⟫
+{  
+  "hypotheses": [  
+    {  
+      "key": "market|price_action|price|down"  
+    },  
+    {  
+      "key": "poultry_industry_association|report_action|production|up"  
+    },  
+    {  
+      "key": "us_government_agency|trade_policy_action|export|down"  
+    },  
+    {  
+      "key": "poultry_company|production_action|capacity|up"  
+    },  
+    {  
+      "key": "poultry_industry_association|forecast_action|poultry_product|down"  
+    }  
+  ]  
+}
+===== END RAW GENERATION =====
+['market', 'price_action', 'price', 'down']
+['poultry_industry_association', 'report_action', 'production', 'up']
+['us_government_agency', 'trade_policy_action', 'export', 'down']
+['poultry_company', 'production_action', 'capacity', 'up']
+['poultry_industry_association', 'forecast_action', 'poultry_product', 'down']
+[DEBUG][3] got 5 preds. First key: market|price_action|price|down
+precision_all: 0.2 recall_all: 0.5083333333333333
+Labels:
+['us_government_agency', 'subsidy_action', 'capacity', 'ambiguous']
+
+===== RAW GENERATION (decoded) =====
+The observed trend in the data indicates a notable shift in the U.S. Retail Broiler Composite (OT) over the last three months, with a recent decline in the current month's dOT. This suggests a potential slowdown in demand or a decrease in supply within the poultry sector. The decline could be attributed to several factors, including seasonal fluctuations in consumer demand, changes in production levels due to logistical challenges, or external market pressures such as trade policies or health-related disruptions. Additionally, the recent drop may reflect an adjustment in pricing strategies or a response to broader economic conditions affecting consumer spending. These factors collectively contribute to the observed trend, pointing to a possible short-term adjustment in the market dynamics of the U.S. poultry industry.
+
+⟪FINAL⟫
+{  
+  "hypotheses": [  
+    { "key": "market|price_action|price|down" },  
+    { "key": "poultry_industry_association|report_action|production|down" },  
+    { "key": "us_government_agency|trade_policy_action|tariff|up" },  
+    { "key": "poultry_company|production_action|capacity|down" },  
+    { "key": "health_event_action|disease_event|poultry_product|down" }  
+  ]  
+}
+===== END RAW GENERATION =====
+['market', 'price_action', 'price', 'down']
+['poultry_industry_association', 'report_action', 'production', 'down']
+['us_government_agency', 'trade_policy_action', 'tariff', 'up']
+['poultry_company', 'production_action', 'capacity', 'down']
+['health_event_action', 'disease_event', 'poultry_product', 'down']
+[DEBUG][4] got 5 preds. First key: market|price_action|price|down
+precision_all: 0.16 recall_all: 0.4066666666666666
+Labels:
+['market', 'forecast_action', 'production', 'up']
+['market', 'price_action', 'price', 'down']
+['market', 'production_action', 'production', 'up']
+['us_government_agency', 'approval_action', 'poultry_product', 'ambiguous']
+
+===== RAW GENERATION (decoded) =====
+The observed trend in the data indicates a notable shift in the U.S. Retail Broiler Composite (OT) over the last three months, with a recent month showing a distinct deviation. The composite OT has been fluctuating, but the current month's dOT suggests a potential downward pressure, possibly due to a combination of supply-side adjustments and market demand dynamics. The recent decline could be linked to increased production costs, shifts in consumer preferences, or external factors such as trade policies or health-related disruptions in the poultry supply chain. These real-time events could be influencing the market's short-term performance, reflecting an ongoing adjustment in the industry's operational and economic landscape.
+
+⟪FINAL⟫
+{
+  "hypotheses": [
+    {"key": "poultry_industry_association|report_action|production|down"},
+    {"key": "us_government_agency|trade_policy_action|tariff|up"},
+    {"key": "poultry_company|price_action|price|down"},
+    {"key": "market|health_event_action|disease_event|up"},
+    {"key": "poultry_industry_association|forecast_action|export|down"}
+  ]
+}
+===== END RAW GENERATION =====
+['poultry_industry_association', 'report_action', 'production', 'down']
+['us_government_agency', 'trade_policy_action', 'tariff', 'up']
+['poultry_company', 'price_action', 'price', 'down']
+['market', 'health_event_action', 'disease_event', 'up']
+['poultry_industry_association', 'forecast_action', 'export', 'down']
+[DEBUG][5] got 5 preds. First key: poultry_industry_association|report_action|production|down
+precision_all: 0.13333333333333333 recall_all: 0.33888888888888885
+Labels:
+['market', 'forecast_action', 'production', 'up']
+['market', 'price_action', 'price', 'up']
+
+===== RAW GENERATION (decoded) =====
+The observed trend in the data indicates a notable shift in the U.S. Retail Broiler Composite (OT) over the last three months, with the current month showing a distinct deviation from the previous pattern. The data suggests a potential slowdown in the overall market activity, which could be attributed to several real-world factors. The recent changes in the OT could be linked to shifts in consumer demand, supply chain disruptions, or regulatory changes affecting production and trade. Additionally, the current month's data (dOT) appears to reflect a downward movement, suggesting possible challenges in maintaining consistent output or pricing stability. This downward trend may be influenced by internal production constraints, external market pressures, or broader economic conditions impacting the poultry sector. Given these observations, several real-time events could be contributing to the current data pattern.
+
+⟪FINAL⟫
+{
+  "hypotheses": [
+    {"key": "market|price_action|price|down"},
+    {"key": "poultry_industry_association|report_action|production|down"},
+    {"key": "us_government_agency|trade_policy_action|tariff|up"},
+    {"key": "poultry_company|production_action|capacity|down"},
+    {"key": "health_event_action|disease_event|poultry_product|down"}
+  ]
+}
+===== END RAW GENERATION =====
+['market', 'price_action', 'price', 'down']
+['poultry_industry_association', 'report_action', 'production', 'down']
+['us_government_agency', 'trade_policy_action', 'tariff', 'up']
+['poultry_company', 'production_action', 'capacity', 'down']
+['health_event_action', 'disease_event', 'poultry_product', 'down']
+[DEBUG][6] got 5 preds. First key: market|price_action|price|down
+precision_all: 0.14285714285714285 recall_all: 0.3619047619047619
+Labels:
+['market', 'forecast_action', 'price', 'up']
+['market', 'price_action', 'price', 'up']
+['market', 'production_action', 'production', 'up']
+['market', 'trade_policy_action', 'export', 'up']
+
+===== RAW GENERATION (decoded) =====
+The observed trend in the data indicates a notable fluctuation in the U.S. Retail Broiler Composite (OT) over the last three months, with a recent dip in the current month's dOT. This suggests a possible slowdown in demand or a shift in supply dynamics. The decline in the current month may be attributed to several factors, such as seasonal changes in consumer behavior, adjustments in production schedules by poultry companies, or external economic pressures affecting retail sales. Additionally, recent health events or regulatory changes could have influenced market sentiment and operational capacities within the poultry industry. These factors collectively contribute to the observed trend, highlighting the complex interplay between supply, demand, and external market conditions.
+
+⟪FINAL⟫
+{  
+  "hypotheses": [  
+    { "key": "market|price_action|price|down" },  
+    { "key": "poultry_industry_association|report_action|production|down" },  
+    { "key": "us_government_agency|trade_policy_action|tariff|up" },  
+    { "key": "poultry_company|production_action|capacity|down" },  
+    { "key": "health_event_action|disease_event|poultry_product|down" }  
+  ]  
+}
+===== END RAW GENERATION =====
+['market', 'price_action', 'price', 'down']
+['poultry_industry_association', 'report_action', 'production', 'down']
+['us_government_agency', 'trade_policy_action', 'tariff', 'up']
+['poultry_company', 'production_action', 'capacity', 'down']
+['health_event_action', 'disease_event', 'poultry_product', 'down']
+[DEBUG][7] got 5 preds. First key: market|price_action|price|down
+precision_all: 0.15 recall_all: 0.34791666666666665
+Labels:
+['market', 'report_action', 'production', 'ambiguous']
+['united_states', 'forecast_action', 'production', 'down']
+['us_government_agency', 'forecast_action', 'price', 'down']
+
+===== RAW GENERATION (decoded) =====
+The observed trend in the data indicates a notable shift in the U.S. Retail Broiler Composite (OT) over the last three months, with the current month showing a distinct deviation from the previous pattern. The time-series data reveals a gradual increase in the OT during the first two months, which could be attributed to seasonal demand or improved production efficiency. However, the current month's dOT (monthly dOT) appears to deviate downward, suggesting a possible slowdown in consumer demand, supply chain disruptions, or external market pressures. This downward movement may be linked to recent economic conditions, such as inflationary pressures or shifts in consumer spending behavior. Additionally, it could reflect changes in trade dynamics or internal industry adjustments, such as production cuts or cost increases. Given the recent context, the most plausible real-time events that could have influenced this change include regulatory actions, market price fluctuations, or internal industry responses.
+
+⟪FINAL⟫
+{  
+  "hypotheses": [  
+    { "key": "market|price_action|price|down" },  
+    { "key": "poultry_industry_association|production_action|production|down" },  
+    { "key": "us_government_agency|trade_policy_action|tariff|up" },  
+    { "key": "poultry_company|forecast_action|export|down" },  
+    { "key": "poultry_industry_association|report_action|capacity|down" }  
+  ]  
+}
+===== END RAW GENERATION =====
+['market', 'price_action', 'price', 'down']
+['poultry_industry_association', 'production_action', 'production', 'down']
+['us_government_agency', 'trade_policy_action', 'tariff', 'up']
+['poultry_company', 'forecast_action', 'export', 'down']
+['poultry_industry_association', 'report_action', 'capacity', 'down']
+[DEBUG][8] got 5 preds. First key: market|price_action|price|down
+precision_all: 0.13333333333333333 recall_all: 0.30925925925925923
+Labels:
+['market', 'forecast_action', 'import', 'up']
+['market', 'forecast_action', 'production', 'down']
+['market', 'price_action', 'price', 'down']
+['market', 'production_action', 'production', 'down']
+
+===== RAW GENERATION (decoded) =====
+The observed trend in the data indicates a notable shift in the U.S. Retail Broiler Composite (OT) over the last three months, with a recent decline in the current month's dOT. This downward movement could be attributed to a combination of supply-side constraints and demand-side pressures. A potential explanation is a temporary disruption in production, such as a slowdown in broiler farming due to seasonal factors or logistical challenges. Additionally, a recent health event affecting poultry stocks might have reduced the overall supply, leading to a decrease in the OT. On the demand side, a shift in consumer preferences toward alternative proteins or a temporary economic downturn could have reduced the demand for broiler products. These factors, combined with potential changes in trade policies or export restrictions, could have contributed to the observed decline in the current month's OT. 
+
+⟪FINAL⟫
+{
+  "hypotheses": [
+    {"key": "poultry_industry_association|health_event_action|disease_event|down"},
+    {"key": "poultry_company|production_action|production|down"},
+    {"key": "us_government_agency|trade_policy_action|export|down"},
+    {"key": "market|price_action|price|down"},
+    {"key": "poultry_industry_association|report_action|production|down"}
+  ]
+}
+===== END RAW GENERATION =====
+['poultry_industry_association', 'health_event_action', 'disease_event', 'down']
+['poultry_company', 'production_action', 'production', 'down']
+['us_government_agency', 'trade_policy_action', 'export', 'down']
+['market', 'price_action', 'price', 'down']
+['poultry_industry_association', 'report_action', 'production', 'down']
+[DEBUG][9] got 5 preds. First key: poultry_industry_association|health_event_action|disease_event|down
+precision_all: 0.13999999999999999 recall_all: 0.30333333333333334
+Labels:
+['market', 'forecast_action', 'price', 'down']
+['market', 'price_action', 'price', 'down']
+['market', 'price_action', 'price', 'up']
+['market', 'production_action', 'production', 'down']
+
+===== RAW GENERATION (decoded) =====
+The observed trend in the data indicates a notable shift in the U.S. Retail Broiler Composite (OT) over the last three months, with a recent monthly dOT suggesting a potential downward movement. This could be attributed to several factors, including changes in supply chain dynamics, shifts in consumer demand, or external economic pressures. A decline in OT might be linked to reduced production due to operational constraints, increased costs, or a slowdown in retail sales. Additionally, any recent health-related events, such as disease outbreaks in poultry farms, could have affected production and, consequently, the overall market dynamics. These factors collectively contribute to the observed trend, highlighting the interplay between production, demand, and external shocks in shaping the market.
+
+⟪FINAL⟫
+{  
+  "hypotheses": [  
+    {  
+      "key": "poultry_industry_association|report_action|production|down"  
+    },  
+    {  
+      "key": "us_government_agency|trade_policy_action|import|down"  
+    },  
+    {  
+      "key": "poultry_company|production_action|capacity|down"  
+    },  
+    {  
+      "key": "claxton_poultry_farms|health_event_action|disease_event|down"  
+    },  
+    {  
+      "key": "market|price_action|price|down"  
+    }  
+  ]  
+}
+===== END RAW GENERATION =====
+['poultry_industry_association', 'report_action', 'production', 'down']
+['us_government_agency', 'trade_policy_action', 'import', 'down']
+['poultry_company', 'production_action', 'capacity', 'down']
+['claxton_poultry_farms', 'health_event_action', 'disease_event', 'down']
+['market', 'price_action', 'price', 'down']
+[DEBUG][10] got 5 preds. First key: poultry_industry_association|report_action|production|down
+precision_all: 0.14545454545454545 recall_all: 0.3212121212121212
+Labels:
+['market', 'health_event_action', 'disease_event', 'ambiguous']
+
+===== RAW GENERATION (decoded) =====
+The observed trend in the data indicates a notable shift in the monthly U.S. Retail Broiler Composite (OT) over the last three months, with a recent decline in the current month's dOT. This decline could be attributed to a combination of factors, including changes in production levels, potential shifts in consumer demand, or external market pressures. The recent drop in dOT may reflect a slowdown in retail sales or a response to supply chain disruptions, possibly influenced by seasonal demand fluctuations or adjustments in pricing strategies by poultry producers. Additionally, the poultry industry may be reacting to internal or external policy changes that affect production, trade, or market access, which could have a direct impact on the retail composite index. These factors collectively suggest a dynamic and responsive market environment, where short-term changes in production, pricing, and policy can significantly influence the retail broiler market.
+
+⟪FINAL⟫
+{  
+  "hypotheses": [  
+    { "key": "market|price_action|price|down" },  
+    { "key": "poultry_industry_association|report_action|production|down" },  
+    { "key": "us_government_agency|trade_policy_action|tariff|up" },  
+    { "key": "poultry_company|production_action|capacity|down" },  
+    { "key": "market|price_action|poultry_product|down" }  
+  ]  
+}
+===== END RAW GENERATION =====
+['market', 'price_action', 'price', 'down']
+['poultry_industry_association', 'report_action', 'production', 'down']
+['us_government_agency', 'trade_policy_action', 'tariff', 'up']
+['poultry_company', 'production_action', 'capacity', 'down']
+['market', 'price_action', 'poultry_product', 'down']
+[DEBUG][11] got 5 preds. First key: market|price_action|price|down
+precision_all: 0.13333333333333333 recall_all: 0.29444444444444445
+Labels:
+['market', 'forecast_action', 'production', 'up']
+['market', 'price_action', 'price', 'up']
+['market', 'price_action', 'export', 'down']
+['market', 'price_action', 'price', 'ambiguous']
+
+===== RAW GENERATION (decoded) =====
+The observed trend in the data indicates a potential shift in the U.S. Retail Broiler Composite, with the current month's data showing a notable deviation from the previous three months. This deviation could be attributed to a combination of factors, including recent changes in supply chain dynamics, shifts in consumer demand, or external policy changes affecting the poultry sector. The recent data may reflect an immediate response to a specific event, such as a production adjustment, a health-related incident, or a regulatory update. These factors could have influenced the market in a way that is not yet fully reflected in the longer-term trends, making the current month's data more volatile or reflective of a short-term anomaly. Given the recent context, plausible real-time events that could have driven this change include a production adjustment, a health event in poultry, or a policy change affecting trade or subsidies.
+
+⟪FINAL⟫
+{  
+  "hypotheses": [  
+    { "key": "poultry_industry_association|report_action|production|down" },  
+    { "key": "poultry_company|production_action|capacity|down" },  
+    { "key": "us_government_agency|trade_policy_action|tariff|up" },  
+    { "key": "poultry_industry_association|health_event_action|disease_event|up" },  
+    { "key": "poultry_company|price_action|price|down" }  
+  ]  
+}
+===== END RAW GENERATION =====
+['poultry_industry_association', 'report_action', 'production', 'down']
+['poultry_company', 'production_action', 'capacity', 'down']
+['us_government_agency', 'trade_policy_action', 'tariff', 'up']
+['poultry_industry_association', 'health_event_action', 'disease_event', 'up']
+['poultry_company', 'price_action', 'price', 'down']
+[DEBUG][12] got 5 preds. First key: poultry_industry_association|report_action|production|down
+precision_all: 0.12307692307692307 recall_all: 0.2717948717948718
+Labels:
+['market', 'forecast_action', 'price', 'down']
+['market', 'price_action', 'price', 'up']
+['market', 'production_action', 'production', 'up']
+
+===== RAW GENERATION (decoded) =====
+The observed trend in the data indicates a notable fluctuation in the monthly U.S. Retail Broiler Composite (OT), with a recent dip in the current month's dOT compared to the previous three months. This downward movement could be attributed to several factors, including changes in supply chain dynamics, shifts in consumer demand, or external economic pressures. A decline in export volumes or disruptions in poultry production could have played a role, especially if there were recent disease outbreaks or regulatory changes affecting the industry. Additionally, if there were policy actions or market price adjustments in the current month, these could have influenced the overall trend. The key is that the current month's data reflects a more pronounced movement, suggesting that recent events have had a direct impact on the market.
+
+⟪FINAL⟫
+{  
+  "hypotheses": [  
+    { "key": "market|price_action|price|down" },  
+    { "key": "poultry_industry_association|report_action|production|down" },  
+    { "key": "us_government_agency|trade_policy_action|export|down" },  
+    { "key": "poultry_company|production_action|capacity|down" },  
+    { "key": "poultry_industry_association|health_event_action|disease_event|down" }  
+  ]  
+}
+===== END RAW GENERATION =====
+['market', 'price_action', 'price', 'down']
+['poultry_industry_association', 'report_action', 'production', 'down']
+['us_government_agency', 'trade_policy_action', 'export', 'down']
+['poultry_company', 'production_action', 'capacity', 'down']
+['poultry_industry_association', 'health_event_action', 'disease_event', 'down']
+[DEBUG][13] got 5 preds. First key: market|price_action|price|down
+precision_all: 0.12857142857142856 recall_all: 0.2761904761904762
+Labels:
+['market', 'price_action', 'price', 'ambiguous']
+
+===== RAW GENERATION (decoded) =====
+The observed trend in the data indicates a notable fluctuation in the U.S. Retail Broiler Composite (OT) over the past three months, with a recent monthly dOT showing a downward movement. This suggests a potential slowdown in demand or supply-side disruptions. The decline could be influenced by a combination of factors, including seasonal demand patterns, changes in consumer behavior, or external economic pressures. Additionally, the poultry industry is highly sensitive to health events or regulatory changes that could impact production or trade. Given the recent downward trend, it is plausible that recent developments in the poultry sector, such as disease outbreaks, production adjustments, or policy shifts, have played a role in shaping the current market dynamics.
+
+⟪FINAL⟫
+{  
+  "hypotheses": [  
+    { "key": "poultry_industry_association|health_event_action|disease_event|down" },  
+    { "key": "us_government_agency|trade_policy_action|tariff|up" },  
+    { "key": "poultry_company|production_action|production|down" },  
+    { "key": "market|price_action|price|down" },  
+    { "key": "poultry_industry_association|report_action|production|down" }  
+  ]  
+}
+===== END RAW GENERATION =====
+['poultry_industry_association', 'health_event_action', 'disease_event', 'down']
+['us_government_agency', 'trade_policy_action', 'tariff', 'up']
+['poultry_company', 'production_action', 'production', 'down']
+['market', 'price_action', 'price', 'down']
+['poultry_industry_association', 'report_action', 'production', 'down']
+[DEBUG][14] got 5 preds. First key: poultry_industry_association|health_event_action|disease_event|down
+precision_all: 0.13333333333333333 recall_all: 0.3244444444444445
+Labels:
+['market', 'price_action', 'price', 'up']
+['united_states', 'forecast_action', 'export', 'down']
+['united_states', 'health_event_action', 'disease_event', 'ambiguous']
+
+===== RAW GENERATION (decoded) =====
+The observed trend in the data indicates a notable shift in the U.S. Retail Broiler Composite (OT) over the last three months, with the current month showing a distinct change in the monthly dOT. The pattern suggests a possible slowdown or reversal in the trend, which could be attributed to a combination of internal and external factors. One plausible explanation is a change in consumer demand, possibly influenced by seasonal shifts or economic conditions affecting purchasing power. Additionally, recent developments in the poultry industry, such as production adjustments, trade policies, or health-related events, may have contributed to this shift. The current month's data appears to reflect the immediate impact of one or more recent events, which could include changes in supply chain dynamics, regulatory updates, or market interventions.
+
+⟪FINAL⟫
+{
+  "hypotheses": [
+    {"key": "market|price_action|price|down"},
+    {"key": "poultry_industry_association|report_action|production|down"},
+    {"key": "us_government_agency|trade_policy_action|tariff|up"},
+    {"key": "poultry_company|production_action|capacity|down"},
+    {"key": "health_event_action|disease_event|poultry_product|down"}
+  ]
+}
+===== END RAW GENERATION =====
+['market', 'price_action', 'price', 'down']
+['poultry_industry_association', 'report_action', 'production', 'down']
+['us_government_agency', 'trade_policy_action', 'tariff', 'up']
+['poultry_company', 'production_action', 'capacity', 'down']
+['health_event_action', 'disease_event', 'poultry_product', 'down']
+[DEBUG][15] got 5 preds. First key: market|price_action|price|down
+precision_all: 0.13749999999999998 recall_all: 0.325
+[INFO] Loaded 16 items from JSONL.
+[INFO] Initializing Qwen reasoner (base-only or base+TSenc)...
+Loading checkpoint shards:   0%|          | 0/5 [00:00<?, ?it/s]Loading checkpoint shards:  20%|██        | 1/5 [00:00<00:01,  2.19it/s]Loading checkpoint shards:  40%|████      | 2/5 [00:00<00:01,  2.16it/s]Loading checkpoint shards:  60%|██████    | 3/5 [00:01<00:00,  2.16it/s]Loading checkpoint shards:  80%|████████  | 4/5 [00:01<00:00,  2.33it/s]Loading checkpoint shards: 100%|██████████| 5/5 [00:01<00:00,  3.08it/s]Loading checkpoint shards: 100%|██████████| 5/5 [00:01<00:00,  2.62it/s]
+[INFO] QwenReasoner ready!
+Labels:
+['market', 'forecast_action', 'capacity', 'up']
+['market', 'forecast_action', 'price', 'up']
+['market', 'price_action', 'price', 'up']
+['market', 'production_action', 'production', 'up']
+['market', 'trade_policy_action', 'tariff', 'down']
+
+===== RAW GENERATION (decoded) =====
+The observed trend in the data indicates a notable decline in the monthly OT (Output Trend) for the U.S. Retail Broiler Composite, suggesting a potential slowdown in production or market demand. This could be attributed to several real-world factors, such as shifts in consumer behavior, changes in supply chain dynamics, or external economic pressures. Given that the current month's data reflects a drop in OT, it is plausible that recent events have disrupted the typical production or distribution patterns. These could include logistical challenges, adjustments in pricing strategies, or regulatory changes affecting the poultry industry. The observed decline may also be influenced by broader economic conditions impacting consumer spending on poultry products.
+
+⟪FINAL⟫
+{  
+  "hypotheses": [  
+    { "key": "market|price_action|price|down" },  
+    { "key": "poultry_industry_association|report_action|production|down" },  
+    { "key": "us_government_agency|trade_policy_action|export|down" },  
+    { "key": "poultry_company|production_action|capacity|down" },  
+    { "key": "health_event_action|disease_event|poultry_product|down" }  
+  ]  
+}
+===== END RAW GENERATION =====
+['market', 'price_action', 'price', 'down']
+['poultry_industry_association', 'report_action', 'production', 'down']
+['us_government_agency', 'trade_policy_action', 'export', 'down']
+['poultry_company', 'production_action', 'capacity', 'down']
+['health_event_action', 'disease_event', 'poultry_product', 'down']
+[DEBUG][0] got 5 preds. First key: market|price_action|price|down
+precision_all: 0.2 recall_all: 0.2
+Labels:
+['market', 'forecast_action', 'price', 'down']
+['market', 'production_action', 'production', 'up']
+['market', 'price_action', 'price', 'down']
+['market', 'price_action', 'price', 'up']
+
+===== RAW GENERATION (decoded) =====
+The observed trend in the data indicates a recent shift in the U.S. Retail Broiler Composite (OT) that suggests potential changes in market dynamics or external factors influencing the poultry sector. The time-series data reveals a consistent pattern over the last three months, with a notable deviation in the current month's monthly dOT. This deviation could be attributed to a combination of internal production adjustments and external market pressures. A plausible explanation is the impact of recent health events affecting poultry production or the influence of trade policies that have altered export or import dynamics. Additionally, the current month may have seen changes in pricing mechanisms or supply chain disruptions that have temporarily affected the overall market sentiment. These factors collectively suggest a more volatile market environment, which could be indicative of underlying structural changes or short-term shocks to the industry.
+
+⟪FINAL⟫
+{
+  "hypotheses": [
+    {"key": "market|price_action|price|down"},
+    {"key": "poultry_industry_association|report_action|production|down"},
+    {"key": "us_government_agency|trade_policy_action|export|down"},
+    {"key": "poultry_company|production_action|capacity|down"},
+    {"key": "health_event_action|disease_event|poultry_product|down"}
+  ]
+}
+===== END RAW GENERATION =====
+['market', 'price_action', 'price', 'down']
+['poultry_industry_association', 'report_action', 'production', 'down']
+['us_government_agency', 'trade_policy_action', 'export', 'down']
+['poultry_company', 'production_action', 'capacity', 'down']
+['health_event_action', 'disease_event', 'poultry_product', 'down']
+[DEBUG][1] got 5 preds. First key: market|price_action|price|down
+precision_all: 0.2 recall_all: 0.35
+Labels:
+['market', 'forecast_action', 'production', 'ambiguous']
+['market', 'price_action', 'price', 'down']
+['market', 'price_action', 'price', 'up']
+
+===== RAW GENERATION (decoded) =====
+The observed trend in the data indicates a notable shift in the U.S. Retail Broiler Composite (OT) over the last three months, with a recent monthly dOT suggesting a potential change in market dynamics. The data points suggest a possible stabilization or slight decline in the overall trend, which could be influenced by several real-world factors. One plausible explanation is the impact of seasonal demand fluctuations, particularly in the retail sector, where consumer spending on poultry products may have adjusted in response to broader economic conditions or shifting dietary preferences. Additionally, recent changes in production or trade policies could have influenced supply-side dynamics, affecting the overall market. Given the current month's data, it is reasonable to consider recent events that may have directly impacted the market in this period.
+
+⟪FINAL⟫
+{  
+  "hypotheses": [  
+    { "key": "market|price_action|poultry_product|down" },  
+    { "key": "poultry_industry_association|report_action|production|down" },  
+    { "key": "us_government_agency|trade_policy_action|tariff|up" },  
+    { "key": "poultry_company|production_action|capacity|down" },  
+    { "key": "market|price_action|price|ambiguous" }  
+  ]  
+}
+===== END RAW GENERATION =====
+['market', 'price_action', 'poultry_product', 'down']
+['poultry_industry_association', 'report_action', 'production', 'down']
+['us_government_agency', 'trade_policy_action', 'tariff', 'up']
+['poultry_company', 'production_action', 'capacity', 'down']
+['market', 'price_action', 'price', 'ambiguous']
+[DEBUG][2] got 5 preds. First key: market|price_action|poultry_product|down
+precision_all: 0.20000000000000004 recall_all: 0.45555555555555555
+Labels:
+['market', 'price_action', 'price', 'down']
+['market', 'price_action', 'price', 'up']
+['united_states', 'forecast_action', 'export', 'ambiguous']
+
+===== RAW GENERATION (decoded) =====
+The observed trend in the data indicates a notable shift in the U.S. Retail Broiler Composite (OT) over the last three months, with the current month showing a distinct deviation from the prior pattern. The consistent OT levels in the previous months suggest a stable market environment, possibly influenced by steady supply and demand dynamics. However, the current month's dOT (monthly dOT) shows a downward movement, which could be attributed to a variety of factors. A potential explanation is a temporary disruption in supply chains due to logistical challenges or seasonal changes affecting poultry production. Another plausible factor could be a change in consumer behavior, such as a shift in demand due to health concerns or economic factors. Additionally, the presence of a disease outbreak in the poultry sector could have led to reduced production or increased costs, thereby affecting the overall market dynamics. These real-time events could have directly impacted the current month's dOT, leading to the observed trend.
+
+⟪FINAL⟫{
+  "hypotheses": [
+    {"key": "poultry_industry_association|health_event_action|disease_event|down"},
+    {"key": "market|price_action|price|down"},
+    {"key": "poultry_company|production_action|production|down"},
+    {"key": "us_government_agency|trade_policy_action|tariff|up"},
+    {"key": "poultry_industry_association|report_action|production|down"}
+  ]
+}
+===== END RAW GENERATION =====
+['poultry_industry_association', 'health_event_action', 'disease_event', 'down']
+['market', 'price_action', 'price', 'down']
+['poultry_company', 'production_action', 'production', 'down']
+['us_government_agency', 'trade_policy_action', 'tariff', 'up']
+['poultry_industry_association', 'report_action', 'production', 'down']
+[DEBUG][3] got 5 preds. First key: poultry_industry_association|health_event_action|disease_event|down
+precision_all: 0.2 recall_all: 0.5083333333333333
+Labels:
+['us_government_agency', 'subsidy_action', 'capacity', 'ambiguous']
+
+===== RAW GENERATION (decoded) =====
+The observed trend in the data indicates a notable shift in the U.S. Retail Broiler Composite (OT) over the past three months, with a recent monthly dOT suggesting a potential change in market dynamics. The data appears to reflect a subtle but consistent movement, possibly influenced by a combination of production adjustments, external trade conditions, and internal market demand shifts. A decline in the OT could be linked to a reduction in supply or an increase in demand, or it could be driven by broader economic factors such as inflation, consumer spending patterns, or changes in import/export policies. Given the recent month's data, it is plausible that a specific event has occurred within the current month that has directly impacted the OT, potentially affecting production, pricing, or trade. These factors suggest a need to closely examine recent industry reports, government policy updates, and market actions for clarity.
+
+⟪FINAL⟫
+{  
+  "hypotheses": [  
+    { "key": "market|price_action|price|down" },  
+    { "key": "poultry_industry_association|report_action|production|down" },  
+    { "key": "us_government_agency|trade_policy_action|tariff|up" },  
+    { "key": "poultry_company|production_action|capacity|down" },  
+    { "key": "poultry_industry_association|forecast_action|export|down" }  
+  ]  
+}
+===== END RAW GENERATION =====
+['market', 'price_action', 'price', 'down']
+['poultry_industry_association', 'report_action', 'production', 'down']
+['us_government_agency', 'trade_policy_action', 'tariff', 'up']
+['poultry_company', 'production_action', 'capacity', 'down']
+['poultry_industry_association', 'forecast_action', 'export', 'down']
+[DEBUG][4] got 5 preds. First key: market|price_action|price|down
+precision_all: 0.16 recall_all: 0.4066666666666666
+Labels:
+['market', 'forecast_action', 'production', 'up']
+['market', 'price_action', 'price', 'down']
+['market', 'production_action', 'production', 'up']
+['us_government_agency', 'approval_action', 'poultry_product', 'ambiguous']
+
+===== RAW GENERATION (decoded) =====
+The observed trend in the data indicates a notable shift in the U.S. Retail Broiler Composite (OT) over the past three months, with a recent decline in the current month's dOT. This downward movement could be attributed to a combination of factors, including changes in supply dynamics, shifts in consumer demand, or external economic pressures. A decline in OT might suggest a reduction in production or an increase in costs, which could be linked to recent policy changes, disease outbreaks, or shifts in trade regulations. Additionally, seasonal demand fluctuations or adjustments in pricing strategies by major poultry producers could also be contributing factors. Given that the current month's data reflects a downward trend, it is plausible that recent events have influenced the market in a way that has not yet been fully reflected in the previous months' data.
+
+⟪FINAL⟫
+{
+  "hypotheses": [
+    {"key": "market|price_action|price|down"},
+    {"key": "poultry_industry_association|report_action|production|down"},
+    {"key": "us_government_agency|trade_policy_action|tariff|up"},
+    {"key": "poultry_company|production_action|capacity|down"},
+    {"key": "poultry_industry_association|health_event_action|disease_event|up"}
+  ]
+}
+===== END RAW GENERATION =====
+['market', 'price_action', 'price', 'down']
+['poultry_industry_association', 'report_action', 'production', 'down']
+['us_government_agency', 'trade_policy_action', 'tariff', 'up']
+['poultry_company', 'production_action', 'capacity', 'down']
+['poultry_industry_association', 'health_event_action', 'disease_event', 'up']
+[DEBUG][5] got 5 preds. First key: market|price_action|price|down
+precision_all: 0.16666666666666666 recall_all: 0.38055555555555554
+Labels:
+['market', 'forecast_action', 'production', 'up']
+['market', 'price_action', 'price', 'up']
+
+===== RAW GENERATION (decoded) =====
+The observed trend in the data indicates a notable fluctuation in the U.S. Retail Broiler Composite (OT) over the last three months, with a recent shift in the current month's dOT suggesting a potential slowdown or adjustment in market dynamics. The data appears to reflect underlying changes in production and pricing pressures, possibly influenced by recent supply chain adjustments, seasonal demand shifts, or regulatory changes. These factors could be affecting the balance between supply and demand in the poultry sector, thereby influencing the overall market tone. Given the recent data movement, it is plausible that specific events within the current month have triggered these changes, such as new trade policies, production adjustments, or health-related disruptions in the poultry industry.
+
+⟪FINAL⟫
+{  
+  "hypotheses": [  
+    {  
+      "key": "us_government_agency|policy_action|tariff|up"  
+    },  
+    {  
+      "key": "poultry_industry_association|production_action|production|down"  
+    },  
+    {  
+      "key": "poultry_company|price_action|price|down"  
+    },  
+    {  
+      "key": "health_event_action|disease_event|down"  
+    },  
+    {  
+      "key": "market|forecast_action|export|up"  
+    }  
+  ]  
+}
+===== END RAW GENERATION =====
+['us_government_agency', 'policy_action', 'tariff', 'up']
+['poultry_industry_association', 'production_action', 'production', 'down']
+['poultry_company', 'price_action', 'price', 'down']
+['health_event_action', 'disease_event', 'down', '']
+['market', 'forecast_action', 'export', 'up']
+[DEBUG][6] got 5 preds. First key: us_government_agency|policy_action|tariff|up
+precision_all: 0.14285714285714285 recall_all: 0.3261904761904762
+Labels:
+['market', 'forecast_action', 'price', 'up']
+['market', 'price_action', 'price', 'up']
+['market', 'production_action', 'production', 'up']
+['market', 'trade_policy_action', 'export', 'up']
+
+===== RAW GENERATION (decoded) =====
+The observed trend in the data indicates a notable shift in the U.S. Retail Broiler Composite (OT) over the last three months, with a recent monthly dOT showing a downward movement. This decline could be attributed to several real-world factors, including changes in production levels, shifts in consumer demand, or external economic pressures. The downward trend in the current month may be influenced by recent supply chain disruptions, rising input costs, or seasonal fluctuations in consumer spending. Additionally, any recent policy changes or health-related events within the poultry sector could have played a role in altering market dynamics. These factors collectively suggest that the current month has seen a significant real-time event that has impacted the OT.
+
+⟪FINAL⟫
+{
+  "hypotheses": [
+    {"key": "poultry_industry_association|report_action|production|down"},
+    {"key": "us_government_agency|trade_policy_action|tariff|up"},
+    {"key": "poultry_company|production_action|capacity|down"},
+    {"key": "market|price_action|price|down"},
+    {"key": "health_event_action|disease_event|poultry_product|down"}
+  ]
+}
+===== END RAW GENERATION =====
+['poultry_industry_association', 'report_action', 'production', 'down']
+['us_government_agency', 'trade_policy_action', 'tariff', 'up']
+['poultry_company', 'production_action', 'capacity', 'down']
+['market', 'price_action', 'price', 'down']
+['health_event_action', 'disease_event', 'poultry_product', 'down']
+[DEBUG][7] got 5 preds. First key: poultry_industry_association|report_action|production|down
+precision_all: 0.15 recall_all: 0.31666666666666665
+Labels:
+['market', 'report_action', 'production', 'ambiguous']
+['united_states', 'forecast_action', 'production', 'down']
+['us_government_agency', 'forecast_action', 'price', 'down']
+
+===== RAW GENERATION (decoded) =====
+The observed trend in the data indicates a notable shift in the U.S. Retail Broiler Composite (OT) over the last three months, with a recent monthly dOT suggesting a potential downward movement. This downward trend may be linked to a combination of factors, including seasonal demand fluctuations, changes in production levels, and external market pressures. A decline in consumer demand, possibly due to economic uncertainty or shifting dietary preferences, could have contributed to reduced sales. Additionally, an increase in production costs or a decrease in export activity may have further pressured the market. If the current month's dOT is indeed lower than the previous months, it could signal a slowdown in the industry, potentially influenced by recent policy changes, supply chain disruptions, or health-related events impacting poultry production.
+
+⟪FINAL⟫
+{
+  "hypotheses": [
+    {"key": "market|price_action|price|down"},
+    {"key": "poultry_industry_association|report_action|production|down"},
+    {"key": "us_government_agency|trade_policy_action|export|down"},
+    {"key": "poultry_company|production_action|capacity|down"},
+    {"key": "health_event_action|disease_event|poultry_product|down"}
+  ]
+}
+===== END RAW GENERATION =====
+['market', 'price_action', 'price', 'down']
+['poultry_industry_association', 'report_action', 'production', 'down']
+['us_government_agency', 'trade_policy_action', 'export', 'down']
+['poultry_company', 'production_action', 'capacity', 'down']
+['health_event_action', 'disease_event', 'poultry_product', 'down']
+[DEBUG][8] got 5 preds. First key: market|price_action|price|down
+precision_all: 0.13333333333333333 recall_all: 0.28148148148148144
+Labels:
+['market', 'forecast_action', 'import', 'up']
+['market', 'forecast_action', 'production', 'down']
+['market', 'price_action', 'price', 'down']
+['market', 'production_action', 'production', 'down']
+
+===== RAW GENERATION (decoded) =====
+The observed trend in the data indicates a potential shift in the U.S. poultry market dynamics, with recent changes in the monthly retail broiler composite (OT) and the current month's deviation (dOT) suggesting underlying economic or operational factors. The OT data, which reflects the overall trend over the past three months, shows a consistent pattern, while the current month's dOT introduces a notable deviation. This deviation could be attributed to a combination of supply-side adjustments, demand fluctuations, or regulatory changes affecting the poultry sector. Given the recent focus on supply chain stability and market responsiveness, it is plausible that factors such as production adjustments, trade policy shifts, or health-related disruptions have influenced this month's outcome. These events would need to be analyzed in the context of broader market conditions and industry-specific developments.
+
+⟪FINAL⟫
+{
+  "hypotheses": [
+    {"key": "poultry_industry_association|report_action|production|down"},
+    {"key": "us_government_agency|trade_policy_action|tariff|up"},
+    {"key": "poultry_company|production_action|capacity|down"},
+    {"key": "market|price_action|price|down"},
+    {"key": "poultry_industry_association|health_event_action|disease_event|up"}
+  ]
+}
+===== END RAW GENERATION =====
+['poultry_industry_association', 'report_action', 'production', 'down']
+['us_government_agency', 'trade_policy_action', 'tariff', 'up']
+['poultry_company', 'production_action', 'capacity', 'down']
+['market', 'price_action', 'price', 'down']
+['poultry_industry_association', 'health_event_action', 'disease_event', 'up']
+[DEBUG][9] got 5 preds. First key: poultry_industry_association|report_action|production|down
+precision_all: 0.13999999999999999 recall_all: 0.2783333333333333
+Labels:
+['market', 'forecast_action', 'price', 'down']
+['market', 'price_action', 'price', 'down']
+['market', 'price_action', 'price', 'up']
+['market', 'production_action', 'production', 'down']
+
+===== RAW GENERATION (decoded) =====
+The observed trend in the data indicates a notable fluctuation in the U.S. Retail Broiler Composite (OT) over the last three months, with the current month showing a distinct deviation from the previous pattern. The data suggests a possible shift in market dynamics, potentially driven by recent changes in production, trade policies, or external economic factors. The recent monthly dOT (differential OT) appears to reflect an upward movement, which could be attributed to increased demand, improved export conditions, or adjustments in pricing strategies by key industry players. However, without further data on specific market behaviors, the exact cause remains speculative, though it is plausible that recent trade policy changes or a surge in consumer demand have played a role in influencing this shift.
+
+⟪FINAL⟫
+{
+  "hypotheses": [
+    {"key": "market|price_action|price|up"},
+    {"key": "poultry_industry_association|report_action|production|up"},
+    {"key": "us_government_agency|trade_policy_action|export|up"},
+    {"key": "poultry_company|production_action|capacity|up"},
+    {"key": "market|price_action|poultry_product|up"}
+  ]
+}
+===== END RAW GENERATION =====
+['market', 'price_action', 'price', 'up']
+['poultry_industry_association', 'report_action', 'production', 'up']
+['us_government_agency', 'trade_policy_action', 'export', 'up']
+['poultry_company', 'production_action', 'capacity', 'up']
+['market', 'price_action', 'poultry_product', 'up']
+[DEBUG][10] got 5 preds. First key: market|price_action|price|up
+precision_all: 0.14545454545454545 recall_all: 0.29848484848484846
+Labels:
+['market', 'health_event_action', 'disease_event', 'ambiguous']
+
+===== RAW GENERATION (decoded) =====
+The observed trend in the data indicates a notable shift in the U.S. Retail Broiler Composite (OT) over the last three months, with a recent decline in the current month's dOT. This suggests a potential slowdown in demand or supply-side disruptions affecting the broiler market. The decline could be attributed to several factors, including seasonal variations in consumer demand, changes in production levels, or external shocks such as health events or trade policy changes. The recent dip might also reflect adjustments in pricing strategies by poultry companies or shifts in export dynamics. Given the current month's data, it is plausible that recent developments have influenced market behavior, such as changes in production schedules, regulatory actions, or unforeseen health events impacting poultry farming operations.
+
+⟪FINAL⟫{
+  "hypotheses": [
+    {"key": "poultry_industry_association|report_action|production|down"},
+    {"key": "us_government_agency|trade_policy_action|tariff|up"},
+    {"key": "poultry_company|price_action|price|down"},
+    {"key": "claxton_poultry_farms|health_event_action|disease_event|up"},
+    {"key": "market|forecast_action|export|down"}
+  ]
+}
+===== END RAW GENERATION =====
+['poultry_industry_association', 'report_action', 'production', 'down']
+['us_government_agency', 'trade_policy_action', 'tariff', 'up']
+['poultry_company', 'price_action', 'price', 'down']
+['claxton_poultry_farms', 'health_event_action', 'disease_event', 'up']
+['market', 'forecast_action', 'export', 'down']
+[DEBUG][11] got 5 preds. First key: poultry_industry_association|report_action|production|down
+precision_all: 0.13333333333333333 recall_all: 0.2736111111111111
+Labels:
+['market', 'forecast_action', 'production', 'up']
+['market', 'price_action', 'price', 'up']
+['market', 'price_action', 'export', 'down']
+['market', 'price_action', 'price', 'ambiguous']
+
+===== RAW GENERATION (decoded) =====
+The observed trend in the data indicates a notable shift in the U.S. Retail Broiler Composite (OT) over the last three months, with a recent monthly dOT suggesting a potential change in market dynamics. The consistent OT values over the past three months suggest a relatively stable production and consumption environment. However, the current month's dOT implies a possible deviation from this trend, which could be driven by several real-time events. These events might include changes in production levels, adjustments in pricing strategies, or the introduction of new trade policies that affect the poultry industry. Given the timing of the data, it is plausible that recent actions or developments within the poultry sector, such as production adjustments, health-related incidents, or regulatory changes, have influenced the current month's dOT. These factors could be indicative of broader market responses to internal or external pressures.
+
+⟪FINAL⟫
+{  
+  "hypotheses": [  
+    { "key": "poultry_industry_association|production_action|production|down" },  
+    { "key": "us_government_agency|trade_policy_action|tariff|up" },  
+    { "key": "poultry_company|price_action|price|down" },  
+    { "key": "poultry_industry_association|report_action|production|down" },  
+    { "key": "claxton_poultry_farms|health_event_action|disease_event|up" }  
+  ]  
+}
+===== END RAW GENERATION =====
+['poultry_industry_association', 'production_action', 'production', 'down']
+['us_government_agency', 'trade_policy_action', 'tariff', 'up']
+['poultry_company', 'price_action', 'price', 'down']
+['poultry_industry_association', 'report_action', 'production', 'down']
+['claxton_poultry_farms', 'health_event_action', 'disease_event', 'up']
+[DEBUG][12] got 5 preds. First key: poultry_industry_association|production_action|production|down
+precision_all: 0.12307692307692307 recall_all: 0.25256410256410255
+Labels:
+['market', 'forecast_action', 'price', 'down']
+['market', 'price_action', 'price', 'up']
+['market', 'production_action', 'production', 'up']
+
+===== RAW GENERATION (decoded) =====
+The observed trend in the data indicates a notable shift in the U.S. Retail Broiler Composite (OT) over the last three months, with a recent monthly dOT suggesting a potential change in market dynamics. The consistent data points over the past three months reveal a pattern that could be influenced by a combination of supply-side adjustments, demand fluctuations, and external policy changes. The recent monthly dOT, in particular, appears to reflect a deviation from the established trend, potentially due to a recent event impacting production, trade, or pricing mechanisms within the poultry sector. This shift could be linked to a variety of real-time occurrences, such as a change in production strategy, a regulatory update, or an unexpected health event affecting the supply chain.
+
+⟪FINAL⟫
+{
+  "hypotheses": [
+    {"key": "poultry_industry_association|report_action|production|down"},
+    {"key": "us_government_agency|trade_policy_action|tariff|up"},
+    {"key": "poultry_company|production_action|capacity|down"},
+    {"key": "poultry_industry_association|health_event_action|disease_event|up"},
+    {"key": "market|price_action|price|down"}
+  ]
+}
+===== END RAW GENERATION =====
+['poultry_industry_association', 'report_action', 'production', 'down']
+['us_government_agency', 'trade_policy_action', 'tariff', 'up']
+['poultry_company', 'production_action', 'capacity', 'down']
+['poultry_industry_association', 'health_event_action', 'disease_event', 'up']
+['market', 'price_action', 'price', 'down']
+[DEBUG][13] got 5 preds. First key: poultry_industry_association|report_action|production|down
+precision_all: 0.12857142857142856 recall_all: 0.25833333333333336
+Labels:
+['market', 'price_action', 'price', 'ambiguous']
+
+===== RAW GENERATION (decoded) =====
+The observed trend in the data indicates a potential shift in the U.S. poultry market dynamics, particularly in the context of recent production and pricing movements. The last three months have shown a consistent downward trend in the overall output (OT), suggesting a possible slowdown in production or a decrease in demand. However, the current month's data (dOT) shows a notable deviation, which could signal an external factor influencing the market. This could be due to a combination of supply chain disruptions, changes in consumer behavior, or policy interventions. Given the recent focus on poultry industry health and trade policies, it is plausible that either a health event or a policy change has occurred in the current month that has influenced production or export dynamics. These real-time events could be contributing to the observed change in the trend.
+
+⟪FINAL⟫
+{  
+  "hypotheses": [  
+    { "key": "poultry_industry_association|health_event_action|disease_event|up" },  
+    { "key": "us_government_agency|trade_policy_action|tariff|down" },  
+    { "key": "poultry_company|production_action|production|down" },  
+    { "key": "market|price_action|price|up" },  
+    { "key": "poultry_industry_association|report_action|production|up" }  
+  ]  
+}
+===== END RAW GENERATION =====
+['poultry_industry_association', 'health_event_action', 'disease_event', 'up']
+['us_government_agency', 'trade_policy_action', 'tariff', 'down']
+['poultry_company', 'production_action', 'production', 'down']
+['market', 'price_action', 'price', 'up']
+['poultry_industry_association', 'report_action', 'production', 'up']
+[DEBUG][14] got 5 preds. First key: poultry_industry_association|health_event_action|disease_event|up
+precision_all: 0.13333333333333333 recall_all: 0.3077777777777778
+Labels:
+['market', 'price_action', 'price', 'up']
+['united_states', 'forecast_action', 'export', 'down']
+['united_states', 'health_event_action', 'disease_event', 'ambiguous']
+
+===== RAW GENERATION (decoded) =====
+The observed trend in the data indicates a notable shift in the U.S. Retail Broiler Composite (OT) over the past three months, with the current month's data (dOT) showing a downward movement. This suggests a potential slowdown in demand or a decline in supply within the poultry sector. The downward trend could be attributed to several factors, including seasonal fluctuations in consumer demand, changes in production levels due to operational adjustments, or external economic pressures affecting purchasing power. Additionally, the recent movement may be influenced by trade policies or health-related events that have impacted the poultry market. The current month's data appears to reflect a more pronounced decline, possibly due to recent events such as a health outbreak, a change in export policies, or a shift in consumer preferences toward alternative protein sources. These factors collectively contribute to the observed trend, indicating a potential slowdown in the market.
+
+⟪FINAL⟫{
+  "hypotheses": [
+    {"key": "market|price_action|price|down"},
+    {"key": "poultry_industry_association|report_action|production|down"},
+    {"key": "us_government_agency|trade_policy_action|export|down"},
+    {"key": "poultry_industry_association|health_event_action|disease_event|down"},
+    {"key": "poultry_company|production_action|capacity|down"}
+  ]
+}
+===== END RAW GENERATION =====
+['market', 'price_action', 'price', 'down']
+['poultry_industry_association', 'report_action', 'production', 'down']
+['us_government_agency', 'trade_policy_action', 'export', 'down']
+['poultry_industry_association', 'health_event_action', 'disease_event', 'down']
+['poultry_company', 'production_action', 'capacity', 'down']
+[DEBUG][15] got 5 preds. First key: market|price_action|price|down
+precision_all: 0.13749999999999998 recall_all: 0.309375
+[INFO] Loaded 16 items from JSONL.
+[INFO] Initializing Qwen reasoner (base-only or base+TSenc)...
+Loading checkpoint shards:   0%|          | 0/5 [00:00<?, ?it/s]Loading checkpoint shards:  20%|██        | 1/5 [00:02<00:09,  2.30s/it]Loading checkpoint shards:  40%|████      | 2/5 [00:11<00:19,  6.44s/it]Loading checkpoint shards:  60%|██████    | 3/5 [00:20<00:15,  7.59s/it]Loading checkpoint shards:  80%|████████  | 4/5 [00:30<00:08,  8.34s/it]Loading checkpoint shards: 100%|██████████| 5/5 [00:33<00:00,  6.54s/it]Loading checkpoint shards: 100%|██████████| 5/5 [00:33<00:00,  6.68s/it]
+[INFO] QwenReasoner ready!
+Labels:
+['market', 'forecast_action', 'capacity', 'up']
+['market', 'forecast_action', 'price', 'up']
+['market', 'price_action', 'price', 'up']
+['market', 'production_action', 'production', 'up']
+['market', 'trade_policy_action', 'tariff', 'down']
+
+===== RAW GENERATION (decoded) =====
+The observed trend in the data indicates a notable shift in the monthly U.S. Retail Broiler Composite (OT) and the current month's dOT, suggesting a potential change in market dynamics. The composite OT, which reflects the overall performance of the broiler market over the last three months, shows a consistent movement, while the current month's dOT appears to diverge or align differently, indicating a possible turning point. This divergence could be linked to recent developments in production, trade, or health events affecting the poultry sector. If the dOT is moving downward, it may suggest a slowdown in consumer demand, supply chain disruptions, or increased costs. Alternatively, if it is moving upward, it could reflect improved production efficiency, favorable trade policies, or increased exports. Given the current month's data, it is plausible that recent events such as changes in trade policies, disease outbreaks, or shifts in production capacity have influenced the market, creating a new trend that is now reflected in the dOT.
+
+⟪FINAL⟫
+{
+  "hypotheses": [
+    {"key": "market|price_action|price|down"},
+    {"key": "poultry_industry_association|report_action|production|down"},
+    {"key": "us_government_agency|trade_policy_action|tariff|up"},
+    {"key": "poultry_company|production_action|capacity|down"},
+    {"key": "poultry_industry_association|health_event_action|disease_event|up"}
+  ]
+}
+===== END RAW GENERATION =====
+['market', 'price_action', 'price', 'down']
+['poultry_industry_association', 'report_action', 'production', 'down']
+['us_government_agency', 'trade_policy_action', 'tariff', 'up']
+['poultry_company', 'production_action', 'capacity', 'down']
+['poultry_industry_association', 'health_event_action', 'disease_event', 'up']
+[DEBUG][0] got 5 preds. First key: market|price_action|price|down
+precision_all: 0.2 recall_all: 0.2
+Labels:
+['market', 'forecast_action', 'price', 'down']
+['market', 'production_action', 'production', 'up']
+['market', 'price_action', 'price', 'down']
+['market', 'price_action', 'price', 'up']
+
+===== RAW GENERATION (decoded) =====
+The observed trend in the data indicates a notable fluctuation in the monthly U.S. Retail Broiler Composite (OT) over the last three months, with the current month showing a distinct deviation from the prior pattern. The data suggests a potential shift in market dynamics, possibly influenced by recent changes in supply or demand factors. The decline in the current month’s OT could be linked to a combination of production adjustments, changes in consumer behavior, or external economic pressures. Additionally, the recent performance may be influenced by regulatory actions, trade policies, or health-related events within the poultry sector. These factors could have created a ripple effect on pricing, production, and overall market sentiment, leading to the observed trend.
+
+⟪FINAL⟫
+{
+  "hypotheses": [
+    {"key": "market|price_action|price|down"},
+    {"key": "poultry_industry_association|report_action|production|down"},
+    {"key": "us_government_agency|trade_policy_action|tariff|up"},
+    {"key": "poultry_company|production_action|capacity|down"},
+    {"key": "health_event_action|disease_event|poultry_product|down"}
+  ]
+}
+===== END RAW GENERATION =====
+['market', 'price_action', 'price', 'down']
+['poultry_industry_association', 'report_action', 'production', 'down']
+['us_government_agency', 'trade_policy_action', 'tariff', 'up']
+['poultry_company', 'production_action', 'capacity', 'down']
+['health_event_action', 'disease_event', 'poultry_product', 'down']
+[DEBUG][1] got 5 preds. First key: market|price_action|price|down
+precision_all: 0.2 recall_all: 0.35
+Labels:
+['market', 'forecast_action', 'production', 'ambiguous']
+['market', 'price_action', 'price', 'down']
+['market', 'price_action', 'price', 'up']
+
+===== RAW GENERATION (decoded) =====
+The observed trend in the data indicates a notable shift in the U.S. Retail Broiler Composite (OT) over the last three months, with a recent decline in the current month's dOT. This suggests a potential slowdown in demand or a decrease in supply within the poultry sector. The decline may be linked to a combination of factors such as seasonal changes in consumer demand, shifts in consumer preferences towards alternative proteins, or disruptions in the supply chain. Additionally, the recent month's data may reflect the impact of new regulations, trade policies, or health-related events that have affected the poultry industry. These changes could have influenced production levels, export activities, or pricing dynamics within the market. Given the context of the current month, several real-time events could be hypothesized to have contributed to the observed trend.
+
+⟪FINAL⟫
+{
+  "hypotheses": [
+    {"key": "market|price_action|price|down"},
+    {"key": "poultry_industry_association|report_action|production|down"},
+    {"key": "us_government_agency|trade_policy_action|tariff|up"},
+    {"key": "poultry_company|production_action|export|down"},
+    {"key": "health_event_action|disease_event|poultry_product|down"}
+  ]
+}
+===== END RAW GENERATION =====
+['market', 'price_action', 'price', 'down']
+['poultry_industry_association', 'report_action', 'production', 'down']
+['us_government_agency', 'trade_policy_action', 'tariff', 'up']
+['poultry_company', 'production_action', 'export', 'down']
+['health_event_action', 'disease_event', 'poultry_product', 'down']
+[DEBUG][2] got 5 preds. First key: market|price_action|price|down
+precision_all: 0.20000000000000004 recall_all: 0.45555555555555555
+Labels:
+['market', 'price_action', 'price', 'down']
+['market', 'price_action', 'price', 'up']
+['united_states', 'forecast_action', 'export', 'ambiguous']
+
+===== RAW GENERATION (decoded) =====
+The observed trend in the data indicates a notable shift in the U.S. Retail Broiler Composite (OT) over the last three months, with the current month showing a distinct change in the monthly dOT. This suggests a potential realignment in market dynamics, possibly driven by recent changes in production, trade policies, or external shocks. The movement in the dOT could be linked to shifts in supply and demand, such as changes in export volumes, domestic consumption patterns, or regulatory actions. Given the time frame, it is plausible that recent policy decisions, industry reports, or health-related events have influenced the market. These events could have affected production levels, export capacities, or pricing mechanisms, leading to the observed trend.
+
+⟪FINAL⟫
+{
+  "hypotheses": [
+    {"key": "market|price_action|price|down"},
+    {"key": "us_government_agency|trade_policy_action|tariff|up"},
+    {"key": "poultry_industry_association|report_action|production|down"},
+    {"key": "poultry_company|production_action|capacity|down"},
+    {"key": "health_event_action|disease_event|poultry_product|down"}
+  ]
+}
+===== END RAW GENERATION =====
+['market', 'price_action', 'price', 'down']
+['us_government_agency', 'trade_policy_action', 'tariff', 'up']
+['poultry_industry_association', 'report_action', 'production', 'down']
+['poultry_company', 'production_action', 'capacity', 'down']
+['health_event_action', 'disease_event', 'poultry_product', 'down']
+[DEBUG][3] got 5 preds. First key: market|price_action|price|down
+precision_all: 0.2 recall_all: 0.5083333333333333
+Labels:
+['us_government_agency', 'subsidy_action', 'capacity', 'ambiguous']
+
+===== RAW GENERATION (decoded) =====
+The observed trend in the data indicates a potential shift in the U.S. poultry market dynamics, particularly in the context of recent months. The composite output (OT) over the last three months suggests a stabilization or slight decline in overall production activity, which could be linked to seasonal variations or underlying supply chain disruptions. However, the current month's data (dOT) shows a distinct deviation, potentially pointing to a recent event that has impacted the market. This could be due to a combination of factors such as changes in trade policies, adjustments in production strategies, or unexpected health-related events affecting the poultry sector. The divergence between the three-month trend and the current month's data suggests that an event within the current month has introduced a new variable that is influencing the market in a notable way.
+
+⟪FINAL⟫
+{  
+  "hypotheses": [  
+    {  
+      "key": "poultry_industry_association|report_action|production|down"  
+    },  
+    {  
+      "key": "us_government_agency|trade_policy_action|tariff|up"  
+    },  
+    {  
+      "key": "poultry_company|production_action|capacity|down"  
+    },  
+    {  
+      "key": "poultry_industry_association|health_event_action|disease_event|up"  
+    },  
+    {  
+      "key": "market|price_action|price|down"  
+    }  
+  ]  
+}
+===== END RAW GENERATION =====
+['poultry_industry_association', 'report_action', 'production', 'down']
+['us_government_agency', 'trade_policy_action', 'tariff', 'up']
+['poultry_company', 'production_action', 'capacity', 'down']
+['poultry_industry_association', 'health_event_action', 'disease_event', 'up']
+['market', 'price_action', 'price', 'down']
+[DEBUG][4] got 5 preds. First key: poultry_industry_association|report_action|production|down
+precision_all: 0.16 recall_all: 0.4066666666666666
+Labels:
+['market', 'forecast_action', 'production', 'up']
+['market', 'price_action', 'price', 'down']
+['market', 'production_action', 'production', 'up']
+['us_government_agency', 'approval_action', 'poultry_product', 'ambiguous']
+
+===== RAW GENERATION (decoded) =====
+The observed trend in the data indicates a notable shift in the monthly U.S. Retail Broiler Composite (OT) over the last three months, with the current month's data (dOT) showing a downward movement. This suggests a possible decline in demand or an increase in supply within the broiler market. The downward trend may be attributed to a combination of factors, including seasonal fluctuations in consumer demand, changes in production levels due to operational adjustments, or external economic pressures affecting purchasing power. Additionally, recent trade dynamics or policy changes could have influenced the market, particularly if there were adjustments in export or import policies affecting the availability or cost of broiler products. These factors, when combined, could have created a more pronounced downward trend in the current month's data.
+
+⟪FINAL⟫
+{  
+  "hypotheses": [  
+    {  
+      "key": "market|price_action|price|down"  
+    },  
+    {  
+      "key": "poultry_industry_association|production_action|production|down"  
+    },  
+    {  
+      "key": "us_government_agency|trade_policy_action|export|down"  
+    },  
+    {  
+      "key": "poultry_company|production_action|capacity|down"  
+    },  
+    {  
+      "key": "market|price_action|poultry_product|down"  
+    }  
+  ]  
+}
+===== END RAW GENERATION =====
+['market', 'price_action', 'price', 'down']
+['poultry_industry_association', 'production_action', 'production', 'down']
+['us_government_agency', 'trade_policy_action', 'export', 'down']
+['poultry_company', 'production_action', 'capacity', 'down']
+['market', 'price_action', 'poultry_product', 'down']
+[DEBUG][5] got 5 preds. First key: market|price_action|price|down
+precision_all: 0.16666666666666666 recall_all: 0.38055555555555554
+Labels:
+['market', 'forecast_action', 'production', 'up']
+['market', 'price_action', 'price', 'up']
+
+===== RAW GENERATION (decoded) =====
+The observed trend in the data indicates a potential shift in the U.S. poultry market dynamics, with a notable change in the monthly dOT (differential of the Retail Broiler Composite) reflecting a downward movement. This decline could be attributed to a combination of factors, including supply chain disruptions, changes in consumer demand, or internal production adjustments. A possible explanation is that recent production constraints or disease outbreaks may have led to a temporary reduction in supply, while demand remained stable or even increased, creating a supply-demand imbalance. Additionally, external factors such as trade policies or export restrictions could have influenced the market, particularly if there were recent changes in international trade agreements or export regulations. These factors collectively may have contributed to the observed downward trend in the current month’s dOT.
+
+⟪FINAL⟫
+{
+  "hypotheses": [
+    {"key": "poultry_industry_association|report_action|production|down"},
+    {"key": "poultry_company|production_action|capacity|down"},
+    {"key": "us_government_agency|trade_policy_action|export|down"},
+    {"key": "poultry_industry_association|health_event_action|disease_event|down"},
+    {"key": "market|price_action|price|down"}
+  ]
+}
+===== END RAW GENERATION =====
+['poultry_industry_association', 'report_action', 'production', 'down']
+['poultry_company', 'production_action', 'capacity', 'down']
+['us_government_agency', 'trade_policy_action', 'export', 'down']
+['poultry_industry_association', 'health_event_action', 'disease_event', 'down']
+['market', 'price_action', 'price', 'down']
+[DEBUG][6] got 5 preds. First key: poultry_industry_association|report_action|production|down
+precision_all: 0.17142857142857143 recall_all: 0.3976190476190476
+Labels:
+['market', 'forecast_action', 'price', 'up']
+['market', 'price_action', 'price', 'up']
+['market', 'production_action', 'production', 'up']
+['market', 'trade_policy_action', 'export', 'up']
+
+===== RAW GENERATION (decoded) =====
+The observed trend in the data indicates a notable shift in the U.S. Retail Broiler Composite (OT) over the last three months, with a recent decline in the current month's dOT. This suggests a possible slowdown in retail demand or a supply-side adjustment. The decline could be attributed to a combination of factors, such as seasonal fluctuations in consumer spending, changes in consumer preferences, or adjustments in production levels in response to market signals. Additionally, external factors like trade policies, health events, or changes in export dynamics might have influenced the overall market dynamics. The recent month's data, in particular, may reflect a more immediate impact of these factors, such as a temporary dip in demand due to a health-related event or a policy change affecting the poultry sector.
+
+⟪FINAL⟫
+{
+  "hypotheses": [
+    {"key": "market|price_action|price|down"},
+    {"key": "poultry_industry_association|report_action|production|down"},
+    {"key": "us_government_agency|trade_policy_action|tariff|up"},
+    {"key": "poultry_company|production_action|capacity|down"},
+    {"key": "health_event_action|disease_event|poultry_product|down"}
+  ]
+}
+===== END RAW GENERATION =====
+['market', 'price_action', 'price', 'down']
+['poultry_industry_association', 'report_action', 'production', 'down']
+['us_government_agency', 'trade_policy_action', 'tariff', 'up']
+['poultry_company', 'production_action', 'capacity', 'down']
+['health_event_action', 'disease_event', 'poultry_product', 'down']
+[DEBUG][7] got 5 preds. First key: market|price_action|price|down
+precision_all: 0.175 recall_all: 0.37916666666666665
+Labels:
+['market', 'report_action', 'production', 'ambiguous']
+['united_states', 'forecast_action', 'production', 'down']
+['us_government_agency', 'forecast_action', 'price', 'down']
+
+===== RAW GENERATION (decoded) =====
+The observed trend in the data indicates a notable shift in the U.S. Retail Broiler Composite (OT) over the last three months, with a recent monthly dOT showing a downward movement. This suggests a possible slowdown or contraction in the retail broiler market, potentially influenced by a combination of supply-side dynamics and demand-side pressures. A decline in the OT could be linked to reduced consumer demand, perhaps due to economic uncertainty or shifting dietary preferences. Alternatively, it may reflect changes in production levels, such as a temporary reduction in broiler output or increased costs that have dampened retail prices. Additionally, external factors like trade policies, disease outbreaks, or changes in export dynamics could also be contributing to this trend. The current month's data, in particular, may reflect a more immediate cause, such as a recent policy change, a supply chain disruption, or a health event that has impacted the poultry sector.
+
+⟪FINAL⟫
+{
+  "hypotheses": [
+    {"key": "market|price_action|price|down"},
+    {"key": "poultry_industry_association|report_action|production|down"},
+    {"key": "us_government_agency|trade_policy_action|export|down"},
+    {"key": "poultry_company|production_action|capacity|down"},
+    {"key": "health_event_action|disease_event|poultry_product|down"}
+  ]
+}
+===== END RAW GENERATION =====
+['market', 'price_action', 'price', 'down']
+['poultry_industry_association', 'report_action', 'production', 'down']
+['us_government_agency', 'trade_policy_action', 'export', 'down']
+['poultry_company', 'production_action', 'capacity', 'down']
+['health_event_action', 'disease_event', 'poultry_product', 'down']
+[DEBUG][8] got 5 preds. First key: market|price_action|price|down
+precision_all: 0.15555555555555556 recall_all: 0.337037037037037
+Labels:
+['market', 'forecast_action', 'import', 'up']
+['market', 'forecast_action', 'production', 'down']
+['market', 'price_action', 'price', 'down']
+['market', 'production_action', 'production', 'down']
+
+===== RAW GENERATION (decoded) =====
+The observed trend in the data indicates a notable fluctuation in the monthly U.S. Retail Broiler Composite (OT) over the last three months, with the current month showing a distinct divergence from the previous two. This divergence suggests an underlying shift in market dynamics, potentially driven by changes in supply, demand, or external policy factors. The recent month's data could be influenced by a combination of production adjustments, trade policy changes, or health-related events affecting the poultry sector. These factors may have led to a temporary disruption in the normal supply chain, resulting in a shift in the OT. Given the current month's data, it is plausible that a recent event has impacted the market, possibly related to production, trade, or health, which could be further explored through industry reports or policy announcements.
+
+⟪FINAL⟫
+{
+  "hypotheses": [
+    {"key": "market|price_action|price|down"},
+    {"key": "poultry_industry_association|report_action|production|down"},
+    {"key": "us_government_agency|trade_policy_action|tariff|up"},
+    {"key": "poultry_company|production_action|capacity|down"},
+    {"key": "health_event_action|disease_event|poultry_product|down"}
+  ]
+}
+===== END RAW GENERATION =====
+['market', 'price_action', 'price', 'down']
+['poultry_industry_association', 'report_action', 'production', 'down']
+['us_government_agency', 'trade_policy_action', 'tariff', 'up']
+['poultry_company', 'production_action', 'capacity', 'down']
+['health_event_action', 'disease_event', 'poultry_product', 'down']
+[DEBUG][9] got 5 preds. First key: market|price_action|price|down
+precision_all: 0.15999999999999998 recall_all: 0.3283333333333333
+Labels:
+['market', 'forecast_action', 'price', 'down']
+['market', 'price_action', 'price', 'down']
+['market', 'price_action', 'price', 'up']
+['market', 'production_action', 'production', 'down']
+
+===== RAW GENERATION (decoded) =====
+The observed trend in the data indicates a recent decline in the U.S. Retail Broiler Composite (OT) for the current month, which could be attributed to a combination of supply-side and demand-side dynamics. A potential explanation is a reduction in production or an increase in costs, which may have led to a decrease in the overall output. This could be linked to recent health events affecting poultry production, such as outbreaks of avian disease, or to changes in trade policies that have impacted the export market. Additionally, a shift in consumer behavior or seasonal demand fluctuations might also be contributing factors. The downward trend in the OT suggests a possible slowdown in the poultry industry, which may be influenced by internal production challenges or external market pressures.
+
+⟪FINAL⟫
+{  
+  "hypotheses": [  
+    { "key": "poultry_industry_association|report_action|production|down" },  
+    { "key": "poultry_company|production_action|capacity|down" },  
+    { "key": "us_government_agency|trade_policy_action|export|down" },  
+    { "key": "poultry_industry_association|health_event_action|disease_event|down" },  
+    { "key": "market|price_action|price|down" }  
+  ]  
+}
+===== END RAW GENERATION =====
+['poultry_industry_association', 'report_action', 'production', 'down']
+['poultry_company', 'production_action', 'capacity', 'down']
+['us_government_agency', 'trade_policy_action', 'export', 'down']
+['poultry_industry_association', 'health_event_action', 'disease_event', 'down']
+['market', 'price_action', 'price', 'down']
+[DEBUG][10] got 5 preds. First key: poultry_industry_association|report_action|production|down
+precision_all: 0.1636363636363636 recall_all: 0.34393939393939393
+Labels:
+['market', 'health_event_action', 'disease_event', 'ambiguous']
+
+===== RAW GENERATION (decoded) =====
+The observed trend in the data indicates a notable shift in the U.S. Retail Broiler Composite (OT) over the last three months, with the current month showing a distinct deviation from the previous pattern. The consistent OT values in the prior months suggest a stable market environment, possibly due to steady supply and demand dynamics. However, the current month's dOT (monthly dOT) appears to deviate, potentially signaling a recent change in market conditions. This could be linked to a variety of real-time events, such as shifts in production, trade policies, or health-related disruptions within the poultry industry. The change in the current month may indicate a response to new regulations, an outbreak of disease, or a strategic move by industry players to adjust supply or pricing.
+
+⟪FINAL⟫
+{
+  "hypotheses": [
+    {"key": "market|price_action|price|down"},
+    {"key": "poultry_industry_association|report_action|production|down"},
+    {"key": "us_government_agency|trade_policy_action|tariff|up"},
+    {"key": "poultry_company|production_action|capacity|down"},
+    {"key": "health_event_action|disease_event|poultry_product|down"}
+  ]
+}
+===== END RAW GENERATION =====
+['market', 'price_action', 'price', 'down']
+['poultry_industry_association', 'report_action', 'production', 'down']
+['us_government_agency', 'trade_policy_action', 'tariff', 'up']
+['poultry_company', 'production_action', 'capacity', 'down']
+['health_event_action', 'disease_event', 'poultry_product', 'down']
+[DEBUG][11] got 5 preds. First key: market|price_action|price|down
+precision_all: 0.15 recall_all: 0.31527777777777777
+Labels:
+['market', 'forecast_action', 'production', 'up']
+['market', 'price_action', 'price', 'up']
+['market', 'price_action', 'export', 'down']
+['market', 'price_action', 'price', 'ambiguous']
+
+===== RAW GENERATION (decoded) =====
+The observed trend in the data indicates a potential shift in the U.S. poultry market dynamics, particularly in the retail broiler composite. The recent data suggests a downward trend in the current month's output (dOT), which may be linked to a combination of supply-side constraints and demand-side factors. A decline in production could be attributed to health-related issues within the poultry industry, such as outbreaks of avian diseases, or operational challenges like labor shortages or feed cost increases. Additionally, external factors such as trade policy changes or export restrictions could have impacted the market. The downward movement in dOT may also reflect a seasonal slowdown in consumer demand or a response to recent price fluctuations. These factors, when combined, could have contributed to the observed trend in the current month.
+
+⟪FINAL⟫
+{  
+  "hypotheses": [  
+    {  
+      "key": "poultry_industry_association|health_event_action|disease_event|down"  
+    },  
+    {  
+      "key": "market|price_action|price|down"  
+    },  
+    {  
+      "key": "us_government_agency|trade_policy_action|export|down"  
+    },  
+    {  
+      "key": "poultry_company|production_action|production|down"  
+    },  
+    {  
+      "key": "poultry_industry_association|report_action|production|down"  
+    }  
+  ]  
+}
+===== END RAW GENERATION =====
+['poultry_industry_association', 'health_event_action', 'disease_event', 'down']
+['market', 'price_action', 'price', 'down']
+['us_government_agency', 'trade_policy_action', 'export', 'down']
+['poultry_company', 'production_action', 'production', 'down']
+['poultry_industry_association', 'report_action', 'production', 'down']
+[DEBUG][12] got 5 preds. First key: poultry_industry_association|health_event_action|disease_event|down
+precision_all: 0.15384615384615383 recall_all: 0.3294871794871795
+Labels:
+['market', 'forecast_action', 'price', 'down']
+['market', 'price_action', 'price', 'up']
+['market', 'production_action', 'production', 'up']
+
+===== RAW GENERATION (decoded) =====
+The observed trend in the data indicates a notable shift in the U.S. Retail Broiler Composite (OT) over the last three months, with a recent monthly dOT suggesting a potential change in market dynamics. The data appears to reflect a stabilization or slight upward movement in the current month, which could be attributed to a combination of factors such as seasonal demand fluctuations, adjustments in production levels, or changes in trade policies. Given the recent economic climate and the ongoing influence of supply chain dynamics, it is plausible that internal market forces, such as pricing strategies or production adjustments, have played a role in this observed trend. Additionally, external factors such as health events or regulatory changes could have influenced the market behavior in the current month.
+
+⟪FINAL⟫
+{
+  "hypotheses": [
+    {"key": "market|price_action|price|up"},
+    {"key": "poultry_industry_association|report_action|production|up"},
+    {"key": "us_government_agency|trade_policy_action|tariff|down"},
+    {"key": "poultry_company|production_action|export|up"},
+    {"key": "health_event_action|disease_event|capacity|down"}
+  ]
+}
+===== END RAW GENERATION =====
+['market', 'price_action', 'price', 'up']
+['poultry_industry_association', 'report_action', 'production', 'up']
+['us_government_agency', 'trade_policy_action', 'tariff', 'down']
+['poultry_company', 'production_action', 'export', 'up']
+['health_event_action', 'disease_event', 'capacity', 'down']
+[DEBUG][13] got 5 preds. First key: market|price_action|price|up
+precision_all: 0.1571428571428571 recall_all: 0.32976190476190476
+Labels:
+['market', 'price_action', 'price', 'ambiguous']
+
+===== RAW GENERATION (decoded) =====
+The observed trend in the data indicates a notable shift in the U.S. Retail Broiler Composite (OT) over the last three months, with the current month showing a distinct deviation from the previous pattern. The decline in the current month's OT, compared to the previous two months, suggests a possible slowdown in demand or an increase in supply. This could be attributed to a variety of real-world factors, such as changes in consumer behavior due to economic conditions, seasonal variations in demand, or internal production adjustments by poultry companies. Additionally, external factors such as trade policies, health events, or supply chain disruptions could have influenced the current month's performance. These factors, when combined, may have created a more pronounced downward movement in the current month's OT, signaling a potential shift in market dynamics.
+
+⟪FINAL⟫
+{  
+  "hypotheses": [  
+    { "key": "market|price_action|price|down" },  
+    { "key": "poultry_industry_association|report_action|production|down" },  
+    { "key": "us_government_agency|trade_policy_action|tariff|up" },  
+    { "key": "poultry_company|production_action|capacity|down" },  
+    { "key": "health_event_action|disease_event|poultry_product|down" }  
+  ]  
+}
+===== END RAW GENERATION =====
+['market', 'price_action', 'price', 'down']
+['poultry_industry_association', 'report_action', 'production', 'down']
+['us_government_agency', 'trade_policy_action', 'tariff', 'up']
+['poultry_company', 'production_action', 'capacity', 'down']
+['health_event_action', 'disease_event', 'poultry_product', 'down']
+[DEBUG][14] got 5 preds. First key: market|price_action|price|down
+precision_all: 0.16 recall_all: 0.3744444444444444
+Labels:
+['market', 'price_action', 'price', 'up']
+['united_states', 'forecast_action', 'export', 'down']
+['united_states', 'health_event_action', 'disease_event', 'ambiguous']
+
+===== RAW GENERATION (decoded) =====
+The observed trend in the data indicates a notable shift in the U.S. Retail Broiler Composite (OT) over the last three months, with a recent monthly dOT suggesting a potential change in market dynamics. The data suggests that the OT has been relatively stable in the previous months, but the current month shows a deviation, possibly due to a combination of supply chain adjustments, consumer behavior shifts, or external policy influences. The recent change could be linked to seasonal demand fluctuations, adjustments in production schedules, or the impact of recent trade policies. It is also possible that recent health-related events or regulatory updates have influenced the market. These factors could have triggered a shift in either production levels, pricing, or export activities, leading to the observed change in the current month's dOT.
+
+⟪FINAL⟫
+{
+  "hypotheses": [
+    {"key": "market|price_action|price|down"},
+    {"key": "poultry_industry_association|report_action|production|up"},
+    {"key": "us_government_agency|trade_policy_action|tariff|ambiguous"},
+    {"key": "poultry_company|production_action|export|up"},
+    {"key": "health_event_action|disease_event|poultry_product|down"}
+  ]
+}
+===== END RAW GENERATION =====
+['market', 'price_action', 'price', 'down']
+['poultry_industry_association', 'report_action', 'production', 'up']
+['us_government_agency', 'trade_policy_action', 'tariff', 'ambiguous']
+['poultry_company', 'production_action', 'export', 'up']
+['health_event_action', 'disease_event', 'poultry_product', 'down']
+[DEBUG][15] got 5 preds. First key: market|price_action|price|down
+precision_all: 0.1625 recall_all: 0.37187499999999996

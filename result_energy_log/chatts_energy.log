@@ -1,0 +1,92 @@
+[ENV] transformers=4.52.4 tokenizers=0.21.4 torch=2.6.0+cu124
+
+Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]
+Loading checkpoint shards:  25%|##5       | 1/4 [00:02<00:07,  2.53s/it]
+Loading checkpoint shards:  50%|#####     | 2/4 [00:04<00:04,  2.48s/it]
+Loading checkpoint shards:  75%|#######5  | 3/4 [00:07<00:02,  2.53s/it]
+Loading checkpoint shards: 100%|##########| 4/4 [00:08<00:00,  1.84s/it]
+Loading checkpoint shards: 100%|##########| 4/4 [00:08<00:00,  2.09s/it]
+
+[MODEL_OUTPUT idx=0]
+{"hypotheses": [{"key": "market|price_change|gasoline|up"}, {"key": "eia|report_release|gasoline|up"}, {"key": "opec|production|crude_oil|down"}, {"key": "united_states|allocate|crude_oil|up"}, {"key": "opec_plus|cap|production|down"}]}
+[PARSED_KEYS idx=0] ["market|price_change|gasoline|up", "eia|report_release|gasoline|up", "opec|production|crude_oil|down", "united_states|allocate|crude_oil|up", "opec_plus|cap|production|down"]
+recall_all: 0.0 precision_all: 0.0
+[PROGRESS] 1/16 overall=0.0000
+
+[MODEL_OUTPUT idx=1]
+{"hypotheses": [{"key": "market|price_change|gasoline|up"}, {"key": "eia|report_release|gasoline|up"}, {"key": "opec|production|crude_oil|down"}, {"key": "united_states|price_change|gasoline|up"}, {"key": "opec_plus|production|crude_oil|down"}]}
+[PARSED_KEYS idx=1] ["market|price_change|gasoline|up", "eia|report_release|gasoline|up", "opec|production|crude_oil|down", "united_states|price_change|gasoline|up", "opec_plus|production|crude_oil|down"]
+recall_all: 0.1111111111111111 precision_all: 0.1
+
+[MODEL_OUTPUT idx=2]
+{"hypotheses": [{"key": "market|price_change|gasoline|up"}, {"key": "eia|report_release|gasoline|up"}, {"key": "opec|production|crude_oil|down"}, {"key": "united_states|price_change|gasoline|up"}, {"key": "opec_plus|production|crude_oil|down"}]}
+[PARSED_KEYS idx=2] ["market|price_change|gasoline|up", "eia|report_release|gasoline|up", "opec|production|crude_oil|down", "united_states|price_change|gasoline|up", "opec_plus|production|crude_oil|down"]
+recall_all: 0.12962962962962962 precision_all: 0.13333333333333333
+
+[MODEL_OUTPUT idx=3]
+{"hypotheses": [{"key": "market|price_change|gasoline|up"}, {"key": "eia|report_release|gasoline|up"}, {"key": "opec|production|crude_oil|down"}, {"key": "united_states|allocate|crude_oil|up"}, {"key": "opec_plus|cap|production|down"}]}
+[PARSED_KEYS idx=3] ["market|price_change|gasoline|up", "eia|report_release|gasoline|up", "opec|production|crude_oil|down", "united_states|allocate|crude_oil|up", "opec_plus|cap|production|down"]
+recall_all: 0.1329365079365079 precision_all: 0.15000000000000002
+
+[MODEL_OUTPUT idx=4]
+{"hypotheses": [{"key": "market|price_change|gasoline|up"}, {"key": "eia|report_release|gasoline|up"}, {"key": "opec|production|crude_oil|down"}, {"key": "united_states|allocate|crude_oil|up"}, {"key": "opec_plus|cap|production|up"}]}
+[PARSED_KEYS idx=4] ["market|price_change|gasoline|up", "eia|report_release|gasoline|up", "opec|production|crude_oil|down", "united_states|allocate|crude_oil|up", "opec_plus|cap|production|up"]
+recall_all: 0.13134920634920633 precision_all: 0.16
+[PROGRESS] 5/16 overall=0.1092
+
+[MODEL_OUTPUT idx=5]
+{"hypotheses": [{"key": "market|price_change|gasoline|up"}, {"key": "eia|report_release|gasoline|up"}, {"key": "opec|production|crude_oil|down"}, {"key": "united_states|allocate|crude_oil|up"}, {"key": "opec_plus|cap|production|up"}]}
+[PARSED_KEYS idx=5] ["market|price_change|gasoline|up", "eia|report_release|gasoline|up", "opec|production|crude_oil|down", "united_states|allocate|crude_oil|up", "opec_plus|cap|production|up"]
+recall_all: 0.10945767195767193 precision_all: 0.13333333333333333
+
+[MODEL_OUTPUT idx=6]
+{"hypotheses": [{"key": "market|price_change|gasoline|up"}, {"key": "eia|report_release|gasoline|up"}, {"key": "opec|production|crude_oil|down"}, {"key": "united_states|allocate|crude_oil|up"}, {"key": "opec_plus|cap|production|up"}]}
+[PARSED_KEYS idx=6] ["market|price_change|gasoline|up", "eia|report_release|gasoline|up", "opec|production|crude_oil|down", "united_states|allocate|crude_oil|up", "opec_plus|cap|production|up"]
+recall_all: 0.09382086167800452 precision_all: 0.1142857142857143
+
+[MODEL_OUTPUT idx=7]
+{"hypotheses": [{"key": "market|price_change|gasoline|up"}, {"key": "eia|report_release|gasoline|up"}, {"key": "opec|production|crude_oil|down"}, {"key": "united_states|allocate|crude_oil|up"}, {"key": "opec_plus|cap|production|down"}]}
+[PARSED_KEYS idx=7] ["market|price_change|gasoline|up", "eia|report_release|gasoline|up", "opec|production|crude_oil|down", "united_states|allocate|crude_oil|up", "opec_plus|cap|production|down"]
+recall_all: 0.10292658730158728 precision_all: 0.125
+
+[MODEL_OUTPUT idx=8]
+{"hypotheses": [{"key": "market|price_change|gasoline|up"}, {"key": "eia|report_release|gasoline|up"}, {"key": "opec|production|crude_oil|down"}, {"key": "united_states|price_change|gasoline|up"}, {"key": "opec_plus|production|crude_oil|down"}]}
+[PARSED_KEYS idx=8] ["market|price_change|gasoline|up", "eia|report_release|gasoline|up", "opec|production|crude_oil|down", "united_states|price_change|gasoline|up", "opec_plus|production|crude_oil|down"]
+recall_all: 0.1161816578483245 precision_all: 0.15555555555555556
+
+[MODEL_OUTPUT idx=9]
+{"hypotheses": [{"key": "market|price_change|gasoline|up"}, {"key": "eia|report_release|crude_oil|up"}, {"key": "opec|production|crude_oil|down"}, {"key": "united_states|allocate|natural_gas|up"}, {"key": "opec_plus|cap|diesel|down"}]}
+[PARSED_KEYS idx=9] ["market|price_change|gasoline|up", "eia|report_release|crude_oil|up", "opec|production|crude_oil|down", "united_states|allocate|natural_gas|up", "opec_plus|cap|diesel|down"]
+recall_all: 0.11884920634920633 precision_all: 0.15999999999999998
+[PROGRESS] 10/16 overall=0.1150
+
+[MODEL_OUTPUT idx=10]
+{"hypotheses": [{"key": "market|price_change|gasoline|up"}, {"key": "eia|report_release|gasoline|up"}, {"key": "opec|production|crude_oil|down"}, {"key": "united_states|price_change|gasoline|up"}, {"key": "opec_plus|production|crude_oil|down"}]}
+[PARSED_KEYS idx=10] ["market|price_change|gasoline|up", "eia|report_release|gasoline|up", "opec|production|crude_oil|down", "united_states|price_change|gasoline|up", "opec_plus|production|crude_oil|down"]
+recall_all: 0.13401875901875898 precision_all: 0.18181818181818182
+
+[MODEL_OUTPUT idx=11]
+{"hypotheses": [{"key": "market|price_change|gasoline|up"}, {"key": "eia|report_release|gasoline|up"}, {"key": "opec|production|crude_oil|down"}, {"key": "united_states|allocate|crude_oil|up"}, {"key": "opec_plus|cap|production|down"}]}
+[PARSED_KEYS idx=11] ["market|price_change|gasoline|up", "eia|report_release|gasoline|up", "opec|production|crude_oil|down", "united_states|allocate|crude_oil|up", "opec_plus|cap|production|down"]
+recall_all: 0.13475529100529096 precision_all: 0.18333333333333335
+
+[MODEL_OUTPUT idx=12]
+{"hypotheses": [{"key": "market|price_change|gasoline|up"}, {"key": "eia|report_release|gasoline|up"}, {"key": "opec|production|crude_oil|down"}, {"key": "united_states|allocate|crude_oil|up"}, {"key": "opec_plus|cap|production|down"}]}
+[PARSED_KEYS idx=12] ["market|price_change|gasoline|up", "eia|report_release|gasoline|up", "opec|production|crude_oil|down", "united_states|allocate|crude_oil|up", "opec_plus|cap|production|down"]
+recall_all: 0.12438949938949936 precision_all: 0.16923076923076924
+
+[MODEL_OUTPUT idx=13]
+{"hypotheses": [{"key": "market|price_change|gasoline|up"}, {"key": "eia|report_release|gasoline|up"}, {"key": "opec|production|crude_oil|down"}, {"key": "united_states|price_change|gasoline|up"}, {"key": "opec_plus|production|crude_oil|down"}]}
+[PARSED_KEYS idx=13] ["market|price_change|gasoline|up", "eia|report_release|gasoline|up", "opec|production|crude_oil|down", "united_states|price_change|gasoline|up", "opec_plus|production|crude_oil|down"]
+recall_all: 0.1234410430839002 precision_all: 0.17142857142857146
+
+[MODEL_OUTPUT idx=14]
+{"hypotheses": [{"key": "market|price_change|gasoline|up"}, {"key": "eia|report_release|gasoline|up"}, {"key": "opec|production|crude_oil|down"}, {"key": "united_states|allocate|crude_oil|up"}, {"key": "opec_plus|cap|production|down"}]}
+[PARSED_KEYS idx=14] ["market|price_change|gasoline|up", "eia|report_release|gasoline|up", "opec|production|crude_oil|down", "united_states|allocate|crude_oil|up", "opec_plus|cap|production|down"]
+recall_all: 0.12187830687830686 precision_all: 0.17333333333333337
+[PROGRESS] 15/16 overall=0.1000
+
+[MODEL_OUTPUT idx=15]
+{"hypotheses": [{"key": "market|price_change|gasoline|up"}, {"key": "eia|report_release|gasoline|up"}, {"key": "opec|production|crude_oil|down"}, {"key": "united_states|allocate|crude_oil|up"}, {"key": "opec_plus|cap|production|up"}]}
+[PARSED_KEYS idx=15] ["market|price_change|gasoline|up", "eia|report_release|gasoline|up", "opec|production|crude_oil|down", "united_states|allocate|crude_oil|up", "opec_plus|cap|production|up"]
+recall_all: 0.11426091269841268 precision_all: 0.16250000000000003

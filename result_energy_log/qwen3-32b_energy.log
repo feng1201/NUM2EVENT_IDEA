@@ -1,0 +1,596 @@
+Labels:
+['market', 'price_change', 'price', 'up']
+['eia', 'forecast_lower', 'price', 'down']
+['eia', 'report_release', 'price', 'down']
+['eia', 'report_release', 'price', 'up']
+['eia', 'forecast_raise', 'price', 'up']
+['eia', 'report_release', 'export', 'up']
+['eia', 'report_release', 'production', 'ambiguous']
+['eia', 'report_release', 'production', 'up']
+['market', 'price_change', 'crude_oil', 'up']
+['market', 'price_change', 'price', 'down']
+['united_states', 'price_change', 'gasoline', 'up']
+['united_states', 'report_release', 'price', 'up']
+
+===== RAW GENERATION (decoded) =====
+The observed trend in the data indicates a complex interplay of supply and demand dynamics. The initial sharp decline in gasoline prices from t0 to t7 (3.909 to 3.203) suggests a significant drop in demand or a surge in supply, potentially driven by economic slowdowns, seasonal adjustments, or OPEC+ production increases. The subsequent gradual recovery from t8 to t12 (3.203 to 3.594) implies stabilizing supply or renewed demand, possibly due to OPEC+ production cuts or geopolitical tensions. The current month’s upward trajectory (c0 to c4) aligns with factors such as reduced inventories, production constraints, or policy shifts. For instance, EIA inventory reports might highlight tighter supplies, while OPEC+ could have extended production cuts to prop up prices. Additionally, sanctions on major producers or export policy changes could further constrain supply, pushing prices higher.  
+
+⟪FINAL⟫{  "hypotheses": [    {      "key": "eia|report_release|inventory|down"    },    {      "key": "opec_plus|production_cut|crude_oil|down"    },    {      "key": "united_states|sanction_impose|export|ambiguous"    },    {      "key": "eia|forecast_raise|price|up"    },    {      "key": "opec|production_raise|crude_oil|ambiguous"    }  ]}
+===== END RAW GENERATION =====
+[DEBUG] parsed JSON: {"hypotheses": [{"key": "eia|report_release|inventory|down"}, {"key": "opec_plus|production_cut|crude_oil|down"}, {"key": "united_states|sanction_impose|export|ambiguous"}, {"key": "eia|forecast_raise|price|up"}, {"key": "opec|production_raise|crude_oil|ambiguous"}]}
+['eia', 'report_release', 'inventory', 'down']
+['opec_plus', 'production_cut', 'crude_oil', 'down']
+['united_states', 'sanction_impose', 'export', 'ambiguous']
+['eia', 'forecast_raise', 'price', 'up']
+['opec', 'production_raise', 'crude_oil', 'ambiguous']
+recall_all: 0.08333333333333333 precision_all: 0.2
+Labels:
+['eia', 'report_release', 'price', 'up']
+['market', 'price_change', 'gasoline', 'down']
+['market', 'price_change', 'gasoline', 'up']
+['market', 'price_change', 'price', 'up']
+['api', 'report_release', 'price', 'up']
+['eia', 'report_release', 'price', 'ambiguous']
+['eia', 'report_release', 'price', 'down']
+['market', 'price_change', 'natural_gas', 'down']
+['united_states', 'report_release', 'price', 'up']
+
+===== RAW GENERATION (decoded) =====
+The observed trend in the data indicates a general decline in U.S. gasoline prices over the current month, with a notable drop in the first two weeks followed by a smaller decrease in the third and fourth weeks. This pattern suggests a possible weakening in demand or a strengthening in supply dynamics. The initial sharp decline (c0 and c1) could be attributed to a combination of seasonal factors, such as reduced travel during the post-holiday period, and potential inventory increases due to higher production or imports. The subsequent smaller drops (c2 and c3) may reflect continued softness in demand or a market response to a forecast of lower prices. Additionally, the gradual decline in prices over the past few weeks in the context window (t8 to t12) may have set the stage for this downward momentum, possibly influenced by broader economic conditions or policy changes affecting the energy sector.
+
+⟪FINAL⟫
+{
+  "hypotheses": [
+    {
+      "key": "market|price_change|gasoline|down"
+    },
+    {
+      "key": "eia|report_release|inventory|up"
+    },
+    {
+      "key": "united_states|forecast_lower|gasoline|down"
+    },
+    {
+      "key": "opec_plus|production_cut|crude_oil|ambiguous"
+    },
+    {
+      "key": "market|price_change|brent|down"
+    }
+  ]
+}
+===== END RAW GENERATION =====
+[DEBUG] parsed JSON: {"hypotheses": [{"key": "market|price_change|gasoline|down"}, {"key": "eia|report_release|inventory|up"}, {"key": "united_states|forecast_lower|gasoline|down"}, {"key": "opec_plus|production_cut|crude_oil|ambiguous"}, {"key": "market|price_change|brent|down"}]}
+['market', 'price_change', 'gasoline', 'down']
+['eia', 'report_release', 'inventory', 'up']
+['united_states', 'forecast_lower', 'gasoline', 'down']
+['opec_plus', 'production_cut', 'crude_oil', 'ambiguous']
+['market', 'price_change', 'brent', 'down']
+recall_all: 0.15277777777777776 precision_all: 0.2
+Labels:
+['market', 'price_change', 'price', 'down']
+['market', 'price_change', 'price', 'up']
+['eia', 'forecast_lower', 'price', 'down']
+['eia', 'report_release', 'price', 'ambiguous']
+['eia', 'report_release', 'price', 'up']
+['market', 'price_change', 'gasoline', 'up']
+
+===== RAW GENERATION (decoded) =====
+The observed trend in the data indicates a volatile but generally upward trajectory in gasoline prices over the past three months, with a peak at t4 (3.594) followed by a temporary decline and subsequent partial recovery. The current month’s data reveals a sharp initial increase (c0: +0.048, c1: +0.063), suggesting heightened demand or supply constraints, followed by a notable pullback (c2: -0.034) and a minor stabilization (c3: -0.001). This pattern could reflect a combination of factors: the initial rise may stem from OPEC+ production cuts or geopolitical tensions reducing crude oil availability, while the subsequent dip might align with EIA inventory reports showing increased gasoline stockpiles, easing short-term pressure. The final minor decline could indicate a market correction or reduced demand amid seasonal adjustments. These dynamics suggest interplay between supply-side policies, inventory management, and demand fluctuations.
+
+⟪FINAL⟫
+{
+  "hypotheses": [
+    {
+      "key": "opec_plus|production_cut|crude_oil|up"
+    },
+    {
+      "key": "eia|report_release|inventory|down"
+    },
+    {
+      "key": "opec|forecast_lower|demand|down"
+    },
+    {
+      "key": "market|price_change|gasoline|up"
+    },
+    {
+      "key": "united_states|sanction_impose|export|ambiguous"
+    }
+  ]
+}
+===== END RAW GENERATION =====
+[DEBUG] parsed JSON: {"hypotheses": [{"key": "opec_plus|production_cut|crude_oil|up"}, {"key": "eia|report_release|inventory|down"}, {"key": "opec|forecast_lower|demand|down"}, {"key": "market|price_change|gasoline|up"}, {"key": "united_states|sanction_impose|export|ambiguous"}]}
+['opec_plus', 'production_cut', 'crude_oil', 'up']
+['eia', 'report_release', 'inventory', 'down']
+['opec', 'forecast_lower', 'demand', 'down']
+['market', 'price_change', 'gasoline', 'up']
+['united_states', 'sanction_impose', 'export', 'ambiguous']
+recall_all: 0.1574074074074074 precision_all: 0.20000000000000004
+Labels:
+['eia', 'report_release', 'price', 'ambiguous']
+['market', 'price_change', 'gasoline', 'up']
+['market', 'price_change', 'price', 'down']
+['opec_plus', 'production_cut', 'crude_oil', 'down']
+['eia', 'report_release', 'price', 'down']
+['market', 'price_change', 'natural_gas', 'down']
+['united_states', 'price_change', 'diesel', 'up']
+
+===== RAW GENERATION (decoded) =====
+The observed trend in the data indicates a volatile but generally upward trajectory in gasoline prices over the past three months, with a notable peak at t11 (3.769) followed by a minor correction at t12. The current month’s data reveals a sharp initial rise in prices (c0–c2), followed by a marginal decline in the final week (c3). This pattern suggests a combination of sustained supply-side pressures and shifting demand dynamics. The early-month increases may reflect OPEC+ production cuts or geopolitical tensions disrupting crude oil flows, while the late-month dip could signal temporary market adjustments, such as a partial reversal of prior restrictions or a downward revision in demand forecasts. The interplay between inventory reports, production decisions, and macroeconomic signals (e.g., EIA forecasts) likely underpins these fluctuations, with the U.S. market reacting to both domestic and global energy policy shifts.
+
+⟪FINAL⟫
+{
+  "hypotheses": [
+    {
+      "key": "opec_plus|production_cut|crude_oil|up"
+    },
+    {
+      "key": "eia|report_release|inventory|down"
+    },
+    {
+      "key": "eia|forecast_raise|price|up"
+    },
+    {
+      "key": "opec_plus|production_raise|crude_oil|down"
+    },
+    {
+      "key": "eia|forecast_lower|price|down"
+    }
+  ]
+}
+===== END RAW GENERATION =====
+[DEBUG] parsed JSON: {"hypotheses": [{"key": "opec_plus|production_cut|crude_oil|up"}, {"key": "eia|report_release|inventory|down"}, {"key": "eia|forecast_raise|price|up"}, {"key": "opec_plus|production_raise|crude_oil|down"}, {"key": "eia|forecast_lower|price|down"}]}
+['opec_plus', 'production_cut', 'crude_oil', 'up']
+['eia', 'report_release', 'inventory', 'down']
+['eia', 'forecast_raise', 'price', 'up']
+['opec_plus', 'production_raise', 'crude_oil', 'down']
+['eia', 'forecast_lower', 'price', 'down']
+recall_all: 0.15376984126984128 precision_all: 0.2
+Labels:
+['market', 'price_change', 'price', 'down']
+['eia', 'report_release', 'price', 'down']
+['opec_plus', 'production_cut', 'crude_oil', 'down']
+['eia', 'forecast_lower', 'price', 'down']
+['eia', 'report_release', 'price', 'up']
+['market', 'price_change', 'crude_oil', 'down']
+['market', 'price_change', 'gasoline', 'up']
+['market', 'price_change', 'price', 'up']
+
+===== RAW GENERATION (decoded) =====
+The observed trend in the data indicates a volatile but generally downward trajectory in the current month, punctuated by minor fluctuations. The initial sharp decline (c0, c1) suggests a significant market response to either increased supply or reduced demand, possibly triggered by an EIA inventory report showing higher-than-expected stockpiles. The subsequent stabilization (c2, c3) may reflect temporary equilibrium as traders adjust to new information, while the final upward movement (c4) hints at renewed supply constraints or geopolitical tensions. These patterns align with plausible real-world drivers such as OPEC+ production decisions, EIA forecasts, and crude oil price dynamics. The interplay of these factors likely explains the observed price behavior, with external shocks (e.g., sanctions or production cuts) amplifying short-term volatility.
+
+⟪FINAL⟫
+{
+  "hypotheses": [
+    {
+      "key": "eia|report_release|inventory|down"
+    },
+    {
+      "key": "opec_plus|production_cut|production|down"
+    },
+    {
+      "key": "eia|forecast_lower|forecast|down"
+    },
+    {
+      "key": "market|price_change|crude_oil|down"
+    },
+    {
+      "key": "opec|sanction_impose|export|down"
+    }
+  ]
+}
+===== END RAW GENERATION =====
+[DEBUG] parsed JSON: {"hypotheses": [{"key": "eia|report_release|inventory|down"}, {"key": "opec_plus|production_cut|production|down"}, {"key": "eia|forecast_lower|forecast|down"}, {"key": "market|price_change|crude_oil|down"}, {"key": "opec|sanction_impose|export|down"}]}
+['eia', 'report_release', 'inventory', 'down']
+['opec_plus', 'production_cut', 'production', 'down']
+['eia', 'forecast_lower', 'forecast', 'down']
+['market', 'price_change', 'crude_oil', 'down']
+['opec', 'sanction_impose', 'export', 'down']
+recall_all: 0.14801587301587302 precision_all: 0.2
+Labels:
+['market', 'price_change', 'price', 'down']
+['eia', 'report_release', 'inventory', 'down']
+['eia', 'report_release', 'price', 'down']
+['market', 'price_change', 'price', 'up']
+
+===== RAW GENERATION (decoded) =====
+The observed trend in the data indicates a volatile but generally stable gasoline price pattern over the last three months, with a recent dip followed by a rebound and subsequent minor declines. The initial drop in the current month (c0) may reflect a temporary oversupply or a report highlighting increased inventory, which typically depresses prices. The subsequent rise (c1) could stem from OPEC+ production cuts, reducing supply and pushing prices upward. The following declines (c2, c3) might align with market adjustments to these cuts, possibly influenced by forecasts of lower demand or geopolitical developments, such as sanctions on oil-producing regions. These patterns suggest interplay between supply-side interventions (e.g., OPEC+ actions) and demand-side expectations (e.g., EIA forecasts), with short-term fluctuations driven by real-time market responses to such events.
+
+⟪FINAL⟫
+{
+  "hypotheses": [
+    {
+      "key": "eia|report_release|inventory|up"
+    },
+    {
+      "key": "opec_plus|production_cut|production|down"
+    },
+    {
+      "key": "eia|forecast_lower|forecast|down"
+    },
+    {
+      "key": "united_states|sanction_impose|production|down"
+    },
+    {
+      "key": "market|price_change|price|down"
+    }
+  ]
+}
+===== END RAW GENERATION =====
+[DEBUG] parsed JSON: {"hypotheses": [{"key": "eia|report_release|inventory|up"}, {"key": "opec_plus|production_cut|production|down"}, {"key": "eia|forecast_lower|forecast|down"}, {"key": "united_states|sanction_impose|production|down"}, {"key": "market|price_change|price|down"}]}
+['eia', 'report_release', 'inventory', 'up']
+['opec_plus', 'production_cut', 'production', 'down']
+['eia', 'forecast_lower', 'forecast', 'down']
+['united_states', 'sanction_impose', 'production', 'down']
+['market', 'price_change', 'price', 'down']
+recall_all: 0.24834656084656084 precision_all: 0.2333333333333333
+Labels:
+['eia', 'report_release', 'inventory', 'up']
+['market', 'price_change', 'price', 'up']
+['eia', 'report_release', 'inventory', 'down']
+['united_states', 'report_release', 'inventory', 'down']
+['united_states', 'report_release', 'price', 'up']
+
+===== RAW GENERATION (decoded) =====
+The observed trend in the data indicates a volatile but generally upward trajectory in gasoline prices over the last three months, with a notable spike in the final weeks. The initial stability in the context window (t0–t2) suggests minimal external shocks, but the sharp rise at t3 (3.684) and subsequent fluctuations hint at intermittent supply-demand imbalances. The current month (c0–c4) reveals a temporary dip at c0 (-0.042), likely due to a short-term oversupply or speculative adjustments, followed by a steady climb, culminating in a significant +0.158 increase at c4. This pattern aligns with potential OPEC+ production cuts or geopolitical tensions disrupting crude oil flows, which would elevate gasoline prices. The final surge at c4 may also reflect a combination of reduced U.S. production, inventory drawdowns, or heightened demand forecasts, particularly if seasonal factors (e.g., summer travel) coincide with constrained supply.  
+
+⟪FINAL⟫  
+{  
+  "hypotheses": [  
+    {  
+      "key": "opec_plus|production_cut|crude_oil|up"  
+    },  
+    {  
+      "key": "eia|report_release|inventory|down"  
+    },  
+    {  
+      "key": "united_states|sanction_impose|export|ambiguous"  
+    },  
+    {  
+      "key": "opec|forecast_raise|price|up"  
+    },  
+    {  
+      "key": "market|price_change|gasoline|up"  
+    }  
+  ]  
+}
+===== END RAW GENERATION =====
+[DEBUG] parsed JSON: {"hypotheses": [{"key": "opec_plus|production_cut|crude_oil|up"}, {"key": "eia|report_release|inventory|down"}, {"key": "united_states|sanction_impose|export|ambiguous"}, {"key": "opec|forecast_raise|price|up"}, {"key": "market|price_change|gasoline|up"}]}
+['opec_plus', 'production_cut', 'crude_oil', 'up']
+['eia', 'report_release', 'inventory', 'down']
+['united_states', 'sanction_impose', 'export', 'ambiguous']
+['opec', 'forecast_raise', 'price', 'up']
+['market', 'price_change', 'gasoline', 'up']
+recall_all: 0.2700113378684807 precision_all: 0.22857142857142856
+Labels:
+['market', 'price_change', 'price', 'up']
+['market', 'price_change', 'gasoline', 'up']
+['api', 'report_release', 'price', 'up']
+['eia', 'report_release', 'inventory', 'up']
+['eia', 'report_release', 'price', 'up']
+['market', 'price_change', 'crude_oil', 'up']
+
+===== RAW GENERATION (decoded) =====
+The observed trend in the data indicates a gradual upward movement in U.S. gasoline prices over the past three months, with a notable acceleration in the current month followed by a sharp correction. The initial three weeks of the current month show consistent price increases, suggesting sustained demand or constrained supply, while the final week’s decline may reflect a temporary market adjustment. This pattern could align with OPEC+ production cuts limiting crude oil availability, driving up gasoline prices, or heightened U.S. demand during seasonal factors like summer travel. The subsequent drop might stem from a report revealing higher-than-expected gasoline inventories, easing short-term supply concerns. Alternatively, a shift in geopolitical dynamics or a policy change (e.g., sanctions relief) could temporarily stabilize prices. The interplay of these factors—supply constraints, demand fluctuations, and inventory reports—likely shaped the observed trajectory.
+
+⟪FINAL⟫
+{
+  "hypotheses": [
+    {
+      "key": "opec_plus|production_cut|production|down"
+    },
+    {
+      "key": "eia|report_release|inventory|up"
+    },
+    {
+      "key": "united_states|forecast_raise|demand|up"
+    },
+    {
+      "key": "opec_plus|extend_cut|production|down"
+    },
+    {
+      "key": "market|price_change|price|up"
+    }
+  ]
+}
+===== END RAW GENERATION =====
+[DEBUG] parsed JSON: {"hypotheses": [{"key": "opec_plus|production_cut|production|down"}, {"key": "eia|report_release|inventory|up"}, {"key": "united_states|forecast_raise|demand|up"}, {"key": "opec_plus|extend_cut|production|down"}, {"key": "market|price_change|price|up"}]}
+['opec_plus', 'production_cut', 'production', 'down']
+['eia', 'report_release', 'inventory', 'up']
+['united_states', 'forecast_raise', 'demand', 'up']
+['opec_plus', 'extend_cut', 'production', 'down']
+['market', 'price_change', 'price', 'up']
+recall_all: 0.2779265873015873 precision_all: 0.25
+Labels:
+['market', 'price_change', 'price', 'up']
+['united_states', 'price_change', 'gasoline', 'up']
+['eia', 'forecast_raise', 'price', 'up']
+['eia', 'report_release', 'forecast', 'up']
+['eia', 'report_release', 'inventory', 'down']
+['eia', 'report_release', 'price', 'up']
+['market', 'price_change', 'crude_oil', 'up']
+['market', 'price_change', 'gasoline', 'up']
+['market', 'price_change', 'price', 'down']
+
+===== RAW GENERATION (decoded) =====
+The observed trend in the data indicates a volatile but generally upward trajectory in gasoline prices over the past three months, with a notable peak at t7 (3.984) followed by a temporary dip and subsequent rebound. The current month’s data reveals a nuanced pattern: an initial decline (c0), a moderate recovery (c1), a sharp rise (c2), and a final pullback (c3). This suggests short-term market sensitivity to supply-demand imbalances, geopolitical factors, or policy shifts. The sharp rise at c2 may reflect a sudden production cut or a bullish forecast, while the final decline (c3) could signal a response to increased supply or a downward revision in demand expectations. The interplay between OPEC+ actions, U.S. inventory reports, and macroeconomic signals likely underpins these fluctuations.  
+
+⟪FINAL⟫  
+{  
+  "hypotheses": [  
+    {  
+      "key": "eia|report_release|inventory|down"  
+    },  
+    {  
+      "key": "opec_plus|production_cut|production|up"  
+    },  
+    {  
+      "key": "eia|forecast_raise|gasoline|up"  
+    },  
+    {  
+      "key": "united_states|export_ban_lift|export|down"  
+    },  
+    {  
+      "key": "market|price_change|price|ambiguous"  
+    }  
+  ]  
+}
+===== END RAW GENERATION =====
+[DEBUG] parsed JSON: {"hypotheses": [{"key": "eia|report_release|inventory|down"}, {"key": "opec_plus|production_cut|production|up"}, {"key": "eia|forecast_raise|gasoline|up"}, {"key": "united_states|export_ban_lift|export|down"}, {"key": "market|price_change|price|ambiguous"}]}
+['eia', 'report_release', 'inventory', 'down']
+['opec_plus', 'production_cut', 'production', 'up']
+['eia', 'forecast_raise', 'gasoline', 'up']
+['united_states', 'export_ban_lift', 'export', 'down']
+['market', 'price_change', 'price', 'ambiguous']
+recall_all: 0.28408289241622575 precision_all: 0.26666666666666666
+Labels:
+['market', 'price_change', 'gasoline', 'down']
+['market', 'price_change', 'price', 'down']
+['eia', 'report_release', 'price', 'down']
+['united_states', 'report_release', 'price', 'down']
+['eia', 'report_release', 'production', 'up']
+['united_states', 'price_change', 'gasoline', 'down']
+['united_states', 'production_raise', 'crude_oil', 'up']
+
+===== RAW GENERATION (decoded) =====
+The observed trend in the data indicates a consistent decline in U.S. gasoline prices over the current month, with the most significant drop occurring in the second week (c1: -0.116). This follows a broader three-month pattern of volatility, including a peak at t6 (4.001) and a sharp downward trajectory from t6 to t12. The current month’s downward momentum suggests potential drivers such as reduced demand (e.g., seasonal slowdowns, economic caution) or increased supply (e.g., OPEC+ production adjustments, U.S. inventory releases). The EIA’s inventory reports or forecasts could have influenced market sentiment, while geopolitical factors (e.g., sanctions, production policies) might also play a role. The cumulative effect of these factors likely created downward pressure on prices, with the steeper drops aligning with major report releases or policy shifts.
+
+⟪FINAL⟫
+{
+  "hypotheses": [
+    {
+      "key": "eia|report_release|inventory|down"
+    },
+    {
+      "key": "opec_plus|production_raise|crude_oil|down"
+    },
+    {
+      "key": "market|price_change|gasoline|down"
+    },
+    {
+      "key": "eia|forecast_lower|price|down"
+    },
+    {
+      "key": "united_states|release|inventory|down"
+    }
+  ]
+}
+===== END RAW GENERATION =====
+[DEBUG] parsed JSON: {"hypotheses": [{"key": "eia|report_release|inventory|down"}, {"key": "opec_plus|production_raise|crude_oil|down"}, {"key": "market|price_change|gasoline|down"}, {"key": "eia|forecast_lower|price|down"}, {"key": "united_states|release|inventory|down"}]}
+['eia', 'report_release', 'inventory', 'down']
+['opec_plus', 'production_raise', 'crude_oil', 'down']
+['market', 'price_change', 'gasoline', 'down']
+['eia', 'forecast_lower', 'price', 'down']
+['united_states', 'release', 'inventory', 'down']
+recall_all: 0.26996031746031746 precision_all: 0.26
+Labels:
+['market', 'price_change', 'price', 'down']
+['market', 'price_change', 'gasoline', 'down']
+['market', 'price_change', 'crude_oil', 'down']
+['united_states', 'price_change', 'gasoline', 'down']
+['united_states', 'production_raise', 'crude_oil', 'up']
+['united_states', 'report_release', 'inventory', 'down']
+['united_states', 'report_release', 'production', 'up']
+
+===== RAW GENERATION (decoded) =====
+The observed trend in the data indicates a consistent decline in U.S. gasoline prices over the past three months, with a pronounced acceleration in the current month. The weekly price drops from t0 to t12 suggest a combination of reduced demand and/or increased supply, while the current month’s sharper declines (c0–c3) imply a reinforcing factor. Potential drivers include seasonal demand shifts (e.g., post-summer travel lull), increased domestic crude oil production, or strategic inventory releases. The current month’s sharper drops may also reflect geopolitical developments, such as OPEC+ policy adjustments or U.S. export policy changes, which could signal oversupply or weakened demand forecasts. These factors collectively point to a market recalibrating to lower demand expectations or surplus supply pressures.  
+
+⟪FINAL⟫  
+{  
+  "hypotheses": [  
+    {  
+      "key": "opec_plus|production_raise|crude_oil|down"  
+    },  
+    {  
+      "key": "eia|report_release|inventory|down"  
+    },  
+    {  
+      "key": "united_states|production_raise|crude_oil|down"  
+    },  
+    {  
+      "key": "opec|forecast_lower|price|down"  
+    },  
+    {  
+      "key": "united_states|export_ban_lift|export|down"  
+    }  
+  ]  
+}
+===== END RAW GENERATION =====
+[DEBUG] parsed JSON: {"hypotheses": [{"key": "opec_plus|production_raise|crude_oil|down"}, {"key": "eia|report_release|inventory|down"}, {"key": "united_states|production_raise|crude_oil|down"}, {"key": "opec|forecast_lower|price|down"}, {"key": "united_states|export_ban_lift|export|down"}]}
+['opec_plus', 'production_raise', 'crude_oil', 'down']
+['eia', 'report_release', 'inventory', 'down']
+['united_states', 'production_raise', 'crude_oil', 'down']
+['opec', 'forecast_lower', 'price', 'down']
+['united_states', 'export_ban_lift', 'export', 'down']
+recall_all: 0.2584054834054834 precision_all: 0.2545454545454546
+Labels:
+['market', 'price_change', 'price', 'down']
+['market', 'price_change', 'price', 'up']
+['united_states', 'price_change', 'gasoline', 'down']
+['eia', 'report_release', 'price', 'down']
+['market', 'price_change', 'gasoline', 'down']
+['united_states', 'price_change', 'natural_gas', 'down']
+['united_states', 'production_raise', 'crude_oil', 'up']
+
+===== RAW GENERATION (decoded) =====
+The observed trend in the data indicates a sustained decline in U.S. gasoline prices over the past three months, punctuated by a sharp drop in the current month followed by a modest rebound. The steady decrease from $3.930 to $3.238 suggests structural factors such as reduced demand, increased supply, or geopolitical adjustments. The current month’s initial -0.096 and -0.083 weekly changes align with aggressive market responses to events like production cuts or sanctions, while the final +0.062 uptick implies a reversal of downward momentum, possibly due to inventory reports or demand forecasts. The pattern hints at a dynamic interplay between supply-side interventions (e.g., OPEC+ actions) and market sentiment shifts, with the rebound likely triggered by a report or forecast signaling tighter supply or stronger demand.  
+
+⟪FINAL⟫{  "hypotheses": [    {      "key": "opec_plus|production_cut|production|down"    },    {      "key": "market|report_release|inventory|down"    },    {      "key": "united_states|release|inventory|down"    },    {      "key": "market|forecast_raise|forecast|up"    },    {      "key": "opec_plus|extend_cut|production|down"    }  ]}
+===== END RAW GENERATION =====
+[DEBUG] parsed JSON: {"hypotheses": [{"key": "opec_plus|production_cut|production|down"}, {"key": "market|report_release|inventory|down"}, {"key": "united_states|release|inventory|down"}, {"key": "market|forecast_raise|forecast|up"}, {"key": "opec_plus|extend_cut|production|down"}]}
+['opec_plus', 'production_cut', 'production', 'down']
+['market', 'report_release', 'inventory', 'down']
+['united_states', 'release', 'inventory', 'down']
+['market', 'forecast_raise', 'forecast', 'up']
+['opec_plus', 'extend_cut', 'production', 'down']
+recall_all: 0.23687169312169312 precision_all: 0.23333333333333336
+Labels:
+['market', 'price_change', 'price', 'up']
+['eia', 'report_release', 'price', 'down']
+['market', 'price_change', 'price', 'down']
+['united_states', 'price_change', 'gasoline', 'down']
+['eia', 'forecast_lower', 'price', 'down']
+['eia', 'forecast_raise', 'production', 'up']
+
+===== RAW GENERATION (decoded) =====
+The observed trend in the data indicates a gradual decline in gasoline prices over the past three months, with a notable dip from t0 (3.520) to t6 (3.176), followed by minor fluctuations. The current month’s data reveals a continued decline in the first three weeks (c0–c2), followed by a sharp rebound in the final two weeks (c3–c4). This pattern suggests external factors influencing supply and demand dynamics. The initial drop may reflect reduced demand due to seasonal or economic factors, while the recent recovery could stem from production adjustments (e.g., OPEC+ cuts) or inventory-related reports. The uptick in c4 implies potential market responses to tightened supply or geopolitical events, such as sanctions or production forecasts. These shifts align with typical drivers of oil markets, including inventory levels, production decisions, and geopolitical tensions.  
+
+⟪FINAL⟫  
+{  
+  "hypotheses": [  
+    { "key": "opec_plus|extend_cut|production|down" },  
+    { "key": "eia|report_release|inventory|down" },  
+    { "key": "opec|forecast_lower|production|down" },  
+    { "key": "united_states|sanction_impose|export|down" },  
+    { "key": "eia|forecast_raise|price|up" }  
+  ]  
+}
+===== END RAW GENERATION =====
+[DEBUG] parsed JSON: {"hypotheses": [{"key": "opec_plus|extend_cut|production|down"}, {"key": "eia|report_release|inventory|down"}, {"key": "opec|forecast_lower|production|down"}, {"key": "united_states|sanction_impose|export|down"}, {"key": "eia|forecast_raise|price|up"}]}
+['opec_plus', 'extend_cut', 'production', 'down']
+['eia', 'report_release', 'inventory', 'down']
+['opec', 'forecast_lower', 'production', 'down']
+['united_states', 'sanction_impose', 'export', 'down']
+['eia', 'forecast_raise', 'price', 'up']
+recall_all: 0.21865079365079365 precision_all: 0.2153846153846154
+Labels:
+['eia', 'report_release', 'inventory', 'up']
+['market', 'price_change', 'crude_oil', 'down']
+['market', 'price_change', 'price', 'down']
+['eia', 'report_release', 'price', 'ambiguous']
+['eia', 'report_release', 'price', 'up']
+['market', 'price_change', 'crude_oil', 'up']
+['market', 'price_change', 'gasoline', 'up']
+['market', 'price_change', 'natural_gas', 'down']
+['market', 'price_change', 'price', 'up']
+
+===== RAW GENERATION (decoded) =====
+The observed trend in the data indicates a generally declining pattern in U.S. gasoline prices over the past three months, with a recent reversal in the current month. From t0 to t12, the price of gasoline dropped from 3.355 to 3.179 before showing a slight recovery. However, within the current month (c0 to c3), gasoline prices have risen by 0.040, 0.055, and 0.076 units before experiencing a minor decline of 0.020. This pattern suggests a potential shift in market dynamics, possibly due to a combination of seasonal demand changes, geopolitical developments, or adjustments in production and inventory levels. The initial rise in the current month could reflect increased demand during a seasonal peak or a response to a report or forecast that altered market expectations. The subsequent drop may indicate a temporary correction or a reaction to a new development, such as a production increase or a policy change, which eased upward pressure on prices.
+
+⟪FINAL⟫
+{
+  "hypotheses": [
+    {
+      "key": "market|price_change|gasoline|up"
+    },
+    {
+      "key": "eia|report_release|inventory|down"
+    },
+    {
+      "key": "opec_plus|production_cut|crude_oil|down"
+    },
+    {
+      "key": "united_states|forecast_raise|demand|up"
+    },
+    {
+      "key": "market|price_change|gasoline|down"
+    }
+  ]
+}
+===== END RAW GENERATION =====
+[DEBUG] parsed JSON: {"hypotheses": [{"key": "market|price_change|gasoline|up"}, {"key": "eia|report_release|inventory|down"}, {"key": "opec_plus|production_cut|crude_oil|down"}, {"key": "united_states|forecast_raise|demand|up"}, {"key": "market|price_change|gasoline|down"}]}
+['market', 'price_change', 'gasoline', 'up']
+['eia', 'report_release', 'inventory', 'down']
+['opec_plus', 'production_cut', 'crude_oil', 'down']
+['united_states', 'forecast_raise', 'demand', 'up']
+['market', 'price_change', 'gasoline', 'down']
+recall_all: 0.21890589569160998 precision_all: 0.24285714285714288
+Labels:
+['eia', 'report_release', 'price', 'up']
+['eia', 'report_release', 'price', 'down']
+['united_states', 'price_change', 'gasoline', 'up']
+['eia', 'forecast_lower', 'price', 'down']
+['eia', 'report_release', 'inventory', 'down']
+['market', 'price_change', 'crude_oil', 'up']
+['market', 'price_change', 'gasoline', 'up']
+['market', 'price_change', 'natural_gas', 'down']
+['market', 'price_change', 'price', 'up']
+['united_states', 'report_release', 'price', 'up']
+
+===== RAW GENERATION (decoded) =====
+The observed trend in the data indicates a consistent upward trajectory in U.S. gasoline prices over the last three months, with a notable acceleration in the current month. The three-month window shows a gradual increase punctuated by minor fluctuations, but the current month’s weekly changes (all positive, with the first week’s jump of +0.101) suggest a sharper, more sustained rise. This pattern could reflect tightening supply dynamics, such as production cuts by OPEC+ or geopolitical disruptions, combined with seasonal demand increases. The current month’s data also hints at possible inventory drawdowns (e.g., EIA reports showing lower stockpiles) or policy actions (e.g., export restrictions) exacerbating price pressures. The sustained upward momentum implies a combination of external shocks and market expectations of prolonged supply constraints.  
+
+⟪FINAL⟫  
+{  
+  "hypotheses": [  
+    {  
+      "key": "EIA|report_release|inventory|down"  
+    },  
+    {  
+      "key": "OPEC_PLUS|extend_cut|production|down"  
+    },  
+    {  
+      "key": "united_states|sanction_impose|export|down"  
+    },  
+    {  
+      "key": "OPEC|forecast_raise|price|up"  
+    },  
+    {  
+      "key": "EIA|report_release|gasoline|up"  
+    }  
+  ]  
+}
+===== END RAW GENERATION =====
+[DEBUG] parsed JSON: {"hypotheses": [{"key": "EIA|report_release|inventory|down"}, {"key": "OPEC_PLUS|extend_cut|production|down"}, {"key": "united_states|sanction_impose|export|down"}, {"key": "OPEC|forecast_raise|price|up"}, {"key": "EIA|report_release|gasoline|up"}]}
+['EIA', 'report_release', 'inventory', 'down']
+['OPEC_PLUS', 'extend_cut', 'production', 'down']
+['united_states', 'sanction_impose', 'export', 'down']
+['OPEC', 'forecast_raise', 'price', 'up']
+['EIA', 'report_release', 'gasoline', 'up']
+recall_all: 0.210978835978836 precision_all: 0.24000000000000005
+Labels:
+['united_states', 'price_change', 'gasoline', 'up']
+['market', 'price_change', 'natural_gas', 'down']
+['market', 'price_change', 'price', 'up']
+['united_states', 'report_release', 'price', 'up']
+
+===== RAW GENERATION (decoded) =====
+The observed trend in the data indicates a volatile yet generally upward trajectory in U.S. gasoline prices over the past three months, with a notable peak in mid-month followed by a minor correction. The current month’s data reveals a nuanced pattern: an initial marginal decline (c0), followed by a sharp rebound (c1-c2), sustained gains (c3), and a modest pullback (c4). This suggests a dynamic interplay of supply-side adjustments and external shocks. The sharp rise in early weeks (c1-c2) could reflect OPEC+ production cuts or geopolitical tensions disrupting crude oil flows, while the subsequent stabilization (c3) might indicate market absorption of these changes. The final week’s dip (c4) may signal temporary oversupply or a downward revision in demand forecasts. These movements align with real-time events such as inventory reports, production decisions, or sanctions affecting global oil markets.  
+
+⟪FINAL⟫  
+{  
+  "hypotheses": [  
+    {  
+      "key": "eia|report_release|inventory|down"  
+    },  
+    {  
+      "key": "opec_plus|production_cut|crude_oil|up"  
+    },  
+    {  
+      "key": "united_states|sanction_impose|export|down"  
+    },  
+    {  
+      "key": "market|forecast_raise|price|up"  
+    },  
+    {  
+      "key": "eia|report_release|production|down"  
+    }  
+  ]  
+}
+===== END RAW GENERATION =====
+[DEBUG] parsed JSON: {"hypotheses": [{"key": "eia|report_release|inventory|down"}, {"key": "opec_plus|production_cut|crude_oil|up"}, {"key": "united_states|sanction_impose|export|down"}, {"key": "market|forecast_raise|price|up"}, {"key": "eia|report_release|production|down"}]}
+['eia', 'report_release', 'inventory', 'down']
+['opec_plus', 'production_cut', 'crude_oil', 'up']
+['united_states', 'sanction_impose', 'export', 'down']
+['market', 'forecast_raise', 'price', 'up']
+['eia', 'report_release', 'production', 'down']
+recall_all: 0.19779265873015875 precision_all: 0.22500000000000003

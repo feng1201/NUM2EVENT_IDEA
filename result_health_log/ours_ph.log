@@ -1,0 +1,517 @@
+[INFO] Loaded 17 items from JSONL.
+[INFO] Initializing Qwen reasoner (base-only or base+TSenc)...
+Loading checkpoint shards:   0%|          | 0/5 [00:00<?, ?it/s]Loading checkpoint shards:  20%|██        | 1/5 [00:00<00:02,  1.83it/s]Loading checkpoint shards:  40%|████      | 2/5 [00:01<00:01,  1.82it/s]Loading checkpoint shards:  60%|██████    | 3/5 [00:01<00:01,  1.83it/s]Loading checkpoint shards:  80%|████████  | 4/5 [00:02<00:00,  1.98it/s]Loading checkpoint shards: 100%|██████████| 5/5 [00:02<00:00,  2.63it/s]Loading checkpoint shards: 100%|██████████| 5/5 [00:02<00:00,  2.23it/s]
+[INFO] QwenReasoner ready!
+Labels:
+['centers_for_disease_control', 'report_release', 'influenza', 'ambiguous']
+['centers_for_disease_control', 'report_release', 'influenza', 'up']
+['united_states', 'rate_change', 'hospitalizations', 'up']
+['united_states', 'report_release', 'influenza', 'ambiguous']
+['united_states', 'report_release', 'influenza', 'up']
+
+===== RAW GENERATION (decoded) =====
+The observed trend in the data indicates a fluctuating pattern in the proportion of U.S. influenza patients, with a notable decrease in recent weeks. The weekly OT data, which spans the last three months, shows a cycle of increase and decrease, suggesting a seasonal or cyclical nature of influenza activity. However, the current month's weekly dOT data reveals a more pronounced decline, which could be linked to various real-time events. This decline might be influenced by public health interventions, such as increased vaccination efforts or enhanced surveillance, or by environmental factors like changes in temperature or humidity. It is also possible that the recent decrease is due to natural variations in viral transmission dynamics, such as reduced social interactions or behavioral changes in response to the influenza season. Given these possibilities, several real-time events could be hypothesized as contributing factors.
+
+⟪FINAL⟫
+{
+  "hypotheses": [
+    {"key": "centers_for_disease_control|report_release|influenza|down"},
+    {"key": "united_states|recommend_vaccination|vaccination|up"},
+    {"key": "health_and_human_services|issue_guidance|hospitalizations|down"},
+    {"key": "advisory_committee_on_immunization_practices|approve_authorize|vaccine|up"},
+    {"key": "national_institute_on_aging|conduct_study|cases|down"}
+  ]
+}
+===== END RAW GENERATION =====
+['centers_for_disease_control', 'report_release', 'influenza', 'down']
+['united_states', 'recommend_vaccination', 'vaccination', 'up']
+['health_and_human_services', 'issue_guidance', 'hospitalizations', 'down']
+['advisory_committee_on_immunization_practices', 'approve_authorize', 'vaccine', 'up']
+['national_institute_on_aging', 'conduct_study', 'cases', 'down']
+[DEBUG][0] got 5 preds. First key: centers_for_disease_control|report_release|influenza|down
+precision_all: 0.2 recall_all: 0.4
+Labels:
+['centers_for_disease_control', 'report_release', 'influenza', 'up']
+['centers_for_disease_control', 'report_release', 'influenza', 'ambiguous']
+
+===== RAW GENERATION (decoded) =====
+The observed trend in the data indicates a fluctuating pattern in the proportion of U.S. influenza patients, with a recent uptick in the current month. The data shows a cyclical pattern over the last three months, with periods of decline followed by increases. This suggests a seasonal variation typical of influenza activity, which is often influenced by factors such as temperature, humidity, and human behavior. However, the recent increase in the current month may be linked to specific events or changes in public health measures that have occurred within the last month. These could include the emergence of a new strain, changes in vaccination campaigns, or the detection of an outbreak in a specific region. The increase in cases could also be influenced by behavioral changes, such as reduced adherence to public health guidelines or increased indoor gatherings during colder weather.
+
+⟪FINAL⟫
+{
+  "hypotheses": [
+    {"key": "centers_for_disease_control|detect|influenza|up"},
+    {"key": "united_states|report_release|cases|up"},
+    {"key": "health_and_human_services|recommend_vaccination|vaccination|up"},
+    {"key": "advisory_committee_on_immunization_practices|approve_authorize|vaccine|up"},
+    {"key": "national_institute_on_aging|conduct_study|h5n1|up"}
+  ]
+}
+===== END RAW GENERATION =====
+['centers_for_disease_control', 'detect', 'influenza', 'up']
+['united_states', 'report_release', 'cases', 'up']
+['health_and_human_services', 'recommend_vaccination', 'vaccination', 'up']
+['advisory_committee_on_immunization_practices', 'approve_authorize', 'vaccine', 'up']
+['national_institute_on_aging', 'conduct_study', 'h5n1', 'up']
+[DEBUG][1] got 5 preds. First key: centers_for_disease_control|detect|influenza|up
+precision_all: 0.1 recall_all: 0.2
+Labels:
+['centers_for_disease_control', 'report_release', 'influenza', 'ambiguous']
+['centers_for_disease_control', 'report_release', 'influenza', 'up']
+
+===== RAW GENERATION (decoded) =====
+The observed trend in the data indicates a fluctuating pattern in the proportion of U.S. influenza patients over the past three months, with a recent shift in the current month's weekly changes. The data suggests a potential stabilization or slight decline in the proportion of influenza cases, which may be influenced by seasonal factors, public health interventions, or changes in testing and reporting practices. The recent weekly changes (dOT) show a possible downward trend, which could be linked to increased vaccination efforts, improved public health messaging, or natural variations in influenza activity. These observations suggest that real-time events within the current month may have played a role in altering the trajectory of the influenza proportion.
+
+⟪FINAL⟫
+{  
+  "hypotheses": [  
+    {  
+      "key": "centers_for_disease_control|report_release|influenza|down"  
+    },  
+    {  
+      "key": "advisory_committee_on_immunization_practices|recommend_vaccination|vaccination|up"  
+    },  
+    {  
+      "key": "united_states|detect|cases|down"  
+    },  
+    {  
+      "key": "health_and_human_services|issue_guidance|vaccine|up"  
+    },  
+    {  
+      "key": "national_institute_on_aging|conduct_study|influenza|ambiguous"  
+    }  
+  ]  
+}
+===== END RAW GENERATION =====
+['centers_for_disease_control', 'report_release', 'influenza', 'down']
+['advisory_committee_on_immunization_practices', 'recommend_vaccination', 'vaccination', 'up']
+['united_states', 'detect', 'cases', 'down']
+['health_and_human_services', 'issue_guidance', 'vaccine', 'up']
+['national_institute_on_aging', 'conduct_study', 'influenza', 'ambiguous']
+[DEBUG][2] got 5 preds. First key: centers_for_disease_control|report_release|influenza|down
+precision_all: 0.13333333333333333 recall_all: 0.4666666666666666
+Labels:
+['centers_for_disease_control', 'report_release', 'influenza', 'up']
+['united_states', 'report_release', 'h5n1', 'ambiguous']
+
+===== RAW GENERATION (decoded) =====
+The observed trend in the data indicates a fluctuating pattern in the proportion of U.S. influenza patients, with a recent uptick in the current month. The weekly data suggests a possible resurgence in influenza activity, potentially linked to seasonal variations in viral transmission, changes in public behavior, or the emergence of a new strain. The recent increase could be influenced by factors such as reduced adherence to preventive measures, increased indoor gatherings, or the spread of a more transmissible variant. Additionally, the timing of the current month may coincide with the start of colder weather, which is typically associated with increased influenza activity. These factors collectively suggest a real-world cause that aligns with typical seasonal influenza patterns.
+
+⟪FINAL⟫
+{
+  "hypotheses": [
+    {"key": "centers_for_disease_control|report_release|influenza|up"},
+    {"key": "united_states|detect|cases|up"},
+    {"key": "health_and_human_services|issue_guidance|vaccination|ambiguous"},
+    {"key": "advisory_committee_on_immunization_practices|recommend_vaccination|vaccine|ambiguous"},
+    {"key": "national_institute_on_aging|conduct_study|h1n1|ambiguous"}
+  ]
+}
+===== END RAW GENERATION =====
+['centers_for_disease_control', 'report_release', 'influenza', 'up']
+['united_states', 'detect', 'cases', 'up']
+['health_and_human_services', 'issue_guidance', 'vaccination', 'ambiguous']
+['advisory_committee_on_immunization_practices', 'recommend_vaccination', 'vaccine', 'ambiguous']
+['national_institute_on_aging', 'conduct_study', 'h1n1', 'ambiguous']
+[DEBUG][3] got 5 preds. First key: centers_for_disease_control|report_release|influenza|up
+precision_all: 0.15000000000000002 recall_all: 0.475
+Labels:
+['centers_for_disease_control', 'recommend_vaccination', 'vaccination', 'ambiguous']
+['centers_for_disease_control', 'report_release', 'influenza', 'up']
+['food_and_drug_administration', 'approve_authorize', 'vaccine', 'ambiguous']
+
+===== RAW GENERATION (decoded) =====
+The observed trend in the data indicates a fluctuating pattern in the proportion of U.S. influenza patients, with a recent uptick in the current month. This could be attributed to seasonal variations, changes in public health interventions, or shifts in viral activity. The recent increase in the proportion of patients may suggest a resurgence in influenza activity, possibly linked to factors such as reduced adherence to preventive measures, increased indoor social interactions, or the emergence of a more transmissible strain. Additionally, the timing of this increase may coincide with the start of colder weather, which is typically associated with higher influenza transmission. These observations point to a possible real-time event that could be influencing the current trend in influenza cases.
+
+⟪FINAL⟫
+{
+  "hypotheses": [
+    {"key": "centers_for_disease_control|detect|influenza|up"},
+    {"key": "united_states|report_release|cases|up"},
+    {"key": "advisory_committee_on_immunization_practices|recommend_vaccination|vaccination|up"},
+    {"key": "health_and_human_services|issue_guidance|hospitalizations|up"},
+    {"key": "national_institute_on_aging|conduct_study|mortality|up"}
+  ]
+}
+===== END RAW GENERATION =====
+['centers_for_disease_control', 'detect', 'influenza', 'up']
+['united_states', 'report_release', 'cases', 'up']
+['advisory_committee_on_immunization_practices', 'recommend_vaccination', 'vaccination', 'up']
+['health_and_human_services', 'issue_guidance', 'hospitalizations', 'up']
+['national_institute_on_aging', 'conduct_study', 'mortality', 'up']
+[DEBUG][4] got 5 preds. First key: centers_for_disease_control|detect|influenza|up
+precision_all: 0.12000000000000002 recall_all: 0.38
+Labels:
+['centers_for_disease_control', 'report_release', 'influenza', 'up']
+['centers_for_disease_control', 'issue_guidance', 'influenza', 'ambiguous']
+['centers_for_disease_control', 'report_release', 'h1n1', 'ambiguous']
+['centers_for_disease_control', 'report_release', 'h5n1', 'up']
+['food_and_drug_administration', 'report_release', 'influenza', 'ambiguous']
+
+===== RAW GENERATION (decoded) =====
+The observed trend in the data indicates a fluctuating pattern in the proportion of U.S. influenza patients, with a recent decline in the current month. The last three months show a mix of upward and downward movements, suggesting variability in influenza activity. However, the most recent weekly data points indicate a downward trend, which could be due to seasonal factors, increased public health interventions, or changes in viral circulation. The decline in the current month may also be influenced by the timing of flu season, the effectiveness of vaccination campaigns, or public behavior changes such as increased mask use or reduced social interactions. These factors could have contributed to a lower proportion of influenza patients in the most recent weeks.
+
+⟪FINAL⟫
+{  
+  "hypotheses": [  
+    {  
+      "key": "centers_for_disease_control|report_release|influenza|down"  
+    },  
+    {  
+      "key": "united_states|detect|cases|down"  
+    },  
+    {  
+      "key": "advisory_committee_on_immunization_practices|recommend_vaccination|vaccination|up"  
+    },  
+    {  
+      "key": "health_and_human_services|issue_guidance|hospitalizations|down"  
+    },  
+    {  
+      "key": "national_institute_on_aging|conduct_study|mortality|ambiguous"  
+    }  
+  ]  
+}
+===== END RAW GENERATION =====
+['centers_for_disease_control', 'report_release', 'influenza', 'down']
+['united_states', 'detect', 'cases', 'down']
+['advisory_committee_on_immunization_practices', 'recommend_vaccination', 'vaccination', 'up']
+['health_and_human_services', 'issue_guidance', 'hospitalizations', 'down']
+['national_institute_on_aging', 'conduct_study', 'mortality', 'ambiguous']
+[DEBUG][5] got 5 preds. First key: centers_for_disease_control|report_release|influenza|down
+precision_all: 0.13333333333333333 recall_all: 0.35000000000000003
+Labels:
+['centers_for_disease_control', 'report_release', 'influenza', 'ambiguous']
+['centers_for_disease_control', 'report_release', 'influenza', 'up']
+['centers_for_disease_control', 'issue_guidance', 'influenza', 'ambiguous']
+['centers_for_disease_control', 'report_release', 'mortality', 'ambiguous']
+['world_health_organization', 'report_release', 'h5n1', 'ambiguous']
+
+===== RAW GENERATION (decoded) =====
+The observed trend in the data indicates a fluctuating pattern in the proportion of U.S. influenza patients over the last three months, with recent weeks showing a decline. This could be attributed to seasonal variations in influenza activity, which typically wane as the weather becomes warmer and people spend more time indoors, reducing transmission. Additionally, the recent decrease in the proportion of patients might be linked to increased public health measures, such as enhanced hygiene practices or vaccination campaigns, which could have been implemented in response to rising cases or a specific strain of influenza. The weekly data also suggests a possible shift in the dominant strain of the virus, which could affect transmission rates and clinical outcomes. These factors, combined with the natural progression of influenza seasons, may explain the observed trend.
+
+⟪FINAL⟫
+{
+  "hypotheses": [
+    {"key": "centers_for_disease_control|issue_guidance|influenza|up"},
+    {"key": "united_states|detect|cases|up"},
+    {"key": "advisory_committee_on_immunization_practices|recommend_vaccination|vaccination|up"},
+    {"key": "national_institute_on_aging|conduct_study|h1n1|ambiguous"},
+    {"key": "health_and_human_services|approve_authorize|vaccine|up"}
+  ]
+}
+===== END RAW GENERATION =====
+['centers_for_disease_control', 'issue_guidance', 'influenza', 'up']
+['united_states', 'detect', 'cases', 'up']
+['advisory_committee_on_immunization_practices', 'recommend_vaccination', 'vaccination', 'up']
+['national_institute_on_aging', 'conduct_study', 'h1n1', 'ambiguous']
+['health_and_human_services', 'approve_authorize', 'vaccine', 'up']
+[DEBUG][6] got 5 preds. First key: centers_for_disease_control|issue_guidance|influenza|up
+precision_all: 0.14285714285714285 recall_all: 0.3285714285714286
+Labels:
+['advisory_committee_on_immunization_practices', 'issue_guidance', 'vaccination', 'ambiguous']
+['centers_for_disease_control', 'report_release', 'influenza', 'ambiguous']
+['health_and_human_services', 'report_release', 'influenza', 'up']
+['national_institute_on_aging', 'issue_guidance', 'vaccination', 'ambiguous']
+
+===== RAW GENERATION (decoded) =====
+The observed trend in the data indicates a fluctuating pattern in the proportion of U.S. influenza patients over the last three months, with recent weeks showing a decline in the proportion of cases. This could be attributed to a combination of factors, including seasonal changes, public health interventions, or variations in testing and reporting practices. The recent decline may suggest either a natural reduction in influenza activity, the impact of public health measures such as increased vaccination rates or social distancing, or a shift in the dominant influenza strain. Given that the current month's data shows a downward trend in the rate of change (dOT), it is plausible that recent events have contributed to a stabilization or reduction in influenza activity, potentially influenced by public health actions or changes in population behavior.
+
+⟪FINAL⟫
+{
+  "hypotheses": [
+    {"key": "centers_for_disease_control|report_release|influenza|down"},
+    {"key": "united_states|conduct_study|vaccination|up"},
+    {"key": "advisory_committee_on_immunization_practices|recommend_vaccination|vaccine|up"},
+    {"key": "health_and_human_services|issue_guidance|hospitalizations|down"},
+    {"key": "national_institute_on_aging|detect|cases|down"}
+  ]
+}
+===== END RAW GENERATION =====
+['centers_for_disease_control', 'report_release', 'influenza', 'down']
+['united_states', 'conduct_study', 'vaccination', 'up']
+['advisory_committee_on_immunization_practices', 'recommend_vaccination', 'vaccine', 'up']
+['health_and_human_services', 'issue_guidance', 'hospitalizations', 'down']
+['national_institute_on_aging', 'detect', 'cases', 'down']
+[DEBUG][7] got 5 preds. First key: centers_for_disease_control|report_release|influenza|down
+precision_all: 0.15 recall_all: 0.31875000000000003
+Labels:
+['centers_for_disease_control', 'issue_guidance', 'vaccination', 'ambiguous']
+['advisory_committee_on_immunization_practices', 'issue_guidance', 'vaccination', 'ambiguous']
+['centers_for_disease_control', 'report_release', 'hospitalizations', 'up']
+['centers_for_disease_control', 'report_release', 'influenza', 'up']
+
+===== RAW GENERATION (decoded) =====
+The observed trend in the data indicates a fluctuating pattern in the proportion of U.S. influenza patients, with a recent decrease in the current month compared to the previous three months. This decline may be attributed to a combination of factors, including the impact of seasonal changes, increased public health interventions, or the natural progression of the influenza season. The reduction in the current month could suggest that the peak of the flu season has passed or that there has been an increase in preventive measures such as vaccination campaigns or public health advisories. It is also possible that the observed trend reflects a shift in population behavior, such as increased adherence to hygiene practices or reduced social interactions due to awareness of respiratory illnesses. These factors could have contributed to the observed downward trend in the current month.
+
+⟪FINAL⟫
+{  
+  "hypotheses": [  
+    {  
+      "key": "centers_for_disease_control|report_release|influenza|down"  
+    },  
+    {  
+      "key": "united_states|recommend_vaccination|vaccination|up"  
+    },  
+    {  
+      "key": "health_and_human_services|issue_guidance|hospitalizations|down"  
+    },  
+    {  
+      "key": "advisory_committee_on_immunization_practices|approve_authorize|vaccine|up"  
+    },  
+    {  
+      "key": "national_institute_on_aging|conduct_study|cases|down"  
+    }  
+  ]  
+}
+===== END RAW GENERATION =====
+['centers_for_disease_control', 'report_release', 'influenza', 'down']
+['united_states', 'recommend_vaccination', 'vaccination', 'up']
+['health_and_human_services', 'issue_guidance', 'hospitalizations', 'down']
+['advisory_committee_on_immunization_practices', 'approve_authorize', 'vaccine', 'up']
+['national_institute_on_aging', 'conduct_study', 'cases', 'down']
+[DEBUG][8] got 5 preds. First key: centers_for_disease_control|report_release|influenza|down
+precision_all: 0.15555555555555556 recall_all: 0.3111111111111111
+Labels:
+['centers_for_disease_control', 'issue_guidance', 'vaccination', 'ambiguous']
+['centers_for_disease_control', 'report_release', 'influenza', 'ambiguous']
+['centers_for_disease_control', 'report_release', 'influenza', 'up']
+['centers_for_disease_control', 'conduct_study', 'influenza', 'ambiguous']
+['centers_for_disease_control', 'conduct_study', 'respiratory_syncytial_virus', 'ambiguous']
+
+===== RAW GENERATION (decoded) =====
+The observed trend in the data indicates a fluctuating pattern in the proportion of U.S. influenza patients (OT) over the last three months, with recent weeks showing a decline. This could be attributed to seasonal variations in influenza activity, which typically wane as weather conditions become colder and drier, reducing viral transmission. Additionally, the recent weekly data on the change in proportion (dOT) suggests a possible stabilization or reduction in the spread of influenza, possibly due to increased public health interventions such as vaccination campaigns or enhanced hygiene practices. These factors, combined with the natural progression of the flu season, may contribute to the observed trend.
+
+⟪FINAL⟫
+{
+  "hypotheses": [
+    {"key": "centers_for_disease_control|report_release|influenza|up"},
+    {"key": "united_states|detect|cases|up"},
+    {"key": "health_and_human_services|issue_guidance|vaccination|up"},
+    {"key": "advisory_committee_on_immunization_practices|recommend_vaccination|vaccine|up"},
+    {"key": "national_institute_on_aging|conduct_study|h1n1|ambiguous"}
+  ]
+}
+===== END RAW GENERATION =====
+['centers_for_disease_control', 'report_release', 'influenza', 'up']
+['united_states', 'detect', 'cases', 'up']
+['health_and_human_services', 'issue_guidance', 'vaccination', 'up']
+['advisory_committee_on_immunization_practices', 'recommend_vaccination', 'vaccine', 'up']
+['national_institute_on_aging', 'conduct_study', 'h1n1', 'ambiguous']
+[DEBUG][9] got 5 preds. First key: centers_for_disease_control|report_release|influenza|up
+precision_all: 0.15999999999999998 recall_all: 0.32
+Labels:
+['centers_for_disease_control', 'report_release', 'influenza', 'up']
+['centers_for_disease_control', 'approve_authorize', 'influenza', 'ambiguous']
+['centers_for_disease_control', 'issue_guidance', 'influenza', 'ambiguous']
+['centers_for_disease_control', 'recommend_vaccination', 'influenza', 'ambiguous']
+['centers_for_disease_control', 'report_release', 'deaths', 'up']
+
+===== RAW GENERATION (decoded) =====
+The observed trend in the data indicates a fluctuating pattern in the proportion of U.S. influenza patients, with a recent dip in the current month compared to the previous three months. This decline may be attributed to a combination of factors, including increased public health interventions, seasonal variations in virus transmission, or changes in reporting practices. The recent decrease could also reflect the impact of vaccination campaigns or a natural waning of the influenza season. Given that the current month's data shows a lower proportion of patients compared to the preceding period, it is plausible that recent public health actions or environmental conditions have influenced the spread of influenza.
+
+⟪FINAL⟫
+{
+  "hypotheses": [
+    {"key": "centers_for_disease_control|issue_guidance|vaccination|up"},
+    {"key": "united_states|detect|cases|down"},
+    {"key": "advisory_committee_on_immunization_practices|recommend_vaccination|influenza|up"},
+    {"key": "health_and_human_services|conduct_study|hospitalizations|ambiguous"},
+    {"key": "national_institute_on_aging|report_release|mortality|down"}
+  ]
+}
+===== END RAW GENERATION =====
+['centers_for_disease_control', 'issue_guidance', 'vaccination', 'up']
+['united_states', 'detect', 'cases', 'down']
+['advisory_committee_on_immunization_practices', 'recommend_vaccination', 'influenza', 'up']
+['health_and_human_services', 'conduct_study', 'hospitalizations', 'ambiguous']
+['national_institute_on_aging', 'report_release', 'mortality', 'down']
+[DEBUG][10] got 5 preds. First key: centers_for_disease_control|issue_guidance|vaccination|up
+precision_all: 0.14545454545454545 recall_all: 0.29090909090909095
+Labels:
+['centers_for_disease_control', 'report_release', 'influenza', 'ambiguous']
+['centers_for_disease_control', 'report_release', 'influenza', 'up']
+['centers_for_disease_control', 'report_release', 'cases', 'up']
+['centers_for_disease_control', 'report_release', 'h5n1', 'ambiguous']
+
+===== RAW GENERATION (decoded) =====
+The observed trend in the data indicates a notable fluctuation in the proportion of U.S. influenza patients, with a recent uptick in the current month. This could be attributed to a combination of seasonal factors, increased surveillance efforts, or changes in public health behaviors. The rise in the current month may reflect heightened community transmission, possibly linked to seasonal changes or reduced adherence to preventive measures. It is also plausible that recent public health interventions or reporting practices have influenced the observed trend. Given the context of the last three months, the current month's data may highlight a shift in the dynamics of influenza activity, potentially influenced by real-time events such as updated health advisories or changes in vaccination campaigns.
+
+⟪FINAL⟫
+{
+  "hypotheses": [
+    {"key": "centers_for_disease_control|report_release|influenza|up"},
+    {"key": "advisory_committee_on_immunization_practices|recommend_vaccination|vaccination|up"},
+    {"key": "health_and_human_services|issue_guidance|influenza|up"},
+    {"key": "national_institute_on_aging|conduct_study|hospitalizations|up"},
+    {"key": "united_states|detect|cases|up"}
+  ]
+}
+===== END RAW GENERATION =====
+['centers_for_disease_control', 'report_release', 'influenza', 'up']
+['advisory_committee_on_immunization_practices', 'recommend_vaccination', 'vaccination', 'up']
+['health_and_human_services', 'issue_guidance', 'influenza', 'up']
+['national_institute_on_aging', 'conduct_study', 'hospitalizations', 'up']
+['united_states', 'detect', 'cases', 'up']
+[DEBUG][11] got 5 preds. First key: centers_for_disease_control|report_release|influenza|up
+precision_all: 0.15 recall_all: 0.30833333333333335
+Labels:
+['centers_for_disease_control', 'report_release', 'influenza', 'up']
+['centers_for_disease_control', 'report_release', 'influenza', 'ambiguous']
+['centers_for_disease_control', 'issue_guidance', 'vaccination', 'ambiguous']
+['centers_for_disease_control', 'recommend_vaccination', 'vaccination', 'ambiguous']
+['centers_for_disease_control', 'report_release', 'influenza', 'down']
+
+===== RAW GENERATION (decoded) =====
+The observed trend in the data indicates a complex interplay of factors influencing the proportion of U.S. influenza patients. Over the last three months, the weekly OT data (proportion of patients) has shown a fluctuating pattern with periods of increase and decrease, suggesting variability in disease transmission dynamics. The current month’s weekly dOT data reveals a recent upward trend, which could be attributed to a combination of seasonal factors, changes in public health interventions, or emerging viral strains. This upward movement may be linked to increased community spread, reduced adherence to preventive measures, or the emergence of a more transmissible variant. Additionally, the timing of this trend may coincide with the start of colder weather, which is often associated with increased indoor gatherings and thus higher transmission rates. The potential for a surge in cases could also be influenced by the effectiveness of recent vaccination campaigns or the presence of new viral mutations that evade existing immunity.
+
+⟪FINAL⟫
+{
+  "hypotheses": [
+    {"key": "centers_for_disease_control|report_release|influenza|up"},
+    {"key": "united_states|detect|cases|up"},
+    {"key": "advisory_committee_on_immunization_practices|recommend_vaccination|vaccination|ambiguous"},
+    {"key": "national_institute_on_aging|conduct_study|h1n1|up"},
+    {"key": "health_and_human_services|issue_guidance|respiratory_syncytial_virus|ambiguous"}
+  ]
+}
+===== END RAW GENERATION =====
+['centers_for_disease_control', 'report_release', 'influenza', 'up']
+['united_states', 'detect', 'cases', 'up']
+['advisory_committee_on_immunization_practices', 'recommend_vaccination', 'vaccination', 'ambiguous']
+['national_institute_on_aging', 'conduct_study', 'h1n1', 'up']
+['health_and_human_services', 'issue_guidance', 'respiratory_syncytial_virus', 'ambiguous']
+[DEBUG][12] got 5 preds. First key: centers_for_disease_control|report_release|influenza|up
+precision_all: 0.15384615384615383 recall_all: 0.33076923076923076
+Labels:
+['centers_for_disease_control', 'issue_guidance', 'influenza', 'ambiguous']
+['centers_for_disease_control', 'report_release', 'influenza', 'up']
+['centers_for_disease_control', 'issue_guidance', 'vaccination', 'ambiguous']
+['centers_for_disease_control', 'recommend_vaccination', 'influenza', 'ambiguous']
+['centers_for_disease_control', 'recommend_vaccination', 'vaccination', 'ambiguous']
+
+===== RAW GENERATION (decoded) =====
+The observed trend in the data indicates a fluctuating pattern in the proportion of U.S. influenza patients, with recent weeks showing a decrease in the proportion of cases (dOT) compared to the previous months. This suggests a potential decline in influenza activity, possibly due to seasonal factors or public health interventions. The recent reduction in cases may be linked to increased vaccination efforts, changes in public behavior such as improved hygiene practices, or the natural progression of the flu season. These factors could have been influenced by recent public health guidance or policy changes issued by relevant health authorities. The observed trend could also be affected by external factors such as weather patterns or the emergence of new viral strains, which may impact transmission rates. Given the recent data, it is plausible that one or more real-time events have contributed to the observed changes in influenza activity.
+
+⟪FINAL⟫
+{  
+  "hypotheses": [  
+    {  
+      "key": "centers_for_disease_control|issue_guidance|influenza|up"  
+    },  
+    {  
+      "key": "health_and_human_services|recommend_vaccination|vaccination|up"  
+    },  
+    {  
+      "key": "advisory_committee_on_immunization_practices|approve_authorize|vaccine|up"  
+    },  
+    {  
+      "key": "united_states|detect|cases|up"  
+    },  
+    {  
+      "key": "world_health_organization|report_release|h5n1|ambiguous"  
+    }  
+  ]  
+}
+===== END RAW GENERATION =====
+['centers_for_disease_control', 'issue_guidance', 'influenza', 'up']
+['health_and_human_services', 'recommend_vaccination', 'vaccination', 'up']
+['advisory_committee_on_immunization_practices', 'approve_authorize', 'vaccine', 'up']
+['united_states', 'detect', 'cases', 'up']
+['world_health_organization', 'report_release', 'h5n1', 'ambiguous']
+[DEBUG][13] got 5 preds. First key: centers_for_disease_control|issue_guidance|influenza|up
+precision_all: 0.1571428571428571 recall_all: 0.32142857142857145
+Labels:
+['centers_for_disease_control', 'report_release', 'influenza', 'up']
+['centers_for_disease_control', 'report_release', 'influenza', 'ambiguous']
+
+===== RAW GENERATION (decoded) =====
+The observed trend in the data indicates a fluctuating pattern in the proportion of U.S. influenza patients, with a recent uptick in the current month. The weekly OT data over the last three months shows a cyclical pattern, with periods of increase and decrease, which is typical for influenza activity. However, the recent weekly dOT data suggests a notable rise in the current month, possibly indicating a surge in cases or an increase in the proportion of patients relative to the previous weeks. This could be driven by a variety of factors, including seasonal changes, increased community transmission, or changes in testing and reporting practices. It may also be influenced by public health interventions, such as vaccination campaigns or public health advisories, which could have affected the spread or detection of influenza. Given the timing, it is plausible that recent public health actions or events have played a role in this observed trend.
+
+⟪FINAL⟫
+{  
+  "hypotheses": [  
+    {  
+      "key": "centers_for_disease_control|report_release|influenza|up"  
+    },  
+    {  
+      "key": "united_states|detect|cases|up"  
+    },  
+    {  
+      "key": "advisory_committee_on_immunization_practices|recommend_vaccination|vaccination|up"  
+    },  
+    {  
+      "key": "health_and_human_services|issue_guidance|influenza|up"  
+    },  
+    {  
+      "key": "national_institute_on_aging|conduct_study|h1n1|up"  
+    }  
+  ]  
+}
+===== END RAW GENERATION =====
+['centers_for_disease_control', 'report_release', 'influenza', 'up']
+['united_states', 'detect', 'cases', 'up']
+['advisory_committee_on_immunization_practices', 'recommend_vaccination', 'vaccination', 'up']
+['health_and_human_services', 'issue_guidance', 'influenza', 'up']
+['national_institute_on_aging', 'conduct_study', 'h1n1', 'up']
+[DEBUG][14] got 5 preds. First key: centers_for_disease_control|report_release|influenza|up
+precision_all: 0.16 recall_all: 0.36666666666666664
+Labels:
+['centers_for_disease_control', 'report_release', 'h5n1', 'up']
+['centers_for_disease_control', 'confirm', 'h5n1', 'ambiguous']
+['centers_for_disease_control', 'outbreak', 'h5n1', 'ambiguous']
+
+===== RAW GENERATION (decoded) =====
+The observed trend in the data indicates a fluctuating pattern in the proportion of U.S. influenza patients, with recent weeks showing a decline in the rate of new cases. This suggests a possible waning of the influenza season or the impact of public health interventions. The recent decrease could be attributed to factors such as increased vaccination rates, behavioral changes like improved hygiene and social distancing, or the natural progression of the flu season. Given the context of the current month, it is plausible that recent public health actions or reports have influenced the observed trend in patient proportions.
+
+⟪FINAL⟫
+{
+  "hypotheses": [
+    {"key": "centers_for_disease_control|report_release|influenza|down"},
+    {"key": "united_states|issue_guidance|vaccination|up"},
+    {"key": "health_and_human_services|recommend_vaccination|influenza|up"},
+    {"key": "advisory_committee_on_immunization_practices|approve_authorize|vaccine|up"},
+    {"key": "national_institute_on_aging|conduct_study|hospitalizations|ambiguous"}
+  ]
+}
+===== END RAW GENERATION =====
+['centers_for_disease_control', 'report_release', 'influenza', 'down']
+['united_states', 'issue_guidance', 'vaccination', 'up']
+['health_and_human_services', 'recommend_vaccination', 'influenza', 'up']
+['advisory_committee_on_immunization_practices', 'approve_authorize', 'vaccine', 'up']
+['national_institute_on_aging', 'conduct_study', 'hospitalizations', 'ambiguous']
+[DEBUG][15] got 5 preds. First key: centers_for_disease_control|report_release|influenza|down
+precision_all: 0.15 recall_all: 0.34375
+Labels:
+['centers_for_disease_control', 'detect', 'h5n1', 'ambiguous']
+
+===== RAW GENERATION (decoded) =====
+The observed trend in the data indicates a notable fluctuation in the proportion of U.S. influenza patients, with a recent dip followed by a slight increase in the current month. This pattern may be attributed to seasonal variations in influenza activity, which are common due to changes in temperature, humidity, and human behavior such as indoor gatherings during colder months. Additionally, the recent increase could be linked to the emergence of a new strain or a resurgence in community transmission. The timing of this trend also coincides with potential public health interventions or changes in surveillance practices, which could have influenced the reported proportion of cases. Given these factors, the observed pattern suggests a complex interplay between environmental conditions, public health measures, and influenza dynamics.
+
+⟪FINAL⟫
+{
+  "hypotheses": [
+    {
+      "key": "centers_for_disease_control|report_release|influenza|up"
+    },
+    {
+      "key": "united_states|detect|cases|up"
+    },
+    {
+      "key": "advisory_committee_on_immunization_practices|recommend_vaccination|vaccination|ambiguous"
+    },
+    {
+      "key": "health_and_human_services|conduct_study|h1n1|ambiguous"
+    },
+    {
+      "key": "national_institute_on_aging|rate_change|hospitalizations|up"
+    }
+  ]
+}
+===== END RAW GENERATION =====
+['centers_for_disease_control', 'report_release', 'influenza', 'up']
+['united_states', 'detect', 'cases', 'up']
+['advisory_committee_on_immunization_practices', 'recommend_vaccination', 'vaccination', 'ambiguous']
+['health_and_human_services', 'conduct_study', 'h1n1', 'ambiguous']
+['national_institute_on_aging', 'rate_change', 'hospitalizations', 'up']
+[DEBUG][16] got 5 preds. First key: centers_for_disease_control|report_release|influenza|up
+precision_all: 0.1411764705882353 recall_all: 0.3235294117647059

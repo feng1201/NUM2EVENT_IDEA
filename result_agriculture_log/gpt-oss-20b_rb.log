@@ -1,0 +1,517 @@
+Labels:
+['market', 'forecast_action', 'capacity', 'up']
+['market', 'forecast_action', 'price', 'up']
+['market', 'price_action', 'price', 'up']
+['market', 'production_action', 'production', 'up']
+['market', 'trade_policy_action', 'tariff', 'down']
+
+===== RAW GENERATION (decoded) =====
+The observed trend shows a consistent decline in the Retail Broiler Composite price over the last three months, from 2.340 to 2.180, and the current month’s month‑over‑month change of –0.116 further confirms the downward momentum. Such a persistent price erosion could stem from a combination of supply‑side dynamics—perhaps an expansion in production capacity or a sudden influx of lower‑priced inventory—alongside demand‑side pressures, such as consumer substitution away from broiler meat or a dip in export demand due to global market shifts. Additionally, regulatory or policy actions, such as tariff reductions on poultry imports or the introduction of new health guidelines, could have temporarily eased price pressure. The current month’s steep decline suggests that a real‑time event, such as a disease outbreak or a policy change, might have accelerated the downward trend.
+
+⟪FINAL⟫{
+  "hypotheses": [
+    { "key": "poultry_company|price_action|price|down" },
+    { "key": "us_government_agency|trade_policy_action|tariff|down" },
+    { "key": "poultry_industry_association|report_action|disease_event|ambiguous" },
+    { "key": "claxton_poultry_farms|production_action|capacity|up" },
+    { "key": "united_states|subsidy_action|subsidy|up" }
+  ]
+}
+===== END RAW GENERATION =====
+[DEBUG] parsed JSON: {"hypotheses": [{"key": "poultry_company|price_action|price|down"}, {"key": "us_government_agency|trade_policy_action|tariff|down"}, {"key": "poultry_industry_association|report_action|disease_event|ambiguous"}, {"key": "claxton_poultry_farms|production_action|capacity|up"}, {"key": "united_states|subsidy_action|subsidy|up"}]}
+['poultry_company', 'price_action', 'price', 'down']
+['us_government_agency', 'trade_policy_action', 'tariff', 'down']
+['poultry_industry_association', 'report_action', 'disease_event', 'ambiguous']
+['claxton_poultry_farms', 'production_action', 'capacity', 'up']
+['united_states', 'subsidy_action', 'subsidy', 'up']
+recall_all: 0.0 precision_all: 0.0
+Labels:
+['market', 'forecast_action', 'price', 'down']
+['market', 'production_action', 'production', 'up']
+['market', 'price_action', 'price', 'down']
+['market', 'price_action', 'price', 'up']
+
+===== RAW GENERATION (decoded) =====
+The observed trend in the data indicates a sustained downward pressure on U.S. retail broiler prices over the past three months, with the composite index falling from 2.305 to 2.064 and the current month’s change of –0.016 continuing that trajectory. This gradual decline suggests that supply is likely outpacing demand, possibly due to an expansion in production capacity or the opening of new poultry farms, which would increase the domestic supply base. Concurrently, consumer preferences may be shifting toward alternative protein sources or the broader economy may be slowing, reducing overall demand for broilers. Additionally, a recent trade‑policy adjustment—such as a tariff cut on imported poultry—could have introduced cheaper foreign supply into the domestic market, further amplifying downward price pressure. Finally, any government subsidy program aimed at supporting poultry producers would incentivize higher output, reinforcing the supply‑driven decline in prices.
+
+⟪FINAL⟫
+{
+  "hypotheses": [
+    {
+      "key": "poultry_company|price_action|price|down"
+    },
+    {
+      "key": "poultry_company|production_action|production|up"
+    },
+    {
+      "key": "us_government_agency|trade_policy_action|tariff|down"
+    },
+    {
+      "key": "poultry_industry_association|report_action|guideline|ambiguous"
+    },
+    {
+      "key": "claxton_poultry_farms|subsidy_action|subsidy|up"
+    }
+  ]
+}
+===== END RAW GENERATION =====
+[DEBUG] parsed JSON: {"hypotheses": [{"key": "poultry_company|price_action|price|down"}, {"key": "poultry_company|production_action|production|up"}, {"key": "us_government_agency|trade_policy_action|tariff|down"}, {"key": "poultry_industry_association|report_action|guideline|ambiguous"}, {"key": "claxton_poultry_farms|subsidy_action|subsidy|up"}]}
+['poultry_company', 'price_action', 'price', 'down']
+['poultry_company', 'production_action', 'production', 'up']
+['us_government_agency', 'trade_policy_action', 'tariff', 'down']
+['poultry_industry_association', 'report_action', 'guideline', 'ambiguous']
+['claxton_poultry_farms', 'subsidy_action', 'subsidy', 'up']
+recall_all: 0.0 precision_all: 0.0
+Labels:
+['market', 'forecast_action', 'production', 'ambiguous']
+['market', 'price_action', 'price', 'down']
+['market', 'price_action', 'price', 'up']
+
+===== RAW GENERATION (decoded) =====
+The observed trend in the data indicates a steady decline in U.S. retail broiler prices over the past three months, dropping from 2.180 to 2.064 to 2.048. The current month’s change of –0.003 further confirms that this downward trajectory is continuing at a modest pace. Such a pattern is typically driven by a combination of increased supply—perhaps due to a recent ramp‑up in production capacity or lower feed costs—and a slight reduction in demand, possibly reflecting shifting consumer preferences or broader economic factors. The small negative dP suggests that recent real‑time events, such as a production boost, a market forecast of further price cuts, or a government report confirming the downward trend, are reinforcing the existing trajectory.
+
+⟪FINAL⟫
+{
+  "hypotheses": [
+    { "key": "poultry_company|price_action|price|down" },
+    { "key": "poultry_industry_association|forecast_action|price|down" },
+    { "key": "us_government_agency|report_action|price|down" },
+    { "key": "poultry_company|production_action|production|up" },
+    { "key": "us_government_agency|subsidy_action|subsidy|up" }
+  ]
+}
+===== END RAW GENERATION =====
+[DEBUG] parsed JSON: {"hypotheses": [{"key": "poultry_company|price_action|price|down"}, {"key": "poultry_industry_association|forecast_action|price|down"}, {"key": "us_government_agency|report_action|price|down"}, {"key": "poultry_company|production_action|production|up"}, {"key": "us_government_agency|subsidy_action|subsidy|up"}]}
+['poultry_company', 'price_action', 'price', 'down']
+['poultry_industry_association', 'forecast_action', 'price', 'down']
+['us_government_agency', 'report_action', 'price', 'down']
+['poultry_company', 'production_action', 'production', 'up']
+['us_government_agency', 'subsidy_action', 'subsidy', 'up']
+recall_all: 0.0 precision_all: 0.0
+Labels:
+['market', 'price_action', 'price', 'down']
+['market', 'price_action', 'price', 'up']
+['united_states', 'forecast_action', 'export', 'ambiguous']
+
+===== RAW GENERATION (decoded) =====
+The observed trend in the data indicates a mild downward drift in U.S. Retail Broiler Composite prices over the past three months, falling from 2.064 to 2.045. However, the current month’s monthly differential of +0.113 represents a sharp reversal, suggesting a temporary spike in retail prices. This abrupt uptick is likely driven by a confluence of supply‑side disruptions and policy shifts: an emerging disease event in poultry flocks could curtail production, while higher feed costs or new trade tariffs might squeeze margins and push retailers to raise prices. Concurrently, market sentiment and industry forecasts may have amplified expectations of tighter supply, further supporting the upward movement. Together, these factors create a coherent narrative for the sudden price rise observed in the latest month.
+
+⟪FINAL⟫{
+  "hypotheses": [
+    {
+      "key": "poultry_company|price_action|price|up"
+    },
+    {
+      "key": "us_government_agency|trade_policy_action|tariff|up"
+    },
+    {
+      "key": "poultry_company|health_event_action|disease_event|up"
+    },
+    {
+      "key": "market|price_action|price|up"
+    },
+    {
+      "key": "poultry_industry_association|forecast_action|production|down"
+    }
+  ]
+}
+===== END RAW GENERATION =====
+[DEBUG] parsed JSON: {"hypotheses": [{"key": "poultry_company|price_action|price|up"}, {"key": "us_government_agency|trade_policy_action|tariff|up"}, {"key": "poultry_company|health_event_action|disease_event|up"}, {"key": "market|price_action|price|up"}, {"key": "poultry_industry_association|forecast_action|production|down"}]}
+['poultry_company', 'price_action', 'price', 'up']
+['us_government_agency', 'trade_policy_action', 'tariff', 'up']
+['poultry_company', 'health_event_action', 'disease_event', 'up']
+['market', 'price_action', 'price', 'up']
+['poultry_industry_association', 'forecast_action', 'production', 'down']
+recall_all: 0.16666666666666666 precision_all: 0.05
+Labels:
+['us_government_agency', 'subsidy_action', 'capacity', 'ambiguous']
+
+===== RAW GENERATION (decoded) =====
+The observed trend in the data indicates a modest upward trajectory in the Retail Broiler Composite over the past three months, with OT climbing from 2.045 to 2.158. However, the current month’s differential of –0.018 signals a sharp dip in price relative to the previous month, suggesting a temporary shift in market dynamics. This sudden decline could stem from a confluence of factors: an unexpected surge in production capacity pushing supply ahead of demand, a recent trade‑policy adjustment that lowered tariffs on imported poultry, or a reduction in government subsidies that dampened purchasing power. Additionally, industry‑wide guidance on consumption patterns—perhaps linked to seasonal or health‑related considerations—might have muted demand, further exerting downward pressure on prices.
+
+⟪FINAL⟫
+{
+  "hypotheses": [
+    {
+      "key": "market|price_action|price|down"
+    },
+    {
+      "key": "united_states|trade_policy_action|tariff|down"
+    },
+    {
+      "key": "poultry_company|production_action|capacity|up"
+    },
+    {
+      "key": "us_government_agency|subsidy_action|subsidy|down"
+    },
+    {
+      "key": "poultry_industry_association|report_action|guideline|ambiguous"
+    }
+  ]
+}
+===== END RAW GENERATION =====
+[DEBUG] parsed JSON: {"hypotheses": [{"key": "market|price_action|price|down"}, {"key": "united_states|trade_policy_action|tariff|down"}, {"key": "poultry_company|production_action|capacity|up"}, {"key": "us_government_agency|subsidy_action|subsidy|down"}, {"key": "poultry_industry_association|report_action|guideline|ambiguous"}]}
+['market', 'price_action', 'price', 'down']
+['united_states', 'trade_policy_action', 'tariff', 'down']
+['poultry_company', 'production_action', 'capacity', 'up']
+['us_government_agency', 'subsidy_action', 'subsidy', 'down']
+['poultry_industry_association', 'report_action', 'guideline', 'ambiguous']
+recall_all: 0.13333333333333333 precision_all: 0.04
+Labels:
+['market', 'forecast_action', 'production', 'up']
+['market', 'price_action', 'price', 'down']
+['market', 'production_action', 'production', 'up']
+['us_government_agency', 'approval_action', 'poultry_product', 'ambiguous']
+
+===== RAW GENERATION (decoded) =====
+The observed trend in the retail broiler composite price shows a modest upward movement from t0 to t1, a slight correction at t2, and a pronounced jump in the current month (dP = +0.123). This pattern suggests that the market had been largely stable but was recently hit by a supply‑side shock or a policy change that tightened available inventory or increased costs. The fact that the price moved upward rather than downward indicates that demand expectations were either unchanged or strengthened during the same period, magnifying the effect of any supply constraint. Likely drivers include a sudden disease event reducing production, a new tariff on imported poultry products limiting competitive supply, or a corporate announcement of reduced output due to feed price hikes. Additionally, an industry‑wide forecast or a market‑level price signal could have amplified the price reaction by signalling to buyers that prices would stay high or rise further. These real‑time events, occurring only within the current month, would collectively explain the sharp price uptick observed.
+
+⟪FINAL⟫{
+  "hypotheses": [
+    {
+      "key": "us_government_agency|trade_policy_action|tariff|up"
+    },
+    {
+      "key": "poultry_company|health_event_action|disease_event|up"
+    },
+    {
+      "key": "poultry_industry_association|forecast_action|price|up"
+    },
+    {
+      "key": "claxton_poultry_farms|production_action|production|down"
+    },
+    {
+      "key": "market|price_action|price|up"
+    }
+  ]
+}
+===== END RAW GENERATION =====
+[DEBUG] parsed JSON: {"hypotheses": [{"key": "us_government_agency|trade_policy_action|tariff|up"}, {"key": "poultry_company|health_event_action|disease_event|up"}, {"key": "poultry_industry_association|forecast_action|price|up"}, {"key": "claxton_poultry_farms|production_action|production|down"}, {"key": "market|price_action|price|up"}]}
+['us_government_agency', 'trade_policy_action', 'tariff', 'up']
+['poultry_company', 'health_event_action', 'disease_event', 'up']
+['poultry_industry_association', 'forecast_action', 'price', 'up']
+['claxton_poultry_farms', 'production_action', 'production', 'down']
+['market', 'price_action', 'price', 'up']
+recall_all: 0.15277777777777776 precision_all: 0.06666666666666667
+Labels:
+['market', 'forecast_action', 'production', 'up']
+['market', 'price_action', 'price', 'up']
+
+===== RAW GENERATION (decoded) =====
+The observed trend in the data indicates a modest upward swing in retail broiler prices over the past three months, punctuated by a recent slight dip of 0.006 units. This pattern suggests that while overall demand or supply pressures have nudged prices higher, a short‑term shock—such as a temporary rise in feed costs, a brief supply disruption, or a brief uptick in disease risk—has exerted downward pressure this month. The market likely absorbed the earlier dip at t1, recovered by t2, and is now experiencing a minor correction, hinting at possible policy or production adjustments within the industry that are beginning to manifest in price movements.
+
+⟪FINAL⟫{
+  "hypotheses": [
+    {
+      "key": "market|price_action|price|down"
+    },
+    {
+      "key": "poultry_company|production_action|capacity|down"
+    },
+    {
+      "key": "poultry_industry_association|forecast_action|price|down"
+    },
+    {
+      "key": "claxton_poultry_farms|health_event_action|disease_event|up"
+    },
+    {
+      "key": "us_government_agency|subsidy_action|subsidy|down"
+    }
+  ]
+}
+===== END RAW GENERATION =====
+[DEBUG] parsed JSON: {"hypotheses": [{"key": "market|price_action|price|down"}, {"key": "poultry_company|production_action|capacity|down"}, {"key": "poultry_industry_association|forecast_action|price|down"}, {"key": "claxton_poultry_farms|health_event_action|disease_event|up"}, {"key": "us_government_agency|subsidy_action|subsidy|down"}]}
+['market', 'price_action', 'price', 'down']
+['poultry_company', 'production_action', 'capacity', 'down']
+['poultry_industry_association', 'forecast_action', 'price', 'down']
+['claxton_poultry_farms', 'health_event_action', 'disease_event', 'up']
+['us_government_agency', 'subsidy_action', 'subsidy', 'down']
+recall_all: 0.20238095238095236 precision_all: 0.08571428571428573
+Labels:
+['market', 'forecast_action', 'price', 'up']
+['market', 'price_action', 'price', 'up']
+['market', 'production_action', 'production', 'up']
+['market', 'trade_policy_action', 'export', 'up']
+
+===== RAW GENERATION (decoded) =====
+The observed trend in the data shows a clear upward trajectory in retail broiler prices, with a modest dip in the most recent prior month before a pronounced rise of +0.060 in the current month. This pattern suggests that while a temporary supply influx or price correction may have briefly moderated prices, underlying factors—such as heightened supply risk, cost pressures, or policy shifts—have resumed their influence, driving prices higher. A plausible chain of events could involve a newly reported disease outbreak raising supply concerns, an escalation in trade tariffs that increases import costs, a contraction in production capacity due to labor or operational disruptions, a reduction in governmental subsidies that raises producer costs, and a broader market-driven price escalation reflecting heightened demand or inflationary pressures.
+
+⟪FINAL⟫{
+  "hypotheses": [
+    {
+      "key": "poultry_industry_association|report_action|disease_event|up"
+    },
+    {
+      "key": "us_government_agency|trade_policy_action|tariff|up"
+    },
+    {
+      "key": "claxton_poultry_farms|production_action|production|down"
+    },
+    {
+      "key": "united_states|subsidy_action|subsidy|down"
+    },
+    {
+      "key": "market|price_action|price|up"
+    }
+  ]
+}
+===== END RAW GENERATION =====
+[DEBUG] parsed JSON: {"hypotheses": [{"key": "poultry_industry_association|report_action|disease_event|up"}, {"key": "us_government_agency|trade_policy_action|tariff|up"}, {"key": "claxton_poultry_farms|production_action|production|down"}, {"key": "united_states|subsidy_action|subsidy|down"}, {"key": "market|price_action|price|up"}]}
+['poultry_industry_association', 'report_action', 'disease_event', 'up']
+['us_government_agency', 'trade_policy_action', 'tariff', 'up']
+['claxton_poultry_farms', 'production_action', 'production', 'down']
+['united_states', 'subsidy_action', 'subsidy', 'down']
+['market', 'price_action', 'price', 'up']
+recall_all: 0.20833333333333331 precision_all: 0.1
+Labels:
+['market', 'report_action', 'production', 'ambiguous']
+['united_states', 'forecast_action', 'production', 'down']
+['us_government_agency', 'forecast_action', 'price', 'down']
+
+===== RAW GENERATION (decoded) =====
+The observed trend in the data indicates a modest dip in retail broiler prices in the first month of the series (t0 → t1), followed by a sharp rebound in the second month (t2). However, the current month shows a pronounced decline relative to the previous peak, suggesting a recent shift in market dynamics. A likely driver is an expansion of domestic supply—perhaps through newly commissioned production capacity or an influx of imports following a tariff reduction—combined with cost‑reduction measures such as increased subsidies. These supply‑side changes would naturally depress the retail price. Additionally, a contemporaneous forecast or industry guideline may have tempered demand expectations, further contributing to the price drop. The confluence of these factors points to a short‑term, supply‑driven adjustment rather than a long‑term structural shift.
+
+⟪FINAL⟫{
+  "hypotheses": [
+    {
+      "key": "us_government_agency|trade_policy_action|tariff|down"
+    },
+    {
+      "key": "poultry_company|production_action|capacity|up"
+    },
+    {
+      "key": "claxton_poultry_farms|subsidy_action|subsidy|up"
+    },
+    {
+      "key": "market|price_action|price|down"
+    },
+    {
+      "key": "poultry_industry_association|report_action|guideline|ambiguous"
+    }
+  ]
+}
+===== END RAW GENERATION =====
+[DEBUG] parsed JSON: {"hypotheses": [{"key": "us_government_agency|trade_policy_action|tariff|down"}, {"key": "poultry_company|production_action|capacity|up"}, {"key": "claxton_poultry_farms|subsidy_action|subsidy|up"}, {"key": "market|price_action|price|down"}, {"key": "poultry_industry_association|report_action|guideline|ambiguous"}]}
+['us_government_agency', 'trade_policy_action', 'tariff', 'down']
+['poultry_company', 'production_action', 'capacity', 'up']
+['claxton_poultry_farms', 'subsidy_action', 'subsidy', 'up']
+['market', 'price_action', 'price', 'down']
+['poultry_industry_association', 'report_action', 'guideline', 'ambiguous']
+recall_all: 0.18518518518518517 precision_all: 0.08888888888888889
+Labels:
+['market', 'forecast_action', 'import', 'up']
+['market', 'forecast_action', 'production', 'down']
+['market', 'price_action', 'price', 'down']
+['market', 'production_action', 'production', 'down']
+
+===== RAW GENERATION (decoded) =====
+The observed trend in the data indicates a somewhat volatile retail broiler market over the past three months. After a modest rise in the first month (from 2.257 to 2.317), prices fell sharply in the second month (to 2.159), suggesting a temporary oversupply or a supply shock such as a disease outbreak or a spike in feed costs. The current month’s modest uptick (+0.036) points to a partial rebound in demand or a reduction in supply constraints, possibly driven by new policy support or improved production conditions. Together, these movements imply that real‑time events—such as government subsidies, industry forecasts, disease incidents, or trade‑policy changes—are influencing the market within the current month, creating a short‑term price recovery after a dip.
+
+⟪FINAL⟫
+{
+  "hypotheses": [
+    {
+      "key": "us_government_agency|subsidy_action|subsidy|up"
+    },
+    {
+      "key": "poultry_company|forecast_action|price|up"
+    },
+    {
+      "key": "claxton_poultry_farms|health_event_action|disease_event|down"
+    },
+    {
+      "key": "poultry_industry_association|report_action|guideline|ambiguous"
+    },
+    {
+      "key": "united_states|trade_policy_action|tariff|up"
+    }
+  ]
+}
+===== END RAW GENERATION =====
+[DEBUG] parsed JSON: {"hypotheses": [{"key": "us_government_agency|subsidy_action|subsidy|up"}, {"key": "poultry_company|forecast_action|price|up"}, {"key": "claxton_poultry_farms|health_event_action|disease_event|down"}, {"key": "poultry_industry_association|report_action|guideline|ambiguous"}, {"key": "united_states|trade_policy_action|tariff|up"}]}
+['us_government_agency', 'subsidy_action', 'subsidy', 'up']
+['poultry_company', 'forecast_action', 'price', 'up']
+['claxton_poultry_farms', 'health_event_action', 'disease_event', 'down']
+['poultry_industry_association', 'report_action', 'guideline', 'ambiguous']
+['united_states', 'trade_policy_action', 'tariff', 'up']
+recall_all: 0.16666666666666666 precision_all: 0.08
+Labels:
+['market', 'forecast_action', 'price', 'down']
+['market', 'price_action', 'price', 'down']
+['market', 'price_action', 'price', 'up']
+['market', 'production_action', 'production', 'down']
+
+===== RAW GENERATION (decoded) =====
+The observed trend in the data indicates a modestly volatile but overall downward drift in U.S. retail broiler prices over the past four months.  The sharp decline from 2.317 to 2.159 in the first month (≈ −6.8 %) suggests a sudden increase in supply or a dip in demand, while the modest rebound to 2.195 in the next month points to a temporary tightening of supply—perhaps due to a short‑term production hiccup or a brief export uptick.  The current month’s further drop of 0.097 to 2.098 signals a renewed supply‑side expansion or a policy shift that has lowered production costs or increased import volume.  Together, these patterns are consistent with real‑time industry actions such as new production capacity announcements, subsidy rollouts, trade‑policy adjustments, or market forecasts that collectively dampen prices.
+
+⟪FINAL⟫{
+  "hypotheses": [
+    {
+      "key": "united_states|subsidy_action|subsidy|up"
+    },
+    {
+      "key": "poultry_company|production_action|capacity|up"
+    },
+    {
+      "key": "poultry_industry_association|forecast_action|price|down"
+    },
+    {
+      "key": "market|report_action|price|down"
+    },
+    {
+      "key": "united_states|trade_policy_action|tariff|down"
+    }
+  ]
+}
+===== END RAW GENERATION =====
+[DEBUG] parsed JSON: {"hypotheses": [{"key": "united_states|subsidy_action|subsidy|up"}, {"key": "poultry_company|production_action|capacity|up"}, {"key": "poultry_industry_association|forecast_action|price|down"}, {"key": "market|report_action|price|down"}, {"key": "united_states|trade_policy_action|tariff|down"}]}
+['united_states', 'subsidy_action', 'subsidy', 'up']
+['poultry_company', 'production_action', 'capacity', 'up']
+['poultry_industry_association', 'forecast_action', 'price', 'down']
+['market', 'report_action', 'price', 'down']
+['united_states', 'trade_policy_action', 'tariff', 'down']
+recall_all: 0.1515151515151515 precision_all: 0.07272727272727274
+Labels:
+['market', 'health_event_action', 'disease_event', 'ambiguous']
+
+===== RAW GENERATION (decoded) =====
+The data shows an initial upward move from t0 (2.159) to t1 (2.195), likely reflecting a temporary supply shortfall or heightened seasonal demand. The sharp decline to t2 (2.098) suggests a supply rebound or a drop in demand, perhaps due to the resolution of a health event or the release of new inventory data. The modest uptick in the current month (+0.013) indicates a renewed upward pressure on prices, consistent with a new supply constraint or policy shift. Real‑world drivers could include a recent poultry disease outbreak reducing production, a new tariff on imported poultry tightening supply, or a forecast by the industry association projecting higher prices. Additionally, a major poultry farm may have curtailed output, and a market report could have highlighted rising costs.
+
+⟪FINAL⟫{
+  "hypotheses": [
+    { "key": "poultry_industry_association|forecast_action|price|up" },
+    { "key": "claxton_poultry_farms|production_action|capacity|down" },
+    { "key": "united_states|health_event_action|disease_event|up" },
+    { "key": "us_government_agency|trade_policy_action|tariff|up" },
+    { "key": "market|report_action|poultry_product|ambiguous" }
+  ]
+}
+===== END RAW GENERATION =====
+[DEBUG] parsed JSON: {"hypotheses": [{"key": "poultry_industry_association|forecast_action|price|up"}, {"key": "claxton_poultry_farms|production_action|capacity|down"}, {"key": "united_states|health_event_action|disease_event|up"}, {"key": "us_government_agency|trade_policy_action|tariff|up"}, {"key": "market|report_action|poultry_product|ambiguous"}]}
+['poultry_industry_association', 'forecast_action', 'price', 'up']
+['claxton_poultry_farms', 'production_action', 'capacity', 'down']
+['united_states', 'health_event_action', 'disease_event', 'up']
+['us_government_agency', 'trade_policy_action', 'tariff', 'up']
+['market', 'report_action', 'poultry_product', 'ambiguous']
+recall_all: 0.13888888888888887 precision_all: 0.06666666666666667
+Labels:
+['market', 'forecast_action', 'production', 'up']
+['market', 'price_action', 'price', 'up']
+['market', 'price_action', 'export', 'down']
+['market', 'price_action', 'price', 'ambiguous']
+
+===== RAW GENERATION (decoded) =====
+The observed trend in the data indicates a moderate downward trajectory in retail broiler prices over the past few months, with an initial dip from 2.195 to 2.098 followed by a small rebound to 2.111, and a recent decline of 0.046 this month. This pattern suggests that while supply constraints may have eased slightly (hence the brief rebound), overall market conditions are leaning toward excess supply or weakened demand. Possible drivers include a recent expansion of production capacity by major poultry firms, a surge in domestic supply driven by lower feed costs, or the onset of a disease concern that dampens consumer confidence. Additionally, new government subsidies or policy adjustments aimed at supporting producers could be flattening price movements, while industry reports highlighting higher inventory levels reinforce the supply‑heavy environment.
+
+⟪FINAL⟫{
+  "hypotheses": [
+    {
+      "key": "market|price_action|price|down"
+    },
+    {
+      "key": "poultry_company|production_action|capacity|up"
+    },
+    {
+      "key": "poultry_company|health_event_action|disease_event|ambiguous"
+    },
+    {
+      "key": "united_states|subsidy_action|subsidy|ambiguous"
+    },
+    {
+      "key": "poultry_industry_association|report_action|production|ambiguous"
+    }
+  ]
+}
+===== END RAW GENERATION =====
+[DEBUG] parsed JSON: {"hypotheses": [{"key": "market|price_action|price|down"}, {"key": "poultry_company|production_action|capacity|up"}, {"key": "poultry_company|health_event_action|disease_event|ambiguous"}, {"key": "united_states|subsidy_action|subsidy|ambiguous"}, {"key": "poultry_industry_association|report_action|production|ambiguous"}]}
+['market', 'price_action', 'price', 'down']
+['poultry_company', 'production_action', 'capacity', 'up']
+['poultry_company', 'health_event_action', 'disease_event', 'ambiguous']
+['united_states', 'subsidy_action', 'subsidy', 'ambiguous']
+['poultry_industry_association', 'report_action', 'production', 'ambiguous']
+recall_all: 0.16666666666666666 precision_all: 0.07692307692307693
+Labels:
+['market', 'forecast_action', 'price', 'down']
+['market', 'price_action', 'price', 'up']
+['market', 'production_action', 'production', 'up']
+
+===== RAW GENERATION (decoded) =====
+The observed trend shows a modest rise in retail broiler prices from t0 to t1, followed by a pronounced decline from t1 to t2, and an even larger drop in the current month, as reflected by the -0.121 dP. This pattern suggests that while prices were relatively stable in the early part of the year, a new factor emerged in the current month that intensified downward pressure. The sharp fall could be driven by a combination of reduced supply due to a disease outbreak or a production cut by a major poultry company, as well as broader market forces such as a change in trade policy or a reduction in government subsidies. These events would simultaneously lower the effective price floor and increase the supply of poultry products, pushing retail prices downward.  
+
+⟪FINAL⟫  
+{  
+  "hypotheses": [  
+    { "key": "claxton_poultry_farms|production_action|capacity|down" },  
+    { "key": "claxton_poultry_farms|health_event_action|disease_event|down" },  
+    { "key": "united_states|trade_policy_action|tariff|down" },  
+    { "key": "poultry_industry_association|forecast_action|production|down" },  
+    { "key": "us_government_agency|subsidy_action|subsidy|down" }  
+  ]  
+}
+===== END RAW GENERATION =====
+[DEBUG] parsed JSON: {"hypotheses": [{"key": "claxton_poultry_farms|production_action|capacity|down"}, {"key": "claxton_poultry_farms|health_event_action|disease_event|down"}, {"key": "united_states|trade_policy_action|tariff|down"}, {"key": "poultry_industry_association|forecast_action|production|down"}, {"key": "us_government_agency|subsidy_action|subsidy|down"}]}
+['claxton_poultry_farms', 'production_action', 'capacity', 'down']
+['claxton_poultry_farms', 'health_event_action', 'disease_event', 'down']
+['united_states', 'trade_policy_action', 'tariff', 'down']
+['poultry_industry_association', 'forecast_action', 'production', 'down']
+['us_government_agency', 'subsidy_action', 'subsidy', 'down']
+recall_all: 0.15476190476190474 precision_all: 0.07142857142857142
+Labels:
+['market', 'price_action', 'price', 'ambiguous']
+
+===== RAW GENERATION (decoded) =====
+The observed trend in the data indicates a steady decline in the Retail Broiler Composite price over the past three months, dropping from 2.111 to 1.943. This downward trajectory suggests a gradual easing of supply constraints or a gradual increase in production capacity. However, the sharp uptick of +0.144 in the current month breaks this pattern, pointing to a sudden, short‑term shock to the market. Such a reversal is most plausibly driven by a combination of real‑time events that constrict supply or heighten uncertainty: a localized disease outbreak that curtails production, a new forecast of lower future output, an import tariff that reduces competitive supply, a market report warning of an impending shortage, or the removal of a subsidy that was previously cushioning producers. Each of these events can quickly tighten the supply curve and elevate prices, explaining the month‑to‑month jump.
+
+⟪FINAL⟫{
+  "hypotheses": [
+    {
+      "key": "poultry_industry_association|health_event_action|disease_event|up"
+    },
+    {
+      "key": "united_states|forecast_action|production|up"
+    },
+    {
+      "key": "us_government_agency|trade_policy_action|tariff|up"
+    },
+    {
+      "key": "market|report_action|poultry_product|up"
+    },
+    {
+      "key": "us_government_agency|subsidy_action|subsidy|down"
+    }
+  ]
+}
+===== END RAW GENERATION =====
+[DEBUG] parsed JSON: {"hypotheses": [{"key": "poultry_industry_association|health_event_action|disease_event|up"}, {"key": "united_states|forecast_action|production|up"}, {"key": "us_government_agency|trade_policy_action|tariff|up"}, {"key": "market|report_action|poultry_product|up"}, {"key": "us_government_agency|subsidy_action|subsidy|down"}]}
+['poultry_industry_association', 'health_event_action', 'disease_event', 'up']
+['united_states', 'forecast_action', 'production', 'up']
+['us_government_agency', 'trade_policy_action', 'tariff', 'up']
+['market', 'report_action', 'poultry_product', 'up']
+['us_government_agency', 'subsidy_action', 'subsidy', 'down']
+recall_all: 0.14444444444444443 precision_all: 0.06666666666666667
+Labels:
+['market', 'price_action', 'price', 'up']
+['united_states', 'forecast_action', 'export', 'down']
+['united_states', 'health_event_action', 'disease_event', 'ambiguous']
+
+===== RAW GENERATION (decoded) =====
+The observed trend in the data indicates a modest decline in retail broiler prices during the current month relative to the preceding month, following a recent rebound after a prior dip. The price fell from 2.087 to roughly 2.033, reflecting downward pressure that may stem from an uptick in supply or a dip in demand. The preceding months show a dip at t1, a rebound at t2, and now a new decline, suggesting that recent supply‑side actions—such as expanded production capacity or increased imports—are outweighing demand factors. Additionally, industry reports or policy shifts could be signaling a broader market adjustment. The combination of these signals points to a real‑time market correction driven by supply expansion, tariff easing, or production incentives.
+
+⟪FINAL⟫
+{
+  "hypotheses": [
+    { "key": "claxton_poultry_farms|production_action|capacity|up" },
+    { "key": "us_government_agency|trade_policy_action|tariff|down" },
+    { "key": "poultry_industry_association|report_action|guideline|down" },
+    { "key": "market|price_action|price|down" },
+    { "key": "claxton_poultry_farms|subsidy_action|subsidy|up" }
+  ]
+}
+===== END RAW GENERATION =====
+[DEBUG] parsed JSON: {"hypotheses": [{"key": "claxton_poultry_farms|production_action|capacity|up"}, {"key": "us_government_agency|trade_policy_action|tariff|down"}, {"key": "poultry_industry_association|report_action|guideline|down"}, {"key": "market|price_action|price|down"}, {"key": "claxton_poultry_farms|subsidy_action|subsidy|up"}]}
+['claxton_poultry_farms', 'production_action', 'capacity', 'up']
+['us_government_agency', 'trade_policy_action', 'tariff', 'down']
+['poultry_industry_association', 'report_action', 'guideline', 'down']
+['market', 'price_action', 'price', 'down']
+['claxton_poultry_farms', 'subsidy_action', 'subsidy', 'up']
+recall_all: 0.15625 precision_all: 0.075

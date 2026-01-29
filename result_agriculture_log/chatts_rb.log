@@ -1,0 +1,319 @@
+[ENV] transformers=4.52.4 tokenizers=0.21.4 torch=2.6.0+cu124
+Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]Loading checkpoint shards:  25%|##5       | 1/4 [00:02<00:08,  2.67s/it]Loading checkpoint shards:  50%|#####     | 2/4 [00:05<00:05,  2.86s/it]Loading checkpoint shards:  75%|#######5  | 3/4 [00:08<00:02,  2.64s/it]Loading checkpoint shards: 100%|##########| 4/4 [00:08<00:00,  1.93s/it]Loading checkpoint shards: 100%|##########| 4/4 [00:08<00:00,  2.22s/it]
+
+[MODEL_OUTPUT idx=0]
+The observed trend in the data indicates a consistent decline in the U.S. Retail Broiler Composite (OT) over the current month, with no significant fluctuations or periodic patterns. This downward trend suggests a sustained decrease in retail broiler prices or quantities, which could be driven by factors such as increased production leading to oversupply, reduced demand due to economic conditions, or changes in trade policies affecting market dynamics. The absence of periodic fluctuations indicates that the decline is not due to seasonal factors but rather ongoing market conditions. Given that the current month's data shows a steady decline with no periodicity, plausible real-time events might include a poultry company announcing a production cut, a health event affecting broiler supply, or a trade policy change impacting export volumes. 
+
+⟪FINAL⟫
+{
+  "hypotheses": [
+    {
+      "key": "poultry_company|production_action|production|down"
+    },
+    {
+      "key": "poultry_industry_association|health_event_action|disease_event|ambiguous"
+    },
+    {
+      "key": "us_government_agency|trade_policy_action|export|down"
+    }
+  ]
+}
+[PARSED_KEYS idx=0] ["poultry_company|production_action|production|down", "poultry_industry_association|health_event_action|disease_event|ambiguous", "us_government_agency|trade_policy_action|export|down"]
+recall_all: 0.0 precision_all: 0.0
+[PROGRESS] 1/16 overall=0.0000
+
+[MODEL_OUTPUT idx=1]
+The observed trend in the data indicates a consistent decline in the U.S. Retail Broiler Composite (OT) over the current month, with no significant fluctuations or periodic patterns. This downward trend suggests a sustained decrease in the overall output or efficiency of broiler production, potentially due to factors such as reduced demand, supply chain disruptions, or production constraints. The absence of periodic fluctuations indicates that this decline is not driven by seasonal or cyclical market forces but rather by more persistent issues. Given the context of the current month, plausible real-time events could include a sudden drop in consumer demand for broiler products, a temporary halt in production due to equipment failures, or a decrease in the availability of feed supplies. These events would directly impact the production capacity and output of the broiler industry, leading to the observed decline in the OT metric.
+⟪FINAL⟫
+{
+  "hypotheses": [
+    {
+      "key": "market|price_action|broiler|down"
+    },
+    {
+      "key": "poultry_industry_association|production_action|broiler|down"
+    },
+    {
+      "key": "poultry_company|production_action|broiler|down"
+    },
+    {
+      "key": "united_states|subsidy_action|broiler|down"
+    },
+    {
+      "key": "poultry_industry_association|report_action|broiler|down"
+    }
+  ]
+}
+[PARSED_KEYS idx=1] ["market|price_action|broiler|down", "poultry_industry_association|production_action|broiler|down", "poultry_company|production_action|broiler|down", "united_states|subsidy_action|broiler|down", "poultry_industry_association|report_action|broiler|down"]
+recall_all: 0.0 precision_all: 0.0
+
+[MODEL_OUTPUT idx=2]
+The observed trend in the data indicates a steady decline in the U.S. Retail Broiler Composite (OT) over the current month, with no significant fluctuations or periodic patterns. This steady downward trend suggests a consistent decrease in the overall output or production volume of retail broilers, possibly due to factors such as reduced demand, production constraints, or supply chain adjustments. The absence of periodic fluctuations indicates that this decline is not driven by seasonal or cyclical market factors but rather by more persistent underlying issues. Given that the current month's data shows a smooth curve with minimal noise, the decline appears to be a gradual and systematic change rather than a result of sudden, short-term events. Potential real-time events that could explain this trend include a decrease in consumer demand for chicken products, a reduction in broiler production capacity, or a shift in trade policies affecting domestic poultry exports. These events would collectively contribute to the observed steady decline in the U.S. Retail Broiler Composite (OT).
+⟪FINAL⟫
+{
+  "hypotheses": [
+    {
+      "key": "market|price_action|broiler|down"
+    },
+    {
+      "key": "poultry_industry_association|production_action|broiler|down"
+    },
+    {
+      "key": "us_government_agency|trade_policy_action|export|down"
+    },
+    {
+      "key": "poultry_company|capacity_action|production|down"
+    },
+    {
+      "key": "market|demand_action|broiler|down"
+    }
+  ]
+}
+[PARSED_KEYS idx=2] ["market|price_action|broiler|down", "poultry_industry_association|production_action|broiler|down", "us_government_agency|trade_policy_action|export|down", "poultry_company|capacity_action|production|down", "market|demand_action|broiler|down"]
+recall_all: 0.0 precision_all: 0.0
+
+[MODEL_OUTPUT idx=3]
+The observed trend in the data indicates a consistent and steady decline in the U.S. Retail Broiler Composite (OT) over the current month, with no significant fluctuations or periodic changes. This downward trend suggests a sustained decrease in the overall output or availability of retail broiler products, potentially driven by factors such as reduced production, supply chain disruptions, or shifts in consumer demand. The absence of periodic fluctuations and minimal noise indicates that this decline is likely a result of ongoing, systemic issues rather than temporary or seasonal variations. Given that the current month's data shows a steady decline in OT, plausible real-time events could include a sudden drop in production due to equipment failure, a temporary halt in exports due to regulatory issues, a decrease in imports due to shipping delays, a reduction in capacity due to maintenance, or a health event affecting the poultry supply chain. These events would directly impact the overall output of retail broiler products, leading to the observed downward trend.
+⟪FINAL⟫
+{
+  "hypotheses": [
+    {"key": "poultry_industry_association|production_action|capacity|down"},
+    {"key": "poultry_industry_association|production_action|export|down"},
+    {"key": "poultry_industry_association|production_action|import|down"},
+    {"key": "poultry_industry_association|production_action|capacity|down"},
+    {"key": "poultry_industry_association|health_event_action|disease_event|down"}
+  ]
+}
+[PARSED_KEYS idx=3] ["poultry_industry_association|production_action|capacity|down", "poultry_industry_association|production_action|export|down", "poultry_industry_association|production_action|import|down", "poultry_industry_association|health_event_action|disease_event|down"]
+recall_all: 0.0 precision_all: 0.0
+
+[MODEL_OUTPUT idx=4]
+The observed trend in the data indicates a steady state with no significant changes in the U.S. Retail Broiler Composite (OT) for the current month. The time series shows a steady overall trend with no periodic fluctuations, very small noise, and no local characteristics, suggesting that the market is stable and there are no major external shocks or internal adjustments affecting the OT value. The steady trend could be due to consistent supply and demand dynamics, stable production levels, and no significant events such as disease outbreaks, policy changes, or market disruptions that would typically cause fluctuations in the OT. Given that the current month's data shows no change in the OT value, plausible real-time events might include stable production and sales figures, no major disease outbreaks in poultry farms, no significant changes in trade policies affecting broiler exports, and consistent consumer demand for retail broiler products. These events collectively maintain the steady state of the OT value.
+⟪FINAL⟫
+{
+  "hypotheses": [
+    {"key": "market|price_action|production|steady"},
+    {"key": "poultry_industry_association|report_action|disease_event|no"},
+    {"key": "us_government_agency|trade_policy_action|export|steady"},
+    {"key": "poultry_company|production_action|capacity|steady"},
+    {"key": "market|price_action|demand|steady"}
+  ]
+}
+[PARSED_KEYS idx=4] ["market|price_action|production|steady", "poultry_industry_association|report_action|disease_event|no", "us_government_agency|trade_policy_action|export|steady", "poultry_company|production_action|capacity|steady", "market|price_action|demand|steady"]
+recall_all: 0.0 precision_all: 0.0
+[PROGRESS] 5/16 overall=0.0000
+
+[MODEL_OUTPUT idx=5]
+The observed trend in the data indicates a steady state with no significant changes in the U.S. Retail Broiler Composite (OT) over the current month. The time series shows a steady overall trend with no periodic fluctuations, very small noise, and no local characteristics, suggesting that the market is stable and there are no major external shocks or internal adjustments affecting the OT. The steady trend could be due to consistent supply and demand dynamics, stable production levels, and no significant regulatory or health-related events impacting the poultry industry. Given that the current month's data only shows a steady trend with no periodic fluctuations or local characteristics, plausible real-time events might include stable production levels, consistent market demand, no major health outbreaks, no significant regulatory changes, and no major trade policy adjustments. These events collectively maintain the stability of the OT.
+⟪FINAL⟫
+{
+  "hypotheses": [
+    {"key": "market|production_action|broiler|steady"},
+    {"key": "market|demand_action|broiler|steady"},
+    {"key": "poultry_industry_association|health_event_action|disease_event|no"},
+    {"key": "us_government_agency|regulation_action|tariff|no"},
+    {"key": "poultry_industry_association|trade_policy_action|import|no"}
+  ]
+}
+[PARSED_KEYS idx=5] ["market|production_action|broiler|steady", "market|demand_action|broiler|steady", "poultry_industry_association|health_event_action|disease_event|no", "us_government_agency|regulation_action|tariff|no", "poultry_industry_association|trade_policy_action|import|no"]
+recall_all: 0.0 precision_all: 0.0
+
+[MODEL_OUTPUT idx=6]
+The observed trend in the data indicates a steady state with no significant changes in the U.S. Retail Broiler Composite (OT) over the current month. The time series shows a steady overall trend with no periodic fluctuations, very small noise, and no local characteristics, suggesting that the market is stable and there are no major external shocks or internal adjustments affecting the OT value. The steady trend could be due to consistent supply and demand dynamics, stable production levels, and no significant events such as disease outbreaks, policy changes, or market disruptions that would typically cause fluctuations in the OT. Given that the current month's data shows no change in the OT value, plausible real-time events might include stable production and supply, no major disease outbreaks, no significant policy changes, no major trade disputes, and no extreme weather events affecting production or distribution. These events collectively maintain the steady state of the OT value.
+⟪FINAL⟫
+{
+  "hypotheses": [
+    {"key": "market|price_action|production|steady"},
+    {"key": "poultry_industry_association|report_action|disease_event|no"},
+    {"key": "us_government_agency|policy_action|tariff|no"},
+    {"key": "poultry_company|production_action|capacity|steady"},
+    {"key": "claxton_poultry_farms|production_action|export|steady"}
+  ]
+}
+[PARSED_KEYS idx=6] ["market|price_action|production|steady", "poultry_industry_association|report_action|disease_event|no", "us_government_agency|policy_action|tariff|no", "poultry_company|production_action|capacity|steady", "claxton_poultry_farms|production_action|export|steady"]
+recall_all: 0.0 precision_all: 0.0
+
+[MODEL_OUTPUT idx=7]
+The observed trend in the data indicates that the U.S. Retail Broiler Composite (OT) has shown a steady increase over the last three months, with the value rising from around 2.14 to 2.26, and the current month's dOT remaining stable at 0.06. This steady upward trend in OT suggests a consistent growth in the retail broiler market, potentially driven by factors such as increased consumer demand, stable production costs, or effective marketing strategies. The stable dOT in the current month indicates that the recent changes in OT are not due to sudden price fluctuations or external shocks, but rather a continuation of the existing market conditions. Possible real-time events within the current month could include: 1) market|price_action|price|up, as the steady increase in OT might reflect a gradual rise in retail prices for broiler products. 2) poultry_industry_association|report_action|production|up, as the upward trend in OT could be a result of increased production reports by industry associations. 3) united_states|subsidy_action|production|up, as government subsidies for poultry production might have been approved, boosting the overall OT. 4) poultry_company|capacity_action|capacity|up, as companies might have expanded their production capacity to meet the growing demand. 5) claxton_poultry_farms|disease_event_action|disease_event|down, as a potential disease event at a major farm could have temporarily reduced supply, but the stable dOT suggests the issue was resolved or had minimal impact on the overall market.
+⟪FINAL⟫
+{
+  "hypotheses": [
+    {
+      "key": "market|price_action|price|up"
+    },
+    {
+      "key": "poultry_industry_association|report_action|production|up"
+    },
+    {
+      "key": "united_states|subsidy_action|production|up"
+    },
+    {
+      "key": "poultry_company|capacity_action|capacity|up"
+    },
+    {
+      "key": "claxton_poultry_farms|disease_event_action|disease_event|down"
+    }
+  ]
+}
+[PARSED_KEYS idx=7] ["market|price_action|price|up", "poultry_industry_association|report_action|production|up", "united_states|subsidy_action|production|up", "poultry_company|capacity_action|capacity|up", "claxton_poultry_farms|disease_event_action|disease_event|down"]
+recall_all: 0.03125 precision_all: 0.025
+
+[MODEL_OUTPUT idx=8]
+The observed trend in the data indicates a steady increase in the U.S. Retail Broiler Composite (OT) over the last three months, with no significant fluctuations or anomalies. This steady upward trend suggests a consistent and gradual growth in the retail broiler market, potentially driven by factors such as stable demand, controlled supply adjustments, or favorable market conditions that have not yet triggered volatility. The absence of periodic fluctuations and minimal noise indicates a stable market environment with no sudden disruptions or external shocks. Given that the current month's dOT data shows a steady trend with no significant changes, plausible real-time events could include stable production levels, consistent consumer demand, or unchanging regulatory policies that have not introduced new market dynamics. These events align with the observed steady trend in the data.
+⟪FINAL⟫
+{
+  "hypotheses": [
+    {
+      "key": "market|forecast_action|production|up"
+    },
+    {
+      "key": "poultry_industry_association|report_action|demand|up"
+    },
+    {
+      "key": "us_government_agency|approval_action|subsidy|up"
+    },
+    {
+      "key": "poultry_company|production_action|capacity|up"
+    },
+    {
+      "key": "market|price_action|price|up"
+    }
+  ]
+}
+[PARSED_KEYS idx=8] ["market|forecast_action|production|up", "poultry_industry_association|report_action|demand|up", "us_government_agency|approval_action|subsidy|up", "poultry_company|production_action|capacity|up", "market|price_action|price|up"]
+recall_all: 0.027777777777777776 precision_all: 0.022222222222222223
+
+[MODEL_OUTPUT idx=9]
+The observed trend in the data indicates a steady decline in the U.S. Retail Broiler Composite (OT) over the current month, with no significant fluctuations. This downward trend suggests a consistent decrease in the overall output or availability of retail broiler products, potentially due to factors such as reduced production, supply chain disruptions, or decreased consumer demand. The absence of periodic fluctuations and minimal noise indicates a stable, gradual change rather than random or temporary effects. Given that the current month's data shows a steady decline, plausible real-time events could include a decrease in production by poultry companies, a reduction in export volumes, or a decline in consumer demand for broiler products. These events would directly impact the OT metric, leading to the observed downward trend.
+⟪FINAL⟫
+{
+  "hypotheses": [
+    {
+      "key": "poultry_company|production_action|production|down"
+    },
+    {
+      "key": "poultry_company|export_action|export|down"
+    },
+    {
+      "key": "market|demand_action|demand|down"
+    }
+  ]
+}
+[PARSED_KEYS idx=9] ["poultry_company|production_action|production|down", "poultry_company|export_action|export|down", "market|demand_action|demand|down"]
+recall_all: 0.025 precision_all: 0.02
+[PROGRESS] 10/16 overall=0.0000
+
+[MODEL_OUTPUT idx=10]
+The observed trend in the data indicates a steady decline in the U.S. Retail Broiler Composite (OT) over the current month, with no significant fluctuations or periodic patterns. This steady downward trend suggests a consistent decrease in the overall output or availability of retail broiler products, potentially driven by factors such as reduced production, supply chain disruptions, or decreased consumer demand. The absence of periodic fluctuations indicates that this decline is not due to seasonal variations or regular market cycles, but rather a sustained issue affecting the industry. Given that the current month's data shows a continuous downward trend without any periodicity, plausible real-time events could include a sudden drop in production due to equipment failure, a temporary halt in exports due to regulatory issues, a decrease in imports due to trade policy changes, a health event affecting broiler production, or a reduction in subsidies impacting production costs. These events would directly lead to the observed steady decline in the U.S. Retail Broiler Composite (OT).
+⟪FINAL⟫
+{
+  "hypotheses": [
+    {"key": "market|price_action|production|down"},
+    {"key": "united_states|trade_policy_action|export|down"},
+    {"key": "poultry_industry_association|health_event_action|disease_event|down"},
+    {"key": "us_government_agency|subsidy_action|subsidy|down"},
+    {"key": "poultry_company|production_action|capacity|down"}
+  ]
+}
+[PARSED_KEYS idx=10] ["market|price_action|production|down", "united_states|trade_policy_action|export|down", "poultry_industry_association|health_event_action|disease_event|down", "us_government_agency|subsidy_action|subsidy|down", "poultry_company|production_action|capacity|down"]
+recall_all: 0.022727272727272728 precision_all: 0.018181818181818184
+
+[MODEL_OUTPUT idx=11]
+The observed trend in the data indicates a steady decline in the U.S. Retail Broiler Composite (OT) over the current month, with no significant fluctuations or periodic patterns. This steady downward trend suggests a consistent decrease in the overall output or availability of retail broiler products, potentially driven by factors such as reduced production, supply chain disruptions, or decreased consumer demand. The absence of periodic fluctuations indicates that this decline is not due to seasonal variations or regular market cycles, but rather a sustained issue affecting the industry. Given that the current month's data shows a smooth curve with minimal noise, the decline is likely a result of ongoing, systemic factors rather than temporary disruptions. Possible real-time events that could explain this trend include a sudden drop in broiler production due to disease outbreaks, a decrease in export demand leading to reduced domestic supply, or a shift in consumer preferences towards alternative protein sources. These events would directly impact the overall output (OT) of retail broiler products, leading to the observed steady decline.
+⟪FINAL⟫
+{
+  "hypotheses": [
+    {
+      "key": "poultry_industry_association|report_action|production|down"
+    },
+    {
+      "key": "united_states|trade_policy_action|export|down"
+    },
+    {
+      "key": "market|price_action|price|down"
+    },
+    {
+      "key": "poultry_company|health_event_action|disease_event|down"
+    },
+    {
+      "key": "market|demand_action|consumer_preference|down"
+    }
+  ]
+}
+[PARSED_KEYS idx=11] ["poultry_industry_association|report_action|production|down", "united_states|trade_policy_action|export|down", "market|price_action|price|down", "poultry_company|health_event_action|disease_event|down", "market|demand_action|consumer_preference|down"]
+recall_all: 0.020833333333333332 precision_all: 0.016666666666666666
+
+[MODEL_OUTPUT idx=12]
+The observed trend in the data indicates a steady state with no significant changes in the U.S. Retail Broiler Composite (OT) over the current month. The time series shows a steady overall trend with no periodic fluctuations, very small noise, and no local characteristics, suggesting that the market is stable and there are no major external shocks or internal adjustments affecting the OT value. The steady trend could be due to consistent supply and demand dynamics, stable production levels, and no significant events such as disease outbreaks, policy changes, or market disruptions that would typically cause fluctuations in the OT. Given that the current month's data shows no change in the OT value, plausible real-time events might include stable production and supply, no major disease outbreaks, no significant policy changes, no major trade disruptions, and no extreme weather events affecting production or distribution. These events collectively maintain the steady state of the OT value.
+⟪FINAL⟫
+{
+  "hypotheses": [
+    {"key": "market|price_action|production|steady"},
+    {"key": "poultry_industry_association|report_action|disease_event|no"},
+    {"key": "us_government_agency|policy_action|tariff|no"},
+    {"key": "poultry_company|production_action|capacity|steady"},
+    {"key": "claxton_poultry_farms|production_action|export|steady"}
+  ]
+}
+[PARSED_KEYS idx=12] ["market|price_action|production|steady", "poultry_industry_association|report_action|disease_event|no", "us_government_agency|policy_action|tariff|no", "poultry_company|production_action|capacity|steady", "claxton_poultry_farms|production_action|export|steady"]
+recall_all: 0.019230769230769232 precision_all: 0.015384615384615385
+
+[MODEL_OUTPUT idx=13]
+The observed trend in the data indicates a consistent decline in the U.S. Retail Broiler Composite (OT) over the current month, with no significant fluctuations or periodic changes. This downward trend suggests a sustained decrease in the overall output or availability of retail broiler products, potentially driven by factors such as reduced production, supply chain disruptions, or shifts in consumer demand. The absence of periodic fluctuations and minimal noise indicates a stable, gradual change rather than random or temporary effects. Given that the current month's data shows a steady decline without any local characteristics, plausible real-time events could include production cuts by major poultry companies, export restrictions, or health-related production halts. These events would directly impact the supply of retail broiler products, leading to the observed downward trend in the OT.
+⟪FINAL⟫
+{
+  "hypotheses": [
+    {
+      "key": "poultry_company|production_action|production|down"
+    },
+    {
+      "key": "us_government_agency|trade_policy_action|export|down"
+    },
+    {
+      "key": "poultry_industry_association|health_event_action|disease_event|down"
+    }
+  ]
+}
+[PARSED_KEYS idx=13] ["poultry_company|production_action|production|down", "us_government_agency|trade_policy_action|export|down", "poultry_industry_association|health_event_action|disease_event|down"]
+recall_all: 0.017857142857142856 precision_all: 0.014285714285714287
+
+[MODEL_OUTPUT idx=14]
+The observed trend in the data indicates a consistent decline in the U.S. Retail Broiler Composite (OT) over the current month, with no significant fluctuations or periodic changes. This downward trend suggests a sustained decrease in retail broiler prices or quantities, which could be driven by factors such as increased production leading to oversupply, reduced demand due to economic conditions, or changes in trade policies affecting market dynamics. Since the time series only includes the current month's data and shows a smooth, steady decline without noise or local characteristics, the driving factors are likely to be ongoing, systemic issues rather than short-term, isolated events. Given that the data only covers the current month, plausible real-time events could include a sudden increase in broiler production by major poultry companies, a new trade policy restricting broiler exports, a health event causing a temporary drop in consumer demand for broiler products, a new report indicating a surplus in the broiler market, or a government subsidy policy change affecting production costs.
+⟪FINAL⟫
+{
+  "hypotheses": [
+    {"key": "poultry_company|production_action|production|up"},
+    {"key": "us_government_agency|trade_policy_action|export|down"},
+    {"key": "poultry_industry_association|health_event_action|disease_event|down"},
+    {"key": "poultry_industry_association|report_action|production|up"},
+    {"key": "us_government_agency|subsidy_action|production|down"}
+  ]
+}
+[PARSED_KEYS idx=14] ["poultry_company|production_action|production|up", "us_government_agency|trade_policy_action|export|down", "poultry_industry_association|health_event_action|disease_event|down", "poultry_industry_association|report_action|production|up", "us_government_agency|subsidy_action|production|down"]
+recall_all: 0.016666666666666666 precision_all: 0.013333333333333334
+[PROGRESS] 15/16 overall=0.0000
+
+[MODEL_OUTPUT idx=15]
+The observed trend in the data indicates a steady state with minimal variation in the U.S. Retail Broiler Composite (OT) over the current month, suggesting stable market conditions and consistent supply-demand dynamics. The overall trend is steady, with the time series starting and ending around 2.09, showing an overall amplitude of 0.00, and the noise standard deviation is around 0.00, indicating a smooth curve with almost no noise. This stability could be attributed to factors such as consistent production levels, stable consumer demand, and no significant external shocks like disease outbreaks or sudden policy changes. Given the current month's data shows no periodic fluctuations and a steady trend, plausible real-time events might include: 1) market|price_action|price|stable, as stable prices would prevent significant changes in the OT; 2) poultry_industry_association|report_action|production|stable, as stable production reports would maintain consistent supply; 3) united_states|health_event_action|disease_event|no, as the absence of disease events would prevent supply disruptions; 4) poultry_company|production_action|capacity|stable, as stable capacity utilization would ensure consistent output; 5) us_government_agency|approval_action|subsidy|no, as no new subsidies would avoid sudden cost changes affecting the OT.
+⟪FINAL⟫
+{
+  "hypotheses": [
+    {
+      "key": "market|price_action|price|stable"
+    },
+    {
+      "key": "poultry_industry_association|report_action|production|stable"
+    },
+    {
+      "key": "united_states|health_event_action|disease_event|no"
+    },
+    {
+      "key": "poultry_company|production_action|capacity|stable"
+    },
+    {
+      "key": "us_government_agency|approval_action|subsidy|no"
+    }
+  ]
+}
+[PARSED_KEYS idx=15] ["market|price_action|price|stable", "poultry_industry_association|report_action|production|stable", "united_states|health_event_action|disease_event|no", "poultry_company|production_action|capacity|stable", "us_government_agency|approval_action|subsidy|no"]
+recall_all: 0.057291666666666664 precision_all: 0.037500000000000006

@@ -1,0 +1,69 @@
+Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]Loading checkpoint shards:  25%|##5       | 1/4 [00:00<00:01,  1.96it/s]Loading checkpoint shards:  50%|#####     | 2/4 [00:01<00:01,  1.97it/s]Loading checkpoint shards:  75%|#######5  | 3/4 [00:01<00:00,  1.91it/s]Loading checkpoint shards: 100%|##########| 4/4 [00:02<00:00,  2.00it/s]Loading checkpoint shards: 100%|##########| 4/4 [00:02<00:00,  1.98it/s]
+
+[LOG] sample_idx=0 begin_infer
+[LOG] pred_keys: ['centers_for_disease_control|issue_guidance|vaccination|ambiguous', 'world_health_organization|confirm|mortalit|up', 'united_states|report_release|influenza|down', 'united_states|rate_change|hospitalizations|down', 'advisory_committee_on_immunization_practices|recommend_vaccination|influenza|up']
+recall_all: 0.6 precision_all: 0.4
+
+[LOG] sample_idx=1 begin_infer
+[LOG] pred_keys: ['centers_for_disease_control|issue_guidance|vaccination|down', 'world_health_organization|confirm|mortality|up', 'united_states|implement_npi|influenza_reductions|down', 'gangrelated_to_influenza_|report_release|hospitalizations|down', 'food_and_drug_administration_|approve_authorize|antivirals|down']
+recall_all: 0.3 precision_all: 0.2
+
+[LOG] sample_idx=2 begin_infer
+[LOG] pred_keys: ['centers_for_disease_control|issue_guidance|vaccination|ambiguous', 'world_health_organization|confirm|mortalit|up']
+recall_all: 0.19999999999999998 precision_all: 0.13333333333333333
+
+[LOG] sample_idx=3 begin_infer
+[LOG] pred_keys: ['centers_for_disease_control|issue_guidence|vaccination|up', 'world_health_organization|confirm|mortality|up', 'united_states|report_release|influenza_hospitalizations|down', 'food_and_drug_administration|approve_authorize|influenza_vaccine|up', 'advisory_committee_on_immunization_practices|recommend_vaccination|influenza|up']
+recall_all: 0.15 precision_all: 0.1
+
+[LOG] sample_idx=4 begin_infer
+[LOG] pred_keys: ['centers_for_disease_control|issue_guidance|vaccination|ambiguous', 'world_health_organization|confirm|mortalit|up', 'united_states|report_release|flu|h1n1', 'food_and_drug_administration|approve_authorize|vaccine|up', 'advisory_committee_on_immunization_practice|recommend_vaccination|influenza|up']
+recall_all: 0.18666666666666668 precision_all: 0.12000000000000002
+
+[LOG] sample_idx=5 begin_infer
+[LOG] pred_keys: ['centers_for_disease_control|issue_guidance|vaccination|down', 'world_health_organization|confirm|mortality|up', 'united_states|report_release|decorating_ordinary_risk|down', 'food_and_drug_administration|approve_authorize|flu_vaccine|down', 'health_and_human_services|detect|early_seasonal_cases|down']
+recall_all: 0.15555555555555556 precision_all: 0.10000000000000002
+
+[LOG] sample_idx=6 begin_infer
+[LOG] pred_keys: ['centers_for_disease_control|issue_guidance|vaccination|ambiguous', 'world_health_organization|confirm|mortalit|up']
+recall_all: 0.13333333333333333 precision_all: 0.08571428571428573
+
+[LOG] sample_idx=7 begin_infer
+[LOG] pred_keys: ['gang_gang|issue_guidance|vaccination|ambiguous', 'world_health_organization|confirm|mortality|up', 'centers_for_disease_control_and_prevention|issue_guidance|vaccination|ambiguous', 'unidentified_source|detect|new_influenza_strain|up', 'un😁identified_source|conduct_study|influenza_outbreak_monitoring|up']
+recall_all: 0.11666666666666667 precision_all: 0.07500000000000001
+
+[LOG] sample_idx=8 begin_infer
+[LOG] pred_keys: ['centers_for_disease_control|issue_guidance|vaccination|ambiguous', 'world_health_organization|confirm|mortalit|up', 'food_and_drug_administration|approve_authorize|vaccine|up', 'united_states|report_release|influenza|hitrate_stabilization', 'united_states|detect|influentional_outbreak|down']
+recall_all: 0.13148148148148148 precision_all: 0.08888888888888889
+
+[LOG] sample_idx=9 begin_infer
+[LOG] pred_keys: ['centers_for_disease_control|issue_guidance|vaccination|ambiguous', 'world_health_organization|confirm|mortalit|up', 'united_states|report_release|influenza|h']
+recall_all: 0.13833333333333334 precision_all: 0.11333333333333333
+
+[LOG] sample_idx=10 begin_infer
+[LOG] pred_keys: ['centers_for_disease_control|issue_guidance|vaccination|ambiguous', 'world_health_organization|confirm|mortality|up', 'united_states|detect|influenza_strain|new', 'health_and_human_services|report_release|hospitalization_data_up|UNK', 'advisory_committee_on_immunization_practice|rate_change|vaccination_coverage_down|UNK']
+recall_all: 0.12575757575757576 precision_all: 0.10303030303030303
+
+[LOG] sample_idx=11 begin_infer
+[LOG] pred_keys: ['centers_for_disease_control|issue_guidance|vaccination|ambiguous', 'united_states|report_release|influenza|hitt_up', 'world_health_organization|confirm|mortalit|up', 'food_and_drug_administration|approve_authorize|flu_vaccine|UNK', 'advisory_committee_on_immunization_practice|recommend_vaccination|influenza|up']
+recall_all: 0.11527777777777777 precision_all: 0.09444444444444444
+
+[LOG] sample_idx=12 begin_infer
+[LOG] pred_keys: ['centers_for_disease_control|issue_guidance|vaccination|ambiguous', 'united_states|report_release|mortality|up', 'world_health_organization|issue_guidance|flu|up', 'food_and_drug_administration|recommend_vaccination|influenza|up', 'health_and_human_services|report|mortality|up']
+recall_all: 0.12179487179487179 precision_all: 0.10256410256410256
+
+[LOG] sample_idx=13 begin_infer
+[LOG] pred_keys: ['centers_for_disease_control|issue_guidance|vaccination|ambiguous', 'united_states|report_release|mortality|up', 'world_health_organization|issue_guidance|mortality|up', 'food_and_drug_administration|approve_authorize|flu_vaccine|up']
+recall_all: 0.12738095238095237 precision_all: 0.1130952380952381
+
+[LOG] sample_idx=14 begin_infer
+[LOG] pred_keys: ['control|issue_guidance|vaccination|down', 'organization|confirm|mortalit|up', 'factors|impact|influenza|down', 'changes|affect|h1n1|ambiguous', 'campaigns|reduce|cases|down']
+recall_all: 0.11888888888888888 precision_all: 0.10555555555555556
+
+[LOG] sample_idx=15 begin_infer
+[LOG] pred_keys: ['centers_for_disease_control|issue_guidance|vaccination|ambiguous', 'world_health_organization|report_release|mortality|up', 'united_states|report_release|influenza|down', 'food_and_drug_administration|approve_authorize|influenza_vaccine|down', 'advisory_committee_on_immunization_principles|issue_guidance|vaccination|up']
+recall_all: 0.11145833333333333 precision_all: 0.09895833333333333
+
+[LOG] sample_idx=16 begin_infer
+[LOG] pred_keys: ['centers_for_disease_control|issue_guidence|vaccination|down', 'world_health_organization|confirm|mortality|up', 'united_states|report_release|decorating_ordinary_risk_|down', 'food_and_drug_administration|approve_authorize|vaccine|up', 'advisory_committee_on_immunization_practic|issue_guidance|vaccination|down']
+recall_all: 0.10490196078431371 precision_all: 0.09313725490196079

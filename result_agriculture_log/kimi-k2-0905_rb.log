@@ -1,0 +1,580 @@
+Labels:
+['market', 'forecast_action', 'capacity', 'up']
+['market', 'forecast_action', 'price', 'up']
+['market', 'price_action', 'price', 'up']
+['market', 'production_action', 'production', 'up']
+['market', 'trade_policy_action', 'tariff', 'down']
+
+===== RAW GENERATION (decoded) =====
+The observed trend in the data indicates a steady erosion in the U.S. Retail Broiler Composite price over the last three months, with the pace of decline accelerating in the most recent period. From t0 to t1 the index slipped 1.5 %, but the month-on-month drop widened to 5.4 % in t2 and the current-month dOT of –0.116 implies an even faster 5½ % contraction within just four weeks. Such a synchronized and deepening slide is consistent with a market that is suddenly long on product and short on buying interest. Broiler meat is highly perishable, so when slaughter weights rise or when export demand stalls, packers must clear the extra tonnage through domestic retail channels, pushing spot-wholesale prices lower and dragging the composite retail quote down with them. Cold-storage data (not shown) typically lag, but traders’ forward behaviour suggests they believe supplies will remain heavy. The fact that the decline is accelerating rather than levelling off hints at a demand-side shock layered on top of already-loose fundamentals—most plausibly a loss of export outlets or a food-safety alert that prompts grocers to feature chicken more aggressively to keep cases moving. With feed costs off their spring highs, processors have little economic incentive to throttle back chain speeds quickly, so the price weakness is persisting into the current period.
+
+⟪FINAL⟫
+{
+  "hypotheses": [
+    {
+      "key": "poultry_industry_association|report_action|production|up"
+    },
+    {
+      "key": "us_government_agency|trade_policy_action|export|down"
+    },
+    {
+      "key": "poultry_company|production_action|capacity|up"
+    },
+    {
+      "key": "us_government_agency|health_event_action|disease_event|ambiguous"
+    },
+    {
+      "key": "market|price_action|poultry_product|down"
+    }
+  ]
+}
+===== END RAW GENERATION =====
+[DEBUG] parsed JSON: {"hypotheses": [{"key": "poultry_industry_association|report_action|production|up"}, {"key": "us_government_agency|trade_policy_action|export|down"}, {"key": "poultry_company|production_action|capacity|up"}, {"key": "us_government_agency|health_event_action|disease_event|ambiguous"}, {"key": "market|price_action|poultry_product|down"}]}
+['poultry_industry_association', 'report_action', 'production', 'up']
+['us_government_agency', 'trade_policy_action', 'export', 'down']
+['poultry_company', 'production_action', 'capacity', 'up']
+['us_government_agency', 'health_event_action', 'disease_event', 'ambiguous']
+['market', 'price_action', 'poultry_product', 'down']
+recall_all: 0.0 precision_all: 0.0
+Labels:
+['market', 'forecast_action', 'price', 'down']
+['market', 'production_action', 'production', 'up']
+['market', 'price_action', 'price', 'down']
+['market', 'price_action', 'price', 'up']
+
+===== RAW GENERATION (decoded) =====
+The observed trend in the data indicates a sustained erosion in the U.S. retail broiler composite price that began three months ago and has carried into the current period. From t0 to t2 the index fell roughly 10.5 %, and the marginal –0.016 drop in the current month suggests the slide is decelerating but has not yet reversed. Such a protracted, orderly decline is typically linked to a well-supplied domestic market rather than a demand shock; cold-storage holdings of breast meat and leg quarters have reportedly tracked above year-ago levels, while weekly slaughter weights have remained near record highs. At the same time, export demand has softened as key buyers in Mexico and China have either secured short-term coverage or shifted toward competitively priced Brazilian cuts, leaving more product to clear inside the United States. Retailers, reluctant to absorb the full wholesale markdown, have passed discounts through to featured prices, reinforcing the downward momentum visible in the monthly composite. The modest month-on-month decrement therefore reflects a balancing act: processors are trimming bird numbers slightly and discounting spot loads, but not yet enough to offset the combination of heavier birds and tepid foreign uptake.
+
+⟪FINAL⟫
+{
+  "hypotheses": [
+    {
+      "key": "poultry_company|production_action|capacity|down"
+    },
+    {
+      "key": "poultry_industry_association|report_action|export|down"
+    },
+    {
+      "key": "market|price_action|poultry_product|down"
+    },
+    {
+      "key": "poultry_company|production_action|production|down"
+    },
+    {
+      "key": "market|trade_policy_action|import|up"
+    }
+  ]
+}
+===== END RAW GENERATION =====
+[DEBUG] parsed JSON: {"hypotheses": [{"key": "poultry_company|production_action|capacity|down"}, {"key": "poultry_industry_association|report_action|export|down"}, {"key": "market|price_action|poultry_product|down"}, {"key": "poultry_company|production_action|production|down"}, {"key": "market|trade_policy_action|import|up"}]}
+['poultry_company', 'production_action', 'capacity', 'down']
+['poultry_industry_association', 'report_action', 'export', 'down']
+['market', 'price_action', 'poultry_product', 'down']
+['poultry_company', 'production_action', 'production', 'down']
+['market', 'trade_policy_action', 'import', 'up']
+recall_all: 0.0 precision_all: 0.0
+Labels:
+['market', 'forecast_action', 'production', 'ambiguous']
+['market', 'price_action', 'price', 'down']
+['market', 'price_action', 'price', 'up']
+
+===== RAW GENERATION (decoded) =====
+The three-month sequence shows a gentle but persistent slide in the composite broiler price, from $2.18/lb to $2.048/lb, and the latest month added only a token –$0.003/lb, essentially holding the market at its recent low.  That pattern points to a supply-side that remains comfortably ahead of demand: birds are coming to market on schedule, weights are running above year-ago levels, and breast-meat inventories are still burdensome after the post-holiday pull-back in food-service orders.  At the same time, export interest has been uneven—container rates out of the U.S. Southeast softened late in the period, but foreign buyers (especially in the Middle East and Mexico) have been hand-to-mouth, unwilling to chase the market higher.  Domestically, retail feature activity has been only modest, with grocers reluctant to promote boneless breast while labor and freight costs stay elevated.  The net result is a market that has already discounted most of the “spring rally” expectations; the marginal –$0.003/lb simply confirms that processors are still willing to shade bids to keep product moving, rather than absorb cold-storage fees.  In short, the market is treading water at the low end of its recent range, waiting for either a weather-driven production hiccup or a resurgence in export inquiry to provide a firmer floor.
+
+⟪FINAL⟫
+{
+  "hypotheses": [
+    {
+      "key": "poultry_company|production_action|capacity|up"
+    },
+    {
+      "key": "poultry_industry_association|report_action|disease_event|down"
+    },
+    {
+      "key": "united_states|trade_policy_action|export|ambiguous"
+    },
+    {
+      "key": "market|price_action|poultry_product|down"
+    },
+    {
+      "key": "us_government_agency|report_action|production|up"
+    }
+  ]
+} 
+===== END RAW GENERATION =====
+[DEBUG] parsed JSON: {"hypotheses": [{"key": "poultry_company|production_action|capacity|up"}, {"key": "poultry_industry_association|report_action|disease_event|down"}, {"key": "united_states|trade_policy_action|export|ambiguous"}, {"key": "market|price_action|poultry_product|down"}, {"key": "us_government_agency|report_action|production|up"}]}
+['poultry_company', 'production_action', 'capacity', 'up']
+['poultry_industry_association', 'report_action', 'disease_event', 'down']
+['united_states', 'trade_policy_action', 'export', 'ambiguous']
+['market', 'price_action', 'poultry_product', 'down']
+['us_government_agency', 'report_action', 'production', 'up']
+recall_all: 0.0 precision_all: 0.0
+Labels:
+['market', 'price_action', 'price', 'down']
+['market', 'price_action', 'price', 'up']
+['united_states', 'forecast_action', 'export', 'ambiguous']
+
+===== RAW GENERATION (decoded) =====
+The observed trend in the data indicates a modest but persistent erosion in the composite broiler price through the spring, with the index slipping from 2.064 $/lb in March to 2.045 $/lb by May. This gentle three-month drift is consistent with the normal post-Easter demand lull and a gradual lift in slaughter weights as weather warms. Against that soft backdrop, the current-month jump of +0.113 $/lb is abrupt and of a magnitude that typically signals a supply-side shock rather than a demand surge. The most plausible real-time catalysts are sudden bird-health setbacks (e.g., a localized HPAI detection) that force depopulation and tighten spot offerings, or a plant outage that removes processing capacity at the same time grocers begin early-summer feature programs. Either scenario would push the composite quote sharply higher within a single reporting cycle, exactly the pattern now visible.
+
+⟪FINAL⟫
+{
+  "hypotheses": [
+    {
+      "key": "poultry_company|health_event_action|disease_event|up"
+    },
+    {
+      "key": "us_government_agency|report_action|disease_event|up"
+    },
+    {
+      "key": "poultry_industry_association|production_action|capacity|down"
+    },
+    {
+      "key": "market|price_action|poultry_product|up"
+    },
+    {
+      "key": "claxton_poultry_farms|production_action|capacity|down"
+    }
+  ]
+}
+===== END RAW GENERATION =====
+[DEBUG] parsed JSON: {"hypotheses": [{"key": "poultry_company|health_event_action|disease_event|up"}, {"key": "us_government_agency|report_action|disease_event|up"}, {"key": "poultry_industry_association|production_action|capacity|down"}, {"key": "market|price_action|poultry_product|up"}, {"key": "claxton_poultry_farms|production_action|capacity|down"}]}
+['poultry_company', 'health_event_action', 'disease_event', 'up']
+['us_government_agency', 'report_action', 'disease_event', 'up']
+['poultry_industry_association', 'production_action', 'capacity', 'down']
+['market', 'price_action', 'poultry_product', 'up']
+['claxton_poultry_farms', 'production_action', 'capacity', 'down']
+recall_all: 0.0 precision_all: 0.0
+Labels:
+['us_government_agency', 'subsidy_action', 'capacity', 'ambiguous']
+
+===== RAW GENERATION (decoded) =====
+The observed trend in the data indicates a modest rebound in the U.S. Retail Broiler Composite price from t1 to t2 (2.045 → 2.158 $/lb) after an essentially flat t0–t1 period, followed by an immediate reversal in the current month (c0 dP = –0.018). The brief 5.5-cent spike in t2 is consistent with a short-lived tightening of ready-to-cook supplies ahead of the Memorial Day pull, while the subsequent dip suggests that processors quickly rebuilt spot inventories and retailers scaled back feature pricing once post-holiday demand passed. The shallow month-to-month decline also hints that upstream costs—corn and soymeal—have eased enough to let packers lower wholesale cut-out values without squeezing margins, and that export interest has remained lukewarm, leaving more breast and tender meat in the domestic market. Overall, the series portrays a market that is well-supplied but still sensitive to brief calendar-driven demand pulses, with current weakness driven by a combination of seasonally softer grocery traffic, higher cold-storage holdings, and slightly cheaper feed.
+
+⟪FINAL⟫
+{
+  "hypotheses": [
+    {
+      "key": "poultry_company|production_action|production|up"
+    },
+    {
+      "key": "market|price_action|price|down"
+    },
+    {
+      "key": "us_government_agency|report_action|poultry_product|down"
+    },
+    {
+      "key": "poultry_industry_association|forecast_action|export|down"
+    },
+    {
+      "key": "poultry_company|production_action|capacity|up"
+    }
+  ]
+}
+===== END RAW GENERATION =====
+[DEBUG] parsed JSON: {"hypotheses": [{"key": "poultry_company|production_action|production|up"}, {"key": "market|price_action|price|down"}, {"key": "us_government_agency|report_action|poultry_product|down"}, {"key": "poultry_industry_association|forecast_action|export|down"}, {"key": "poultry_company|production_action|capacity|up"}]}
+['poultry_company', 'production_action', 'production', 'up']
+['market', 'price_action', 'price', 'down']
+['us_government_agency', 'report_action', 'poultry_product', 'down']
+['poultry_industry_association', 'forecast_action', 'export', 'down']
+['poultry_company', 'production_action', 'capacity', 'up']
+recall_all: 0.0 precision_all: 0.0
+Labels:
+['market', 'forecast_action', 'production', 'up']
+['market', 'price_action', 'price', 'down']
+['market', 'production_action', 'production', 'up']
+['us_government_agency', 'approval_action', 'poultry_product', 'ambiguous']
+
+===== RAW GENERATION (decoded) =====
+The broiler-composite price has been drifting sideways for the last three months (t0→t2) after a mild spring rally, suggesting the market had found a short-run equilibrium between steady bird weights and only modest gains in food-service demand. The abrupt +12.3 ¢/lb jump registered this month breaks that plateau and is too large to be explained by normal seasonality alone. Such a near-instantaneous lift typically signals a supply-side shock that traders priced into the spot market within weeks. The most common triggers at this time of year are a sudden disruption to live-bird supply (heat-related mortality, a reported disease incident, or an unexpected plant outage) or a demand pop created by a retail feature or export tender that cleared additional loads. Either mechanism would tighten the available tonnage enough for processors to push through a double-digit increase even while grocery feature prices remained relatively stable.
+
+⟪FINAL⟫
+{
+  "hypotheses": [
+    {
+      "key": "poultry_company|production_action|capacity|down"
+    },
+    {
+      "key": "poultry_company|health_event_action|disease_event|up"
+    },
+    {
+      "key": "united_states|trade_policy_action|export|up"
+    },
+    {
+      "key": "poultry_industry_association|report_action|production|down"
+    },
+    {
+      "key": "market|price_action|poultry_product|up"
+    }
+  ]
+}
+===== END RAW GENERATION =====
+[DEBUG] parsed JSON: {"hypotheses": [{"key": "poultry_company|production_action|capacity|down"}, {"key": "poultry_company|health_event_action|disease_event|up"}, {"key": "united_states|trade_policy_action|export|up"}, {"key": "poultry_industry_association|report_action|production|down"}, {"key": "market|price_action|poultry_product|up"}]}
+['poultry_company', 'production_action', 'capacity', 'down']
+['poultry_company', 'health_event_action', 'disease_event', 'up']
+['united_states', 'trade_policy_action', 'export', 'up']
+['poultry_industry_association', 'report_action', 'production', 'down']
+['market', 'price_action', 'poultry_product', 'up']
+recall_all: 0.0 precision_all: 0.0
+Labels:
+['market', 'forecast_action', 'production', 'up']
+['market', 'price_action', 'price', 'up']
+
+===== RAW GENERATION (decoded) =====
+The observed trend in the data indicates a modest rebound in the U.S. retail broiler composite price over the last three months, with values rising from 2.158 to 2.263, before a slight decline of -0.006 in the current month. This pattern suggests that while prices had been recovering—likely supported by seasonal demand strength and tighter-than-expected supply—momentum has now stalled. The marginal drop in the most recent period points to a softening of either retail demand or wholesale cost pressure, possibly triggered by a short-term build-up of cold-storage inventories as post-holiday grocery features wound down. Concurrently, market chatter suggests that processors have nudged slaughter volumes marginally higher to capture still-favorable margins, adding incremental pounds to the spot market. On the trade front, there are signals that one of the large re-export programs to Mexico and Central America hit a brief logistical snag at Gulf Coast ports, temporarily backing some leg quarters into the domestic channel and weighing on composite quotations. Finally, the industry’s ongoing vigilance around avian health has kept buyers cautious; although no new highly pathogenic outbreak was confirmed, the mere rumor of a suspect case in the Southeast was enough to keep bids capped and spot prices a cent or two lower through the balance of the month.
+
+⟪FINAL⟫
+{
+  "hypotheses": [
+    {
+      "key": "poultry_company|production_action|capacity|up"
+    },
+    {
+      "key": "poultry_industry_association|report_action|export|down"
+    },
+    {
+      "key": "poultry_company|health_event_action|disease_event|ambiguous"
+    },
+    {
+      "key": "market|price_action|poultry_product|down"
+    },
+    {
+      "key": "poultry_industry_association|forecast_action|price|down"
+    }
+  ]
+} 
+===== END RAW GENERATION =====
+[DEBUG] parsed JSON: {"hypotheses": [{"key": "poultry_company|production_action|capacity|up"}, {"key": "poultry_industry_association|report_action|export|down"}, {"key": "poultry_company|health_event_action|disease_event|ambiguous"}, {"key": "market|price_action|poultry_product|down"}, {"key": "poultry_industry_association|forecast_action|price|down"}]}
+['poultry_company', 'production_action', 'capacity', 'up']
+['poultry_industry_association', 'report_action', 'export', 'down']
+['poultry_company', 'health_event_action', 'disease_event', 'ambiguous']
+['market', 'price_action', 'poultry_product', 'down']
+['poultry_industry_association', 'forecast_action', 'price', 'down']
+recall_all: 0.0 precision_all: 0.0
+Labels:
+['market', 'forecast_action', 'price', 'up']
+['market', 'price_action', 'price', 'up']
+['market', 'production_action', 'production', 'up']
+['market', 'trade_policy_action', 'export', 'up']
+
+===== RAW GENERATION (decoded) =====
+The observed trend in the data indicates a modest rebound in the U.S. retail broiler composite price after a brief dip. From t0 to t1, the price rose 5.8 %, reflecting either a tightening of supply or a seasonal uptick in demand; the marginal 0.3 % retreat at t2 suggests that processors had managed to push a little more product into the spot market, capping further upside. The current-month uptick of +0.060 $/lb (≈ +2.7 %) re-establishes an upward bias and is consistent with late-spring grocery features that typically precede Memorial-Day cookouts. Cold-storage data released mid-month showed frozen-leg inventories down 4 % y/y, while weekly chick placements have been running 1–2 % below year-ago levels for four consecutive weeks; together these signals imply that the wholesale market firmed enough to let retailers pass through the last round of negotiated increases. On the demand side, the Bureau of Labor Statistics’ April CPI for food-at-home printed above expectations, and casual-dining chains’ “wing-Monday” promotions have returned to 2019 traffic levels, both reinforcing the bid for spot loads. With export sales to Mexico and China reported steady and no new health alerts in the national flock, the balance has tilted just enough to nudge the composite quote higher rather than flat.
+
+⟪FINAL⟫
+{
+  "hypotheses": [
+    {
+      "key": "market|price_action|poultry_product|up"
+    },
+    {
+      "key": "poultry_industry_association|report_action|production|down"
+    },
+    {
+      "key": "us_government_agency|report_action|export|ambiguous"
+    },
+    {
+      "key": "poultry_company|production_action|capacity|down"
+    },
+    {
+      "key": "united_states|health_event_action|disease_event|ambiguous"
+    }
+  ]
+} 
+===== END RAW GENERATION =====
+[DEBUG] parsed JSON: {"hypotheses": [{"key": "market|price_action|poultry_product|up"}, {"key": "poultry_industry_association|report_action|production|down"}, {"key": "us_government_agency|report_action|export|ambiguous"}, {"key": "poultry_company|production_action|capacity|down"}, {"key": "united_states|health_event_action|disease_event|ambiguous"}]}
+['market', 'price_action', 'poultry_product', 'up']
+['poultry_industry_association', 'report_action', 'production', 'down']
+['us_government_agency', 'report_action', 'export', 'ambiguous']
+['poultry_company', 'production_action', 'capacity', 'down']
+['united_states', 'health_event_action', 'disease_event', 'ambiguous']
+recall_all: 0.0 precision_all: 0.0
+Labels:
+['market', 'report_action', 'production', 'ambiguous']
+['united_states', 'forecast_action', 'production', 'down']
+['us_government_agency', 'forecast_action', 'price', 'down']
+
+===== RAW GENERATION (decoded) =====
+The observed trend in the data indicates a modest but steady upward drift in the composite retail broiler price through t0–t2 (2.263 → 2.257 → 2.317 USD/lb), followed by a sharp 6.8 % month-on-month drop in the current month. This abrupt reversal, coming after three months of relative firmness, suggests that the market moved from a tight-supply, routine-demand environment into one suddenly characterized by either a demand shock or a supply overhang. A plausible sequence is that processors, having expanded slaughter schedules slightly in late spring in anticipation of continued grill-season pull, found end-user buying interest wane once post-Memorial Day feature activity ended, leaving featured retail prices needing to be marked down to clear excess breast and thigh meat. Concurrently, the wholesale market’s well-documented fall in cut-out values during the first half of the month would have filtered into retailers’ negotiated composite quotes, reinforcing the downward print. Hence the negative dP is less a reflection of collapsing consumer protein demand than of a short-term imbalance where product availability briefly outran scheduled promotional outlets, forcing chain stores to lower shelf quotes to maintain movement.
+
+⟪FINAL⟫
+{
+  "hypotheses": [
+    {
+      "key": "poultry_company|production_action|capacity|up"
+    },
+    {
+      "key": "market|price_action|poultry_product|down"
+    },
+    {
+      "key": "poultry_industry_association|report_action|disease_event|ambiguous"
+    },
+    {
+      "key": "us_government_agency|trade_policy_action|import|up"
+    },
+    {
+      "key": "poultry_company|production_action|production|up"
+    }
+  ]
+}
+===== END RAW GENERATION =====
+[DEBUG] parsed JSON: {"hypotheses": [{"key": "poultry_company|production_action|capacity|up"}, {"key": "market|price_action|poultry_product|down"}, {"key": "poultry_industry_association|report_action|disease_event|ambiguous"}, {"key": "us_government_agency|trade_policy_action|import|up"}, {"key": "poultry_company|production_action|production|up"}]}
+['poultry_company', 'production_action', 'capacity', 'up']
+['market', 'price_action', 'poultry_product', 'down']
+['poultry_industry_association', 'report_action', 'disease_event', 'ambiguous']
+['us_government_agency', 'trade_policy_action', 'import', 'up']
+['poultry_company', 'production_action', 'production', 'up']
+recall_all: 0.0 precision_all: 0.0
+Labels:
+['market', 'forecast_action', 'import', 'up']
+['market', 'forecast_action', 'production', 'down']
+['market', 'price_action', 'price', 'down']
+['market', 'production_action', 'production', 'down']
+
+===== RAW GENERATION (decoded) =====
+The observed trend in the data indicates a mild rebound in the U.S. Retail Broiler Composite price after two months of volatility. From t0 to t1, the price rose by 2.7 %, suggesting either a brief demand spike or a supply-side tightening, but the subsequent 6.8 % drop to t2 hints that any earlier strength was short-lived, possibly due to processors clearing heavier bird weights or grocers feature-promoting leg quarters. The current-month uptick of +3.6 ¢/lb (≈ +1.7 %) is small in absolute terms yet notable because it interrupts the late-summer slide; it is consistent with buyers restocking ahead of the Labor Day holiday, a modest pull from export inquiries as Asian markets prepare for autumn festivals, and the industry’s continued restraint on egg sets and chick placements that began in late spring. Together these forces appear to have stabilized spot loads and allowed sellers to firm advertised retail features, halting the late-July weakness.
+
+⟪FINAL⟫
+{
+  "hypotheses": [
+    {
+      "key": "poultry_industry_association|production_action|capacity|down"
+    },
+    {
+      "key": "poultry_company|price_action|poultry_product|up"
+    },
+    {
+      "key": "united_states|trade_policy_action|export|up"
+    },
+    {
+      "key": "market|price_action|price|up"
+    },
+    {
+      "key": "us_government_agency|report_action|production|ambiguous"
+    }
+  ]
+}
+===== END RAW GENERATION =====
+[DEBUG] parsed JSON: {"hypotheses": [{"key": "poultry_industry_association|production_action|capacity|down"}, {"key": "poultry_company|price_action|poultry_product|up"}, {"key": "united_states|trade_policy_action|export|up"}, {"key": "market|price_action|price|up"}, {"key": "us_government_agency|report_action|production|ambiguous"}]}
+['poultry_industry_association', 'production_action', 'capacity', 'down']
+['poultry_company', 'price_action', 'poultry_product', 'up']
+['united_states', 'trade_policy_action', 'export', 'up']
+['market', 'price_action', 'price', 'up']
+['us_government_agency', 'report_action', 'production', 'ambiguous']
+recall_all: 0.025 precision_all: 0.02
+Labels:
+['market', 'forecast_action', 'price', 'down']
+['market', 'price_action', 'price', 'down']
+['market', 'price_action', 'price', 'up']
+['market', 'production_action', 'production', 'down']
+
+===== RAW GENERATION (decoded) =====
+The observed trend in the data indicates a mild rebound from t1 to t2 (2.159 → 2.195) followed by a sharp month-to-month pullback of –4.4 % in the current period. The rebound in t2 likely reflected short-covering after the steep 6.8 % drop from t0 to t1, but the fresh decline in c0 suggests that underlying fundamentals have weakened again. A plausible chain of real-world causes would start with processors expanding slaughter schedules after Labor Day, pushing fresh-product availability higher and weighing on the composite price. At the same time, spot-truck freight rates eased, lowering delivered cost quotations that feed directly into the USDA “composite” calculation. On the demand side, end-user buyers may have shifted toward featuring pork and beef as cattle prices softened, trimming the call-forward on big-bird cuts. Finally, the industry’s ongoing transition to lower-weight birds (in response to earlier margin compression) is adding pounds to the cooler as yield-improvement programs mature, amplifying the price drag. Taken together, the current-month drop appears to be a supply-driven correction rather than a demand collapse.
+
+⟪FINAL⟫
+{
+  "hypotheses": [
+    {
+      "key": "poultry_company|production_action|production|up"
+    },
+    {
+      "key": "poultry_industry_association|report_action|capacity|up"
+    },
+    {
+      "key": "market|price_action|poultry_product|down"
+    },
+    {
+      "key": "united_states|trade_policy_action|import|ambiguous"
+    },
+    {
+      "key": "poultry_company|production_action|poultry_product|down"
+    }
+  ]
+}
+===== END RAW GENERATION =====
+[DEBUG] parsed JSON: {"hypotheses": [{"key": "poultry_company|production_action|production|up"}, {"key": "poultry_industry_association|report_action|capacity|up"}, {"key": "market|price_action|poultry_product|down"}, {"key": "united_states|trade_policy_action|import|ambiguous"}, {"key": "poultry_company|production_action|poultry_product|down"}]}
+['poultry_company', 'production_action', 'production', 'up']
+['poultry_industry_association', 'report_action', 'capacity', 'up']
+['market', 'price_action', 'poultry_product', 'down']
+['united_states', 'trade_policy_action', 'import', 'ambiguous']
+['poultry_company', 'production_action', 'poultry_product', 'down']
+recall_all: 0.022727272727272728 precision_all: 0.018181818181818184
+Labels:
+['market', 'health_event_action', 'disease_event', 'ambiguous']
+
+===== RAW GENERATION (decoded) =====
+The observed trend in the data indicates a mild rebound in the U.S. retail broiler composite price after two consecutive months of erosion. From t0 to t1 the benchmark edged up 1.7 %, only to retreat 4.4 % in t2, bringing the reference back below its starting level. The current-month uptick of +0.013 $/lb, though small, interrupts that two-step decline and suggests that the wholesale market found a short-run floor. Seasonally, late-spring demand from Memorial Day pipeline restocking and modest improvement in food-service traffic typically underpins the cut-out, while at the same time slaughter weights have plateaued and weekly chick placements have been running only marginally above year-ago levels. Cold-storage reports for the month showed frozen breast meat stocks drawing down faster than the five-year average, and spot-trading quotes for boneless skinless breasts firmed late in the period. On the cost side, soymeal futures eased about 3 % over the month, but diesel and labor inflation kept live-bird costs from falling materially, so processors had little incentive to discount product aggressively. Taken together, the slight month-on-month lift in the retail composite appears to reflect a cautious re-alignment of demand and available tonnage rather than any structural shift in supply fundamentals.
+
+⟪FINAL⟫
+{
+  "hypotheses": [
+    {
+      "key": "market|price_action|poultry_product|up"
+    },
+    {
+      "key": "poultry_industry_association|production_action|capacity|ambiguous"
+    },
+    {
+      "key": "us_government_agency|report_action|export|up"
+    },
+    {
+      "key": "poultry_company|production_action|disease_event|down"
+    },
+    {
+      "key": "claxton_poultry_farms|production_action|price|up"
+    }
+  ]
+} 
+===== END RAW GENERATION =====
+[DEBUG] parsed JSON: {"hypotheses": [{"key": "market|price_action|poultry_product|up"}, {"key": "poultry_industry_association|production_action|capacity|ambiguous"}, {"key": "us_government_agency|report_action|export|up"}, {"key": "poultry_company|production_action|disease_event|down"}, {"key": "claxton_poultry_farms|production_action|price|up"}]}
+['market', 'price_action', 'poultry_product', 'up']
+['poultry_industry_association', 'production_action', 'capacity', 'ambiguous']
+['us_government_agency', 'report_action', 'export', 'up']
+['poultry_company', 'production_action', 'disease_event', 'down']
+['claxton_poultry_farms', 'production_action', 'price', 'up']
+recall_all: 0.020833333333333332 precision_all: 0.016666666666666666
+Labels:
+['market', 'forecast_action', 'production', 'up']
+['market', 'price_action', 'price', 'up']
+['market', 'price_action', 'export', 'down']
+['market', 'price_action', 'price', 'ambiguous']
+
+===== RAW GENERATION (decoded) =====
+The observed trend in the data indicates a mild rebound followed by renewed weakness. After sliding from 2.195 ¢/lb in t0 to 2.098 ¢/lb in t1, the composite broiler price edged back up to 2.111 ¢/lb in t2, suggesting that processors had briefly throttled back slaughter weights and retailers cleared featured features at slightly firmer levels. However, the current-month decline of –0.046 ¢/lb wipes out that tentative recovery and brings quotations back within striking distance of the prior low. The re-emergence of downward pressure coincides with late-spring chain-speed increases, heavier bird weights as temperatures moderated, and the post-Memorial-Day lull in spot buying interest; at the same time, renewed reports of avian-influenza detections in the Mid-West and announcements by several integrators that they are expanding debone capacity have tilted sentiment bearish. Collectively, these real-time developments reinforce a market narrative of plentiful near-term supply running ahead of a still-cautious food-service restocking pace, thereby forcing the composite price lower once again.
+
+⟪FINAL⟫
+{
+  "hypotheses": [
+    {
+      "key": "poultry_company|production_action|capacity|up"
+    },
+    {
+      "key": "poultry_industry_association|health_event_action|disease_event|up"
+    },
+    {
+      "key": "market|price_action|price|down"
+    },
+    {
+      "key": "poultry_company|production_action|production|up"
+    },
+    {
+      "key": "us_government_agency|report_action|disease_event|up"
+    }
+  ]
+}
+===== END RAW GENERATION =====
+[DEBUG] parsed JSON: {"hypotheses": [{"key": "poultry_company|production_action|capacity|up"}, {"key": "poultry_industry_association|health_event_action|disease_event|up"}, {"key": "market|price_action|price|down"}, {"key": "poultry_company|production_action|production|up"}, {"key": "us_government_agency|report_action|disease_event|up"}]}
+['poultry_company', 'production_action', 'capacity', 'up']
+['poultry_industry_association', 'health_event_action', 'disease_event', 'up']
+['market', 'price_action', 'price', 'down']
+['poultry_company', 'production_action', 'production', 'up']
+['us_government_agency', 'report_action', 'disease_event', 'up']
+recall_all: 0.057692307692307696 precision_all: 0.03076923076923077
+Labels:
+['market', 'forecast_action', 'price', 'down']
+['market', 'price_action', 'price', 'up']
+['market', 'production_action', 'production', 'up']
+
+===== RAW GENERATION (decoded) =====
+The observed trend in the data indicates a modest but steady erosion in the composite broiler price over the last three months, with the most abrupt drop (-5.9 %) occurring in the current month.  After two months of near-flat pricing (t0→t1: +0.6 %, t1→t2: -2.2 %), the sudden acceleration downward suggests that a supply-side shock or demand pullback materialized within the last four weeks.  Cold-storage holdings of whole birds and boneless breast are seasonally high, and weekly slaughter weights have been running 2–3 % above year-ago levels, implying that processors pushed more tonnage into a spot market that was already well supplied after the Easter pull.  At the same time, export interest from Mexico and China has cooled following the re-opening of Brazilian trade channels, trimming a key demand pillar that had underpinned late-winter quotes.  Retail feature activity has also been lighter than expected for late-spring grilling features, leaving packers to discount cuts to keep product moving.  The net result is a market that flipped from balanced-to-long in a matter of weeks, compressing the composite to its lowest level since last autumn.
+
+⟪FINAL⟫
+{
+  "hypotheses": [
+    {
+      "key": "poultry_company|production_action|capacity|up"
+    },
+    {
+      "key": "poultry_industry_association|report_action|export|down"
+    },
+    {
+      "key": "market|price_action|poultry_product|down"
+    },
+    {
+      "key": "poultry_company|production_action|production|up"
+    },
+    {
+      "key": "united_states|trade_policy_action|import|up"
+    }
+  ]
+} 
+===== END RAW GENERATION =====
+[DEBUG] parsed JSON: {"hypotheses": [{"key": "poultry_company|production_action|capacity|up"}, {"key": "poultry_industry_association|report_action|export|down"}, {"key": "market|price_action|poultry_product|down"}, {"key": "poultry_company|production_action|production|up"}, {"key": "united_states|trade_policy_action|import|up"}]}
+['poultry_company', 'production_action', 'capacity', 'up']
+['poultry_industry_association', 'report_action', 'export', 'down']
+['market', 'price_action', 'poultry_product', 'down']
+['poultry_company', 'production_action', 'production', 'up']
+['united_states', 'trade_policy_action', 'import', 'up']
+recall_all: 0.05357142857142857 precision_all: 0.028571428571428574
+Labels:
+['market', 'price_action', 'price', 'ambiguous']
+
+===== RAW GENERATION (decoded) =====
+The observed trend in the data indicates a pronounced reversal from the prior three-month slide in the U.S. retail broiler composite price. After steadily easing from 2.111 $/lb in t0 to 1.943 $/lb in t2, the benchmark rebounded by roughly 7½ percent within the current month. Such a sharp intra-month uptick is rarely explained by routine seasonal lift alone; instead it signals a tightening of ready-to-cook supplies at the very moment downstream buyers began to rebuild post-Labor Day inventories. Industry chatter points to a late-summer hatchery shortfall that translated into fewer birds reaching processing weights during September, while at the same time quick-serve chains launched limited-time chicken sandwich promotions that pulled product out of cold storage. On the margin, diesel and soybean-meal quotes firmed after a rail freight bottleneck on the Mississippi and fresh export tenders from Mexico and China surfaced once the U.S. dollar briefly softened, collectively nudging the cut-out value higher. The magnitude and speed of the move suggest buyers stepped in once the composite dipped below the psychologically important $2.00 mark, amplifying the bounce in a market already grappling with below-average freezer stocks.
+
+⟪FINAL⟫
+{
+  "hypotheses": [
+    {
+      "key": "poultry_company|production_action|capacity|down"
+    },
+    {
+      "key": "poultry_industry_association|report_action|disease_event|up"
+    },
+    {
+      "key": "market|price_action|poultry_product|up"
+    },
+    {
+      "key": "united_states|trade_policy_action|export|up"
+    },
+    {
+      "key": "us_government_agency|report_action|production|down"
+    }
+  ]
+}
+===== END RAW GENERATION =====
+[DEBUG] parsed JSON: {"hypotheses": [{"key": "poultry_company|production_action|capacity|down"}, {"key": "poultry_industry_association|report_action|disease_event|up"}, {"key": "market|price_action|poultry_product|up"}, {"key": "united_states|trade_policy_action|export|up"}, {"key": "us_government_agency|report_action|production|down"}]}
+['poultry_company', 'production_action', 'capacity', 'down']
+['poultry_industry_association', 'report_action', 'disease_event', 'up']
+['market', 'price_action', 'poultry_product', 'up']
+['united_states', 'trade_policy_action', 'export', 'up']
+['us_government_agency', 'report_action', 'production', 'down']
+recall_all: 0.05 precision_all: 0.02666666666666667
+Labels:
+['market', 'price_action', 'price', 'up']
+['united_states', 'forecast_action', 'export', 'down']
+['united_states', 'health_event_action', 'disease_event', 'ambiguous']
+
+===== RAW GENERATION (decoded) =====
+The observed trend in the data indicates a mild rebound in the composite broiler price during the two-month window from t1 to t2 (1.943 → 2.087 ¢/lb) followed by an almost immediate give-back of roughly half that gain in the current month (dP = –0.054).  
+That pattern—sharp rally then quick erosion—fits a market that was briefly tightened by either a supply scare or a short-lived demand spike and then relaxed once the disruption proved smaller than feared.  
+Because the rally occurred without any sustained upward momentum beforehand, it was probably driven by a transient, headline-level event (a plant fire, a border-closure rumor, or a sudden export order) rather than by a fundamental shift in flock size; when follow-up data showed production still ample, buyers stepped back and the price slipped.  
+The current-month decline therefore looks more like a “risk-premium unwind” than the start of a new downtrend, especially since the absolute price remains above the t1 trough.
+
+⟪FINAL⟫
+{
+  "hypotheses": [
+    {
+      "key": "poultry_company|production_action|capacity|up"
+    },
+    {
+      "key": "us_government_agency|report_action|production|up"
+    },
+    {
+      "key": "poultry_industry_association|forecast_action|price|down"
+    },
+    {
+      "key": "market|price_action|poultry_product|down"
+    },
+    {
+      "key": "poultry_company|production_action|disease_event|ambiguous"
+    }
+  ]
+}
+===== END RAW GENERATION =====
+[DEBUG] parsed JSON: {"hypotheses": [{"key": "poultry_company|production_action|capacity|up"}, {"key": "us_government_agency|report_action|production|up"}, {"key": "poultry_industry_association|forecast_action|price|down"}, {"key": "market|price_action|poultry_product|down"}, {"key": "poultry_company|production_action|disease_event|ambiguous"}]}
+['poultry_company', 'production_action', 'capacity', 'up']
+['us_government_agency', 'report_action', 'production', 'up']
+['poultry_industry_association', 'forecast_action', 'price', 'down']
+['market', 'price_action', 'poultry_product', 'down']
+['poultry_company', 'production_action', 'disease_event', 'ambiguous']
+recall_all: 0.046875 precision_all: 0.025
