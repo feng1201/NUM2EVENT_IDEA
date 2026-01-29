@@ -1,15 +1,5 @@
 # Num2Event — Experiment Pipeline
 
-This repository contains an end-to-end pipeline for:
-
-- Extracting structured AAOD-style events from an energy dataset using an LLM
-- Deduplicating and splitting events into train/validation/test by date
-- Synthesizing data conditioned on events and prices
-- Building datasets and generating reasoning traces
-- Fine-tuning and evaluating a model
-
-All commands below use **relative paths** and assume you run them from the **repository root**.
-
 ---
 
 ## 1) Environment setup
