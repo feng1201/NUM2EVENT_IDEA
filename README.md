@@ -158,7 +158,7 @@ python data_process/energy4experiment_sft_full_standalone.py \
 
 ## 8) Training
 
-### Stage 1 (SFT)
+### Stage 1 (TS Encoder)
 
 ```bash
 export CUDA_VISIBLE_DEVICES=0,1,2,4,5,6,7
@@ -177,7 +177,7 @@ torchrun --nproc_per_node=8 finetune/finetune_twostage.py \
   --logging_steps 10 --eval_steps 200
 ```
 
-### Stage 2 (SFT continuation)
+### Stage 2 (Cold Start)
 
 ```bash
 export PYTHONUNBUFFERED=1
