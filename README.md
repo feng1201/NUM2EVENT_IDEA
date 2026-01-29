@@ -34,10 +34,9 @@ You need to download the base model (`Qwen/Qwen3-8B`) from Hugging Face to your 
 # Ensure git-lfs is installed ([https://git-lfs.com](https://git-lfs.com))
 git lfs install
 
-# Clone the model
+Clone the model
 git clone [https://huggingface.co/Qwen/Qwen3-8B](https://huggingface.co/Qwen/Qwen3-8B) checkpoints/Qwen3-8B
-
----
+```
 
 ## 3) Event extraction (LLM → JSONL)
 
